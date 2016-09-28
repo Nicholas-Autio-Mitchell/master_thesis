@@ -1,0 +1,14 @@
+#+latex_header: \usepackage[linesnumbered,ruled,lined,noend]{algorithm2e}
+
+
+#+begin_src latex 
+
+  \begin{algorithm}[H]
+    \KwIn{input}
+    \Repeat{something} {
+        scroll to bottom of page\;
+    }
+    \caption{a caption}
+  \end{algorithm}
+
+#+end_src

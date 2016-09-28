@@ -1,0 +1,222 @@
+
+
+
+* DONE Clean up and improve data
+
+** DONE Remove duplicate (integer) columns from sentiment analysis results
+
+** DONE Add some more macroeconomical data:
+
+*** DONE oil prices -> one month forward month -> both ICE Brent and WTI Crude
+
+*** DONE natural gas -> NYMEX Naturla Gas Futures; 1-month forwards
+
+*** DONE copper cash price [additionally added bid/ask spread as vola proxy]
+
+*** DONE Volatility from VIX (S&P500)
+
+*** DONE Asian markets: Nikkei 225, Shanghei SE Composite, ETF for Emerging Markets ("EFA")
+
+*** DONE Currencies:
+
+**** DONE USD_EUR
+
+**** DONE USD-GBP
+
+**** DONE USD-JPY
+
+**** DONE USD-AUS
+
+**** DONE USD-CAD
+
+** DONE Remove duplicate (integer) columns from sentiment analysis results
+
+** DONE Extra search terms from Twitter?
+
+** DONE Merge all data into one data table
+
+** DONE Remove variables of high-covariance/correlation
+
+*** CANCELLED function: nearZeroVar() {caret} - see: "Building Predictive Models in R Using the caret Package.pdf"
+
+*** Used the findCorrelated() function from caret
+
+*** Also removed the Dow_SPDR data, as it had zero variance over many time periods within the time-series
+
+
+* DONE Research alternative methods for imputing data
+
+** What are the underlying assumptions of our model?
+
+** Are we altering or breaking our assumptions by the way we impute data?
+
+** Can we use several methods and compare the output of the model?
+
+*** If we do this, we need to be careful about the interpretation. One model may return brilliant results, but without robustness, i.e. the data does not correspond to the assumptions used in the model, or the data way 'fixed' to produce better results
+
+** Current Imputation Methods  <2015-12-09 Wed>
+
+
+| Method     | Weekends   | is.monday | was.weekend.pos | # Lags | test.ID          | Notes              |
+|------------+------------+-----------+-----------------+--------+------------------+--------------------|
+| LOCF       | remove all | used      | not usec (yet)  |    1:5 | ds_locf_L[1:5]   | First value for    |
+|            |            |           |                 |        |                  | Nikkei225:         |
+|            |            |           |                 |        |                  | taken from         |
+|            |            |           |                 |        |                  | preceding Friday   |
+|------------+------------+-----------+-----------------+--------+------------------+--------------------|
+| Spline     | remove all | used      | not usec (yet)  |    1:5 | ds_spline_L[1:5] |                    |
+|            |            |           |                 |        |                  |                    |
+|------------+------------+-----------+-----------------+--------+------------------+--------------------|
+| Predictive | remove all | used      | not usec (yet)  |    1:5 | NOT YET DONE     | Using a separate   |
+| Models     |            |           |                 |        |                  | model for the data |
+|            |            |           |                 |        |                  | to model itself in |
+|            |            |           |                 |        |                  | replacing NAs      |
+|------------+------------+-----------+-----------------+--------+------------------+--------------------|
+| kNN        | remove all | used      | not usec (yet)  |    1:5 | ds_caret_L[1:5]  | In {caret}:        |
+|            |            |           |                 |        |                  | PreProcess         |
+|            |            |           |                 |        |                  |                    |
+|------------+------------+-----------+-----------------+--------+------------------+--------------------|
+| bagImpute  | remove all | used      | not usec (yet)  |    1:5 | ds_caret_L[1:5]  | In {caret}         |
+|            |            |           |                 |        |                  | PreProcess         |
+|            |            |           |                 |        |                  |                    |
+|------------+------------+-----------+-----------------+--------+------------------+--------------------|
+
+
+* DONE Run using parallel processing
+
+** DONE doMC() for Mac
+
+** DONE doParallel for Windows
+
+
+
+* STARTED Define a simple model that can be used to optimise the parameters
+
+** DONE glmboost() -> use Niko's examples for a quick start
+
+** STARTED Work through the 'mboost_tutorial'
+
+** DONE Ensure that the script works on both windowns and Mac -> doParallel() for Windows
+
+** TODO Use different loss functions:
+
+*** NOTE: this can be done within caret by specifiying custom models - see:
+http://topepo.github.io/caret/custom_models.html
+
+**** least squares
+
+**** least absolute deviation
+
+**** Huber --> can be done within mboost, using family = 
+
+**** Quantile
+
+**** Possibly not available (meant for classfication):
+
+***** Exponential loss -> e.g. only possible for binary classification, tree depth of two?
+
+***** Binomial deviance
+
+***** Multinominal deviance
+
+
+* DONE Create simple loop to perform cross validation
+
+** Use fixed window size - between 25 and sixty days
+Find some sources for this claim. Where is it used? Why is it better than increasing window size?
+
+
+* STARTED Implement model in optimisation functions
+
+** Note: the glmboost() function doesn't work in caret for optimisation
+This function is therefore used to test the water, manually and get some
+results to act as 'control' for optimsation within {caret}
+
+** STARTED define a testGrid of all parameters:
+
+*** n-iterations
+
+*** tree.depth
+
+*** shrinkage
+
+*** Model specific:
+
+**** number of observations in node after split: "n.minobsinnode"
+
+**** sample-size for stochastic boosting
+
+
+* STARTED Significance of weekend sentiment
+
+** STARTED Can we use another dummy variable to model the market movements on mondays?
+
+** STARTED Aggregate the weekend SA scores to DV: 'was.weekend.positive' -> see notes in book
+
+** Plot the weekend sentiment against movements in markets on Monda
+
+
+* STARTED Plot results:
+
+** STARTED loss function, using cvrisk()
+
+** Plot showing how the approximation becomes better over more iterations (reduced variance if stochastic GB?)
+
+*** Graded colouring for more and more iterations (see: https://youtu.be/IXZKgIsZRm0?t=17m1s)
+
+*** This might also work using the alpha = I(1/10) in ggplot, somehow!
+
+** Interesting data exploation plots of most significant predictors (e.g. Peter Prettenhof, sci-kit-learn)
+
+** ROC -> sensitivity vs. specificity
+
+*** This can be done easily within caret, but it only works for classification problems.
+If we predict for example if the Dow moves upwards or downwards, (using the binomial 'family'), then using the ROC curve/as the metric within caret's optimisation works well. Not forgetting it can't be done for glmboost()!
+
+*** This can be done within the model extension predicting the direction of movement and the magnitude separately. There we have a classification problem using the binomial model!
+
+
+* TODO Compare several models
+
+** DONE base model: glmboost()
+
+** STARTED gbm (not within the mboost package -> mboost literature refers to it as a black-box method')
+
+** gamboost()
+
+** blackboost()
+
+** lm()
+
+** AdaBoost() -> minimises the exponential loss, c.p. our loos function, by default the mean squared error
+
+** C.5.0()
+
+** Ensemble methods?
+
+** Which involve stochastic gradient boosting? Make sure it is involved!
+
+*** AdaBoost covers this - subsampling of data for each base learner. See:
+http://scikit-learn.org/dev/modules/ensemble.html#subsampling
+
+*** This may well be exactly the same as 'out of bag' selection in mboost or the equivalent using {gbm}!
+
+
+* STARTED Compare GoogleTrends data to our search terms, another way to show correlation
+
+** Obtain some google trends data for same time frame
+Done using {gtrendR}
+
+** Plot the data on its own to see the correlation
+This shows the relative frequency with which each search term is 'googled'
+
+** Plot the Google data alongside the twitter data
+This is to see what the relationship is and also if there are large discrepnacies in particular areas
+
+** Further work ideas using both data sets
+We could weight the tweets with the relative frequencies coming from Google
+
+
+* TODO Try a few more ensemble methods for comparison in Weka/RWeka
+
+

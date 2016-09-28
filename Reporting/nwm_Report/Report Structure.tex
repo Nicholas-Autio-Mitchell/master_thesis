@@ -1,0 +1,383 @@
+% Created 2016-01-08 Fri 17:08
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\author{Nicholas Mitchell}
+\date{\today}
+\title{Report Structure}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\pagebreak
+
+This file: A rough outline to the thesis. Each heading below may be separated into its own .tex file (in folder "content")
+
+
+\section{Introduction}
+\label{sec-1}
+
+\begin{enumerate}
+\item Overview of research area
+\label{sec-1-1}
+
+\item Motivation for thesis
+\label{sec-1-2}
+An introduction: what are we setting out to better understand? Where can we shed light within the current state of prediction making in a financial context using social media data?
+On top of incorporating social media data, which specific/special statistical methodology are we implementing, and why?
+
+\item Literature review (combined with the motivations?)
+\label{sec-1-3}
+An overview of similar projects using social media data to effect (Google work from Okhrin's chair).
+Work using our statistical methodology, a jsutification why it is fitting for our model (boosting allows the inclusion of many factors without necessarily watering down the model at the same time)
+
+\item Thesis breakdown
+\label{sec-1-4}
+
+\begin{enumerate}
+\item The order of the thesis -> try to tell a story that can be read from start to finish, each step easily comprehendable.
+\label{sec-1-4-1}
+
+\item List hypotheses?
+\label{sec-1-4-2}
+\end{enumerate}
+\end{enumerate}
+
+
+\section{Data}
+\label{sec-2}
+
+\begin{enumerate}
+\item Data Overview
+\label{sec-2-1}
+
+\begin{enumerate}
+\item What data do we aim to use? Here a brief overview, but a section later on explaining how the data was collected and prepared for modelling.
+\label{sec-2-1-1}
+
+\item What is our justification for this data?
+\label{sec-2-1-2}
+\end{enumerate}
+
+
+\item Twitter Mining
+\label{sec-2-2}
+
+\begin{enumerate}
+\item Overview [Background for reader but also for future reference for DEVnet]
+\label{sec-2-2-1}
+
+\begin{enumerate}
+\item The end goal
+\label{sec-2-2-1-1}
+We want data that looks like \textbf{this} which can be edited like \textbf{this} and is reliable, reproducible, relevant, \ldots{}
+\item The challenges
+\label{sec-2-2-1-2}
+There are several sources of Twitter data, each with their own strengths and shortcomings. Below is a summary of each.
+\end{enumerate}
+
+\item Twitter API for Developers
+\label{sec-2-2-2}
+
+\begin{enumerate}
+\item What is it?
+\label{sec-2-2-2-1}
+
+\item How does it work?
+\label{sec-2-2-2-2}
+
+\item Advantages
+\label{sec-2-2-2-3}
+
+\item Limitations
+\label{sec-2-2-2-4}
+\end{enumerate}
+
+\item Third party companies
+\label{sec-2-2-3}
+
+\begin{enumerate}
+\item What is it?
+\label{sec-2-2-3-1}
+
+\item How does it work?
+\label{sec-2-2-3-2}
+
+\item Advantages
+\label{sec-2-2-3-3}
+
+\item Limitations
+\label{sec-2-2-3-4}
+\end{enumerate}
+
+\item Twitter advanced search
+\label{sec-2-2-4}
+
+\begin{enumerate}
+\item What is it?
+\label{sec-2-2-4-1}
+
+\item How does it work?
+\label{sec-2-2-4-2}
+
+\item Advantages
+\label{sec-2-2-4-3}
+
+\item Limitations
+\label{sec-2-2-4-4}
+\end{enumerate}
+
+\item How we have used the advanced search
+\label{sec-2-2-5}
+
+\begin{enumerate}
+\item Advantages vs. Disadvantages
+\label{sec-2-2-5-1}
+\end{enumerate}
+\end{enumerate}
+
+
+\item\relax [Optional] Scraping with Python
+\label{sec-2-3}
+
+\begin{enumerate}
+\item Overview
+\label{sec-2-3-1}
+Explain general methodology, difficulties and their solutions
+This may be better as a larger appendix
+\end{enumerate}
+
+\item\relax [Include in appendix?] Data Preprocessing
+\label{sec-2-4}
+
+\begin{enumerate}
+\item Features of the Twitter data
+\label{sec-2-4-1}
+Possibly talk about any differences between our scraped data and the data that is available from the API
+\item Our final version of Twitter data
+\label{sec-2-4-2}
+A simple example table of the final version that gets imported into R
+\end{enumerate}
+
+\item Inspection of Entire Data Set
+\label{sec-2-5}
+
+\begin{enumerate}
+\item Starting point for modelling
+\label{sec-2-5-1}
+
+Having collected and cleaned the Twitter data, the next step is to look at it in context, alongside the common and more directly related financial market data
+It is important that some level of correlation is present.
+Here we could explain our hypotheses (mentioned in first section):
+\begin{itemize}
+\item Frequency of tweets is telling of near future market movements?
+\item Or rather it may give us a measure of momentum? A lot of tweets don't tell us how the direction will change, but rather hopw long it may stay on its present course.
+\item Can we measure a general delay between market movements and the respose on Twitter? (Maybe it does indeed run in the opposite direction?)
+\end{itemize}
+\end{enumerate}
+\end{enumerate}
+
+
+\section{Sentiment Analysis}
+\label{sec-3}
+
+\begin{enumerate}
+\item Introduction
+\label{sec-3-1}
+
+\begin{enumerate}
+\item What is sentiment analysis and why can it help us to model the markets
+\label{sec-3-1-1}
+\end{enumerate}
+
+\item Models to be applied
+\label{sec-3-2}
+
+\begin{enumerate}
+\item SentiStrength, Emolex, Sentinet140, Vader Afinn, Vader
+\label{sec-3-2-1}
+
+\item Short explanation of each of the five models used:
+\label{sec-3-2-2}
+
+\begin{enumerate}
+\item the underlying philosophy
+\label{sec-3-2-2-1}
+
+\item the algorithm
+\label{sec-3-2-2-2}
+
+\item understanding the output
+\label{sec-3-2-2-3}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+
+\section{Boosting}
+\label{sec-4}
+
+\begin{enumerate}
+\item Theoretical background
+\label{sec-4-1}
+
+\begin{enumerate}
+\item Friedman - sequential regression, using residuals to fit next learner
+\label{sec-4-1-1}
+
+\item Parameters: number of iterations, shrinkage (learning rate), tree depth. For each, explain:
+\label{sec-4-1-2}
+
+\begin{enumerate}
+\item importance - how can it affects/helps refine results
+\label{sec-4-1-2-1}
+
+\item limitations - what happens if we get parameters wrong or, for example, had infinite time to compute things?
+\label{sec-4-1-2-2}
+Where are the bottle necks? Why are other models better in certain situations?
+\end{enumerate}
+\end{enumerate}
+
+\item Strengths \& Weaknesses
+\label{sec-4-2}
+
+\begin{enumerate}
+\item Number of covariates is no longer an issue (assuming we hae enough iterations)
+\label{sec-4-2-1}
+
+\item (Multi)collinearity isn't such a worry, as the most important predictors are used - in addition we can 'prune' early on
+\label{sec-4-2-2}
+
+\item Collinearity isn't a problem perhaps anyway in a strict sense as there is a lot of noise in our data sets - see the comments on: \url{http://stats.stackexchange.com/questions/30903/what-does-that-mean-that-two-time-series-are-colinear}
+\label{sec-4-2-3}
+
+\item Can be optimised according to any given loss function (Least squares, absolute error, Huber error, \ldots{})
+\label{sec-4-2-4}
+These can be tailor-fitted to data. If we believe the data set to be non-Gaussian, a different loss-function can be used.
+
+\item The sequential learning steps can be performed stochastically to increase model performance AND computation times
+\label{sec-4-2-5}
+
+\item 
+\label{sec-4-2-6}
+\end{enumerate}
+
+\item Why does it suit the requirements of this research?
+\label{sec-4-3}
+
+\begin{enumerate}
+\item We have many predictors, meaning the dimensions of the data [e.g. 670 x 400] are not typically great time-series/predictive analysis
+\label{sec-4-3-1}
+
+\item \ldots{} Compare to other models that are not suited to this data?
+\label{sec-4-3-2}
+\end{enumerate}
+\end{enumerate}
+
+
+\section{Description of our model}
+\label{sec-5}
+
+\begin{enumerate}
+\item Define our boosting model:
+\label{sec-5-1}
+
+\begin{enumerate}
+\item How are the model parameters optimised
+\label{sec-5-1-1}
+
+\item Cross validation
+\label{sec-5-1-2}
+
+\item Loss function plots
+\label{sec-5-1-3}
+
+\item AUC/ROC plots?
+\label{sec-5-1-4}
+\end{enumerate}
+
+\item Principal Component Analysis / (one other common and robust techniques to analyse data?)
+\label{sec-5-2}
+
+\begin{enumerate}
+\item Can we show that the addition of sentiment analysis data improves the ability of the model to explain variance?
+\label{sec-5-2-1}
+Is it possible that Sentiment analysis would add another dimension to the PCA (or SCA)
+\end{enumerate}
+\end{enumerate}
+
+
+\section{Data subsets}
+\label{sec-6}
+
+\begin{center}
+\begin{tabular}{lll}
+Name & Components (log$_{\text{ret}}$ \textasciitilde{} \ldots{}) & Reasoning\\
+\hline
+dow$_{\text{only}}$ & lagged log$_{\text{ret}}$ & Most basic example for comparison\\
+dow$_{\text{trad}}$ & gold, oil, sp500, int$_{\text{rates}}$ & traditional model factors\\
+dow$_{\text{macro}}$ & all macro data & Many macro factors handled well\\
+dow$_{\text{SA}}$$_{\text{avg}}$ & average sentiment scores & Sentiment analysis explains var.\\
+dow$_{\text{SA}}$$_{\text{all}}$ & all individual SA results & SA from certain models might perform better\\
+ &  & \\
+\hline
+dow$_{\text{best}}$ & trad + macro + best of SA & All data to showcase component-wise boosting\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{For each model:}
+\label{sec-7}
+
+\begin{enumerate}
+\item Explanation/Reasoning behind the model
+\label{sec-7-1}
+
+\item Analysis of Results
+\label{sec-7-2}
+\end{enumerate}
+
+
+\section{Discussion of all results / comparison to literature}
+\label{sec-8}
+
+\section{Further work}
+\label{sec-9}
+
+\begin{enumerate}
+\item Other sources of social media data
+\label{sec-9-1}
+
+\item Extensions to the model:
+\label{sec-9-2}
+
+\begin{enumerate}
+\item Use of PCA to capture the variance of model with fewer predictors
+\label{sec-9-2-1}
+
+\item This may allow boosting to run for longer and so in sum produce better results
+\label{sec-9-2-2}
+\end{enumerate}
+\end{enumerate}
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

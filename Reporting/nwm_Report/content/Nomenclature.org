@@ -1,0 +1,13 @@
+## ================================================ ##
+##  A file to keep track of how things are written  ##
+## ================================================ ##
+
+| What                           | How       | Notes                                       |
+|--------------------------------+-----------+---------------------------------------------|
+| Model variables in text blocks | bold-face | Try to get something like on StackExchange? |
+| keywords or new ideas          | italic    |                                             |
+| Footnotes                      | [fn::]    | End with fullstop                           |
+| Links                          | C-c C-l   | In text flow, simply hyperlinked            |
+|                                |           |                                             |
+
+

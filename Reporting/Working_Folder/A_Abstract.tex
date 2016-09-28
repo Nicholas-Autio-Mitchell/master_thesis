@@ -1,0 +1,58 @@
+% Created 2016-03-31 Thu 14:40
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\usepackage{listingsutf8}
+\usepackage{pdfpages}
+\usepackage[bottom]{footmisc} %% to keep entire footers on one page
+\usepackage[]{graphicx}
+\usepackage[]{minted}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{comment}
+\usepackage[linesnumbered,ruled,lined,shortend]{algorithm2e}
+\usepackage[space]{grffile}
+\setcounter{secnumdepth}{4}
+\author{Nicholas Mitchell}
+\date{\today}
+\title{A\_Abstract}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\pagebreak
+
+
+\section{Abstract}
+\label{sec-1}
+
+\vspace{10mm}
+
+The emergence and ensuing explosion in popularity of social media platforms since the beginning of the twenty-first century, facilitated and catalysed by technological advancements in global connectivity, has created an abundance of data in completely new dimensions to traditionally available data. This has lead to rise in popularity of terms such as \emph{big data}, \emph{sentiment analysis} and \emph{machine learning}, to name but just a few. The task of the data scientist is to extract information from masses of information in a way that allows new insights to be made. This study utilises a combination of these developments with the aim of enhancing data sets commonly used to analyse and predict the movements of stock markets; with particularly interest given to the Dow Jones Industrial Average (DJIA). Social media data from the Twitter platform has been used to add greater breadth to our data set; the results of multi-model sentiment analysis performed on individual tweets being incorporated as additional covariates into a forecasting model.
+
+Component-wise gradient boosting was selected as the methodology for its inherent features, such as variable selection and scalability to high-dimensional data sets. These are major advantages, considering both the large number of covariates produced by sentiment analysis and the scarcity of prior knowledge regarding their individual influence levels.
+
+The ultimate aim of was to determine the extent to which the addition of social media data, in the form of sentiment analysis, to traditional financial market data enhances the predictive accuracy of a set of forecasting models. Over numerous modelling conditions, we were able to show that the predictive accuracy was indeed increased through the inclusion of social media data. Gaussian models were shown to cope well with the inclusion of social media data and so wide data sets (p >> n), returning strong results with errors equal or smaller to those measured in traditional data sets. Binomial modelling produced higher predictive accuracies still, however tended to be less robust to larger data sets, with performance being diminished in tests utilising increased-size data sets. Stochastic gradient boosting was shown not to perform as well as component-wise gradient boosting, returning noisier results - some models failing to outperform a naive model.
+
+\pagebreak
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

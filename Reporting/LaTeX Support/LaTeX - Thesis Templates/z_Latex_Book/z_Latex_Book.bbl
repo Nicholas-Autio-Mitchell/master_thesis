@@ -1,0 +1,30 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Adams et~al.(2002)Adams, Lyon, Henrie, Kalidindi, and
+  Garmestani]{Adams.2002}
+B.~L. Adams, M.~Lyon, B.~L. Henrie, Surya~R. Kalidindi, and Hamid Garmestani.
+\newblock {S}pectral {I}ntegration of {M}icrostructure and {D}esign.
+\newblock \emph{Materials Science Forum}, 408-412:\penalty0 487--492, 2002.
+
+\bibitem[Adams et~al.(2004)Adams, Lyon, and Henrie]{Adams.2004}
+B.~L. Adams, M.~Lyon, and B.~Henrie.
+\newblock {M}icrostructures by design: linear problems in elastic--plastic
+  design.
+\newblock \emph{International Journal of Plasticity}, 20:\penalty0 1577--1602,
+  2004.
+
+\bibitem[Fullwood et~al.(2010)Fullwood, Niezgoda, Adams, and
+  Kalidindi]{Fullwood.2010}
+D.~T. Fullwood, S.~R. Niezgoda, B.~L. Adams, and S.~R. Kalidindi.
+\newblock {M}icrostructure sensitive design for performance optimization.
+\newblock \emph{Progress in Materials Science}, 55\penalty0 (6):\penalty0
+  477--562, 2010.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0079642509000760}.
+
+\end{thebibliography}

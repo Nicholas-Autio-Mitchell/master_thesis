@@ -1,0 +1,79 @@
+% Created 2016-03-08 Tue 00:16
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\author{Nicholas Mitchell}
+\date{\today}
+\title{Test report}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Example of Org-Babel for R Literate Programming}
+\label{sec-1}
+\begin{enumerate}
+\item R text output
+\label{sec-1-1}
+A simple summary. 
+\begin{minted}[]{r}
+x <- rnorm(10)
+summary(x)
+\end{minted}
+
+\item R graphics output
+\label{sec-1-2}
+Note we use the object \texttt{x} generated in previous code block, thanks to
+the header option \texttt{:session *R*}.  The output graphics file is
+\texttt{a.png}. 
+
+\begin{minted}[]{r}
+y <- rnorm(10)
+plot(x, y)
+\end{minted}
+
+Same plot with larger dimension:
+
+\begin{minted}[]{r}
+plot(x, y)
+\end{minted}
+
+\begin{minted}[]{r}
+for(i in 1:seq(1, 3)) {
+
+    print(i)
+}
+\end{minted}
+
+\begin{minted}[linenos,firstnumber=1]{python}
+_def fun(input):
+     input + 1
+\end{minted}
+
+
+\begin{verbatim}
+1  something here
+\end{verbatim}
+\end{enumerate}
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

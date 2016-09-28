@@ -1,0 +1,21 @@
+## An example of smileys posted on Twitter and what is returned after data extraction.
+
+## What was posted:  -------------------------------------------------------
+
+# Tweet_1
+nmitchelldevnet @nmitchelldevnet 6 mins6 minutes ago
+    😘😋😝😄🌷🎥
+    0 retweets 0 favourites
+
+# Tweet_2
+nmitchelldevnet @nmitchelldevnet 2 hrs2 hours ago
+:) :-) :'-) :') >:P :-P :P X-P x-p xp XP ( ^)o(^ ) (^O^) (^o^)
+
+## What was extracted:  ----------------------------------------------------
+
+> nmitchelldevnet
+[[1]]
+[1] "nmitchelldevnet: \xed\xa0\xbd\xed\xb8\x98\xed\xa0\xbd\xed\xb8\x8b\xed\xa0\xbd\xed\xb8\x9d\xed\xa0\xbd\xed\xb8\x84\xed\xa0\xbc\xed\xbc\xb7\xed\xa0\xbc\xed\xbe\xa5"
+
+[[2]]
+[1] "nmitchelldevnet: :) :-) :'-) :') &gt;:P :-P :P X-P x-p xp XP ( ^)o(^ ) (^O^) (^o^)"

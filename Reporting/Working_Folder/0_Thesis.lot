@@ -1,0 +1,9 @@
+\contentsline {table}{\numberline {1}{\ignorespaces Summary of Twitter data usage}}{15}{table.1}
+\contentsline {table}{\numberline {2}{\ignorespaces A breakdown of all tweets obtained, by search term}}{16}{table.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Representative sentiment analysis scores for individual words}}{19}{table.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Three example tweets with their sentiment scores from each sentiment analysis model.}}{23}{table.4}
+\contentsline {table}{\numberline {5}{\ignorespaces A breakdown of all financial market data used}}{37}{table.5}
+\contentsline {table}{\numberline {6}{\ignorespaces The descriptions of the five base subsets used for comparisons}}{41}{table.6}
+\contentsline {table}{\numberline {7}{\ignorespaces The top 50 binomial models, ranked by descending predictive accuracy}}{51}{table.7}
+\contentsline {table}{\numberline {8}{\ignorespaces The tuning grid optimised over for stochastic gradient boosting}}{55}{table.8}
+\contentsline {table}{\numberline {9}{\ignorespaces A summary of public holidays included as a dummy variable}}{62}{table.9}

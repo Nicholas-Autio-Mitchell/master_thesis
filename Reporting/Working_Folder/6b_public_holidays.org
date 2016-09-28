@@ -1,0 +1,89 @@
+
+#+latex_header: \usepackage[bottom]{footmisc} %% to keep entire footers on one page
+#+LATEX_HEADER: \usepackage[]{graphicx}
+#+LATEX_HEADER: \usepackage[]{minted} 
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry} 
+#+LATEx_HEADER: \usepackage{comment}
+#+latex_header: \usepackage[linesnumbered,ruled,lined,shortend]{algorithm2e}
+#+latex_header: \usepackage[space]{grffile}
+
+#+OPTIONS: todo:nil
+#+OPTIONS: H:4
+#+OPTIONS: num:4
+
+
+* Appendix 2 - Public holidays <<pub-holidays>>
+
+
+** DONE Remark: Nikkei 225
+
+An additional feature of the data sourced from [[http://markets.on.nytimes.com/research/markets/holidays/holidays.asp?display%3Dmarket&timeOffset%3D-1&exchange%3DTYO][Japan]] should be mentioned. The Nikkei 225 stock index data was used, which had a missing data point for the very first day of the timeline, 14^th January 2013. In order to perform the selected method of imputation - last observation carried forward (LOCF) - it was therefore necessary to source the data from the most closely preceding trading day, in order to impute the missing first day.
+
+
+** DONE North America
+
+Table [[tab:public-holidays]] summarises public holidays relevant to the timeline and so the data used in this study is presented. The public holidays listed give the dates, which were used a dummy variables in the modelling. The dummy variable took the value 1 for a public holiday and 0 for not a public holiday.
+
+#+attr_latex: :placement \
+#+Caption[A summary of public holidays included as a dummy variable]: A summary of relevant public holidays in North America, included as a dummy variable for modelling.
+#+Name: tab:public-holidays
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   |                           |   |   |   |   |   |   | Monday January 21 2013     |   |
+|   | *Martin Luther King Day:* |   |   |   |   |   |   | Monday January 20 2014     |   |
+|   |                           |   |   |   |   |   |   | Monday January 19 2015     |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   |                           |   |   |   |   |   |   | Monday February 18 2013    |   |
+|   | *Presidents' Day:*        |   |   |   |   |   |   | Monday February 17 2014    |   |
+|   |                           |   |   |   |   |   |   | Monday February 16 2015    |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   |                           |   |   |   |   |   |   | Monday May 27 2013         |   |
+|   | *Memorial Day:*           |   |   |   |   |   |   | Monday May 26 2014         |   |
+|   |                           |   |   |   |   |   |   | Monday May 25 2015         |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   |                           |   |   |   |   |   |   | Thursday July 4 2013       |   |
+|   | *Independence Day:*       |   |   |   |   |   |   | Friday July 4 2014         |   |
+|   |                           |   |   |   |   |   |   | Friday July 3 2015         |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   |                           |   |   |   |   |   |   | Monday September 2 2013    |   |
+|   | *Labor Day:*              |   |   |   |   |   |   | Monday September 1 2014    |   |
+|   |                           |   |   |   |   |   |   | Monday September 7 2015    |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   | *Columbus Day:*           |   |   |   |   |   |   | Monday October 14 2013     |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   | *Veterans' Day:*          |   |   |   |   |   |   | Monday November 11 2013    |   |
+|   |                           |   |   |   |   |   |   | Tuesday November 11 2014   |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   | *Thanksgiving Day:*       |   |   |   |   |   |   | Thursday November 28 2013  |   |
+|   |                           |   |   |   |   |   |   | Thursday November 27 2014  |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   | *Christmas Day:*          |   |   |   |   |   |   | Wednesday December 25 2013 |   |
+|   |                           |   |   |   |   |   |   | Thursday December 25 2014  |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   | *New Year's Day:*         |   |   |   |   |   |   | Wednesday January 1 2014   |   |
+|   |                           |   |   |   |   |   |   | Thursday January 1 2015    |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |
+|   | *Columbus Day:*           |   |   |   |   |   |   | Monday October 13 2014     |   |
+|   |                           |   |   |   |   |   |   |                            |   |
+|---+---------------------------+---+---+---+---+---+---+----------------------------+---|
+|   |                           |   |   |   |   |   |   |                            |   |

@@ -1,0 +1,41 @@
+
+
+#+latex_header: \usepackage[bottom]{footmisc} %% to keep entire footers on one page
+#+LATEX_HEADER: \usepackage[]{graphicx}
+#+LATEX_HEADER: \usepackage[]{minted} 
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry} 
+#+LATEx_HEADER: \usepackage{comment}
+#+latex_header: \usepackage[linesnumbered,ruled,lined,shortend]{algorithm2e}
+#+latex_header: \usepackage[space]{grffile}
+
+#+OPTIONS: todo:nil
+#+OPTIONS: H:4
+#+OPTIONS: num:4
+
+
+* Appendix 1 - Flowcharts <<flowcharts>>
+
+
+** TODO Flowchart 1 - Twitter mining <<flowchart-twitter-mining>> <<flowchart-scraping>>
+
+#+attr_latex: :float nil :width 14.5cm
+#+Caption[A flowchart outlining the workflow to obtain Twitter data]: The workflow used to scrape the Twitter Advanecd Search (TAS) interface - repeated for all thirteen search terms. The workflow has three lanes; (left) process completed using Python; (right) processees completed using R; (centre) meta-information linking various process.
+#+Name: flowchart-scraping
+[[/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/nwm_Report/images/workflow_scraping.png]]
+
+
+** TODO Flowchart 2.a - Data preparation <<flowchart-mod1>>
+
+#+attr_latex: :options angle=90 :float nil :width 15.5cm
+#+Caption[A flowchart outlining the modelling workflow (part 1)]: A flowchart outlining the modelling workflow (part 1).
+#+Name: flowchart-data-prep
+[[/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/nwm_Report/images/workflow_modelling_1.png]]
+
+
+** TODO Flowchart 2.b - Modelling <<flowchart-mod2>>
+#+attr_latex: :float nil :options angle=90 :width 15.5cm
+#+Caption[A flowchart outlining the modelling workflow (part 2)]: A flowchart outlining the modelling workflow (part 2)
+#+Name: flowchart-modelling
+[[/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/nwm_Report/images/workflow_modelling_2.png]]
+
+\pagebreak

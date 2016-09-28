@@ -1,0 +1,19 @@
+## Dynamic TO-DO List
+
+1) Pull our fixed data sets to work with on premilimary visual inspection
+
+Time frame: 2013-01-01 until 2015-06-30
+Max Tweets: 20,000
+
+--> Twitter Data
+  - General terms: "Dow Jones" "#DowJones" 
+  - User posted: "@BarackObama"
+  
+--> Market Data
+  - Time series data: e.g. [date, open, close, volume, adjusted close]
+  - Dow Jones
+  - S&P500
+  - (Also could pull DAX and FTSE100 - tickers are ready to use, not so interesting to compare with chosen Twitter case)
+  
+  
+2) Install package 'qdap' and the related dictionaries to remove stop words without needing to convert data into a corpus

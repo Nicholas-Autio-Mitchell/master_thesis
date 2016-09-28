@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+family \PYG{o}{=} Gaussian\PYG{p}{()}
+y \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{k+kt}{matrix}\PYG{p}{(}\PYG{k+kc}{NA}\PYG{p}{,} \PYG{l+m}{7}\PYG{p}{,} \PYG{l+m}{19}\PYG{p}{)}
+\end{Verbatim}

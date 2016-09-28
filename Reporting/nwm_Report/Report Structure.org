@@ -1,0 +1,220 @@
+\pagebreak
+
+This file: A rough outline to the thesis. Each heading below may be separated into its own .tex file (in folder "content")
+
+
+* Information about document
+That the pdf version contains hyperlinks to relevant websites and other online resources, however all links are also included in print following the literary references section.
+
+The links are signified with the symbol: example link^\dag
+
+* Introduction
+
+** Overview of research area
+
+** Motivation for thesis
+An introduction: what are we setting out to better understand? Where can we shed light within the current state of prediction making in a financial context using social media data?
+On top of incorporating social media data, which specific/special statistical methodology are we implementing, and why?
+
+** Literature review (combined with the motivations?)
+An overview of similar projects using social media data to effect (Google work from Okhrin's chair).
+Work using our statistical methodology, a justification why it is fitting for our model (boosting allows the inclusion of many factors without necessarily watering down the model at the same time)
+
+** Thesis breakdown
+
+*** The order of the thesis -> try to tell a story that can be read from start to finish, each step easily comprehensible.
+
+*** List hypotheses?
+
+
+* Data
+
+** Data Overview
+*** What data do we aim to use? Here a brief overview, but a section later on explaining how the data was collected and prepared for modelling.
+
+*** What is our justification for this data?
+
+*** Descriptive statistics for the data in order to summarise the data 
+
+**** DONE [#A] No pie-charts! -> Bar charts are preferable
+
+**** Use the flow-chart on how to display data types (saved somewhere as an image)
+
+**** Subsections for macro data and SA data
+    
+** DONE Twitter Mining
+
+*** DONE Overview [Background for reader but also for future reference for DEVnet]
+
+**** The end goal
+We want data that looks like *this* which can be edited like *this* and is reliable, reproducible, relevant, ...
+**** The challenges
+There are several sources of Twitter data, each with their own strengths and shortcomings. Below is a summary of each.
+
+*** DONE Twitter API for Developers
+
+**** What is it?
+
+**** How does it work?
+
+**** Advantages
+
+**** Limitations
+
+*** DONE Third party companies
+
+**** What is it?
+
+**** How does it work?
+
+**** Advantages
+
+**** Limitations
+
+*** DONE Twitter advanced search
+
+**** What is it?
+
+**** How does it work?
+
+**** Advantages
+
+**** Limitations
+
+*** DONE How we have used the advanced search
+
+**** Advantages vs. Disadvantages
+     
+** [Optional] Scraping with Python
+
+*** Overview
+Explain general methodology, difficulties and their solutions
+This may be better as a larger appendix
+
+** [Include in appendix?] Data Preprocessing 
+
+*** Features of the Twitter data
+Possibly talk about any differences between our scraped data and the data that is available from the API
+*** Our final version of Twitter data
+A simple example table of the final version that gets imported into R    
+
+** Inspection of Entire Data Set
+
+*** Starting point for modelling
+
+Having collected and cleaned the Twitter data, the next step is to look at it in context, alongside the common and more directly related financial market data
+It is important that some level of correlation is present.
+Here we could explain our hypotheses (mentioned in first section):
+- Frequency of tweets is telling of near future market movements?
+- Or rather it may give us a measure of momentum? A lot of tweets don't tell us how the direction will change, but rather hope long it may stay on its present course.
+- Can we measure a general delay between market movements and the response on Twitter? (Maybe it does indeed run in the opposite direction?)
+
+
+* Sentiment Analysis
+  
+** Introduction
+
+*** What is sentiment analysis and why can it help us to model the markets
+
+** Models to be applied
+
+*** SentiStrength, Emolex, Sentinet140, Vader Afinn, Vader
+
+*** Short explanation of each of the five models used:
+
+**** the underlying philosophy
+
+**** the algorithm
+
+**** understanding the output
+
+
+* Boosting
+
+** Theoretical background
+
+*** Friedman - sequential regression, using residuals to fit next learner
+
+*** Parameters: number of iterations, shrinkage (learning rate), tree depth. For each, explain:
+
+**** importance - how can it affects/helps refine results
+
+**** limitations - what happens if we get parameters wrong or, for example, had infinite time to compute things?
+Where are the bottle necks? Why are other models better in certain situations?
+
+** Strengths & Weaknesses
+
+*** [#A] Number of covariates is no longer an issue (assuming we have enough iterations)
+
+*** [#A] (Multi-)collinearity isn't such a worry, as the most important predictors are selected - in addition we can 'prune' early on
+
+*** [#C] Collinearity isn't a problem perhaps anyway in a strict sense as there is a lot of noise in our data sets (high variance in sentiment analysis results) - see the comments on: http://stats.stackexchange.com/questions/30903/what-does-that-mean-that-two-time-series-are-colinear
+
+*** [#B] Can be optimised according to any given loss function (Least squares, absolute error, Huber error, ...)
+These can be tailor-fitted to data. If we believe the data set to be non-Gaussian, a different loss-function can be used.
+
+*** [#B] The sequential learning steps can be performed stochastically to potentially increase model performance AND decrease computational cost
+
+*** Computationally expensive
+
+** Why does it suit the requirements of this research?
+
+*** We have many predictors, meaning the dimensions of the data [e.g. 670 x 400] are not typically great time-series/predictive analysis
+
+*** glmboost() and better gamboost() mean we can explore distributions of sentiment data too (we assume market returns are log-normal)
+
+*** ... Compare to other approaches that are not quite so well suited to this data?
+
+
+* Description of our model
+
+** Define our boosting model:
+
+*** How are the model parameters optimised
+
+*** Cross validation
+
+*** Loss function plots 
+
+*** AUC/ROC plots?
+
+** Principal Component Analysis / (one other common and robust techniques to analyse data?)
+
+*** Can we show that the addition of sentiment analysis data improves the ability of the model to explain variance?
+Is it possible that Sentiment analysis would add another dimension to the PCA (or SCA)
+
+
+* Data subsets
+
+| Name       | Components (log_ret ~ ...)  | Reasoning                                    |
+|------------+-----------------------------+----------------------------------------------|
+| dow_only   | lagged log_ret              | Most basic example for comparison            |
+| dow_trad   | gold, oil, sp500, int_rates | traditional model factors                    |
+| dow_macro  | all macro data              | Many macro factors handled well              |
+| dow_SA_avg | average sentiment scores    | Sentiment analysis explains var.             |
+| dow_SA_all | all individual SA results   | SA from certain models might perform better  |
+|            |                             |                                              |
+|------------+-----------------------------+----------------------------------------------|
+| dow_best   | trad + macro + best of SA   | All data to showcase component-wise boosting |
+|------------+-----------------------------+----------------------------------------------|
+
+
+* For each model:
+
+** Explanation/Reasoning behind the model
+
+** Analysis of Results
+
+
+* Discussion of all results / comparison to literature
+
+
+* Further work
+
+** Other sources of social media data
+
+** Extensions to the model:
+
+*** Use of PCA to capture the variance of model with fewer predictors
+
+*** This may allow boosting to run for longer and so in sum produce better results

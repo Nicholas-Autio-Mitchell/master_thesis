@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{eat\PYGZus{}dick} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{function}\PYG{p}{(}\PYG{n}{dick}\PYG{p}{,} \PYG{n}{balls}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+
+    \PYG{n}{jizz} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{dick}\PYG{p}{,} \PYG{n}{balls}\PYG{p}{)}
+    \PYG{k}{return}\PYG{p}{(}\PYG{n}{jizz}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

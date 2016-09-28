@@ -1,0 +1,101 @@
+
+\makeatletter
+\def\PYGparaiso-light@reset{\let\PYGparaiso-light@it=\relax \let\PYGparaiso-light@bf=\relax%
+    \let\PYGparaiso-light@ul=\relax \let\PYGparaiso-light@tc=\relax%
+    \let\PYGparaiso-light@bc=\relax \let\PYGparaiso-light@ff=\relax}
+\def\PYGparaiso-light@tok#1{\csname PYGparaiso-light@tok@#1\endcsname}
+\def\PYGparaiso-light@toks#1+{\ifx\relax#1\empty\else%
+    \PYGparaiso-light@tok{#1}\expandafter\PYGparaiso-light@toks\fi}
+\def\PYGparaiso-light@do#1{\PYGparaiso-light@bc{\PYGparaiso-light@tc{\PYGparaiso-light@ul{%
+    \PYGparaiso-light@it{\PYGparaiso-light@bf{\PYGparaiso-light@ff{#1}}}}}}}
+\def\PYGparaiso-light#1#2{\PYGparaiso-light@reset\PYGparaiso-light@toks#1+\relax+\PYGparaiso-light@do{#2}}
+
+\expandafter\def\csname PYGparaiso-light@tok@\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@gu\endcsname{\let\PYGparaiso-light@bf=\textbf\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.36,0.77,0.75}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@ch\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.55,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@gs\endcsname{\let\PYGparaiso-light@bf=\textbf}
+\expandafter\def\csname PYGparaiso-light@tok@cm\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.55,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@vg\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.94,0.38,0.33}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@m\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.98,0.61,0.08}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@mh\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.98,0.61,0.08}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@ge\endcsname{\let\PYGparaiso-light@it=\textit}
+\expandafter\def\csname PYGparaiso-light@tok@gd\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.94,0.38,0.33}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@il\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.98,0.61,0.08}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@cs\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.55,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@cp\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.55,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@gi\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.28,0.71,0.52}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@gh\endcsname{\let\PYGparaiso-light@bf=\textbf\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@ni\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@ld\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.28,0.71,0.52}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@nl\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@nn\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{1.00,0.77,0.09}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@no\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.94,0.38,0.33}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@na\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.02,0.71,0.94}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@nb\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@nc\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{1.00,0.77,0.09}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@nd\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.36,0.77,0.75}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@ne\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.94,0.38,0.33}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@nf\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.02,0.71,0.94}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@nx\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.02,0.71,0.94}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@si\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.98,0.61,0.08}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@s2\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.28,0.71,0.52}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@vi\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.94,0.38,0.33}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@py\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@nt\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.36,0.77,0.75}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@nv\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.94,0.38,0.33}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@s1\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.28,0.71,0.52}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@kd\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.51,0.36,0.64}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@sx\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.28,0.71,0.52}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@vc\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.94,0.38,0.33}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@gp\endcsname{\let\PYGparaiso-light@bf=\textbf\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.55,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@sh\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.28,0.71,0.52}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@ow\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.36,0.77,0.75}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@mf\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.98,0.61,0.08}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@bp\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@c1\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.55,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@o\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.36,0.77,0.75}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@kc\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.51,0.36,0.64}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@c\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.55,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@kr\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.51,0.36,0.64}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@err\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.94,0.38,0.33}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@mb\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.98,0.61,0.08}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@ss\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.28,0.71,0.52}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@sr\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.28,0.71,0.52}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@mo\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.98,0.61,0.08}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@kn\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.36,0.77,0.75}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@mi\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.98,0.61,0.08}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@l\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.98,0.61,0.08}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@cpf\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.55,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@n\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@p\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@s\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.28,0.71,0.52}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@kp\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.51,0.36,0.64}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@w\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@kt\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{1.00,0.77,0.09}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@sc\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.18,0.12,0.18}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@sb\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.28,0.71,0.52}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@k\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.51,0.36,0.64}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@se\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.98,0.61,0.08}{##1}}}
+\expandafter\def\csname PYGparaiso-light@tok@sd\endcsname{\def\PYGparaiso-light@tc##1{\textcolor[rgb]{0.55,0.53,0.53}{##1}}}
+
+\def\PYGparaiso-lightZbs{\char`\\}
+\def\PYGparaiso-lightZus{\char`\_}
+\def\PYGparaiso-lightZob{\char`\{}
+\def\PYGparaiso-lightZcb{\char`\}}
+\def\PYGparaiso-lightZca{\char`\^}
+\def\PYGparaiso-lightZam{\char`\&}
+\def\PYGparaiso-lightZlt{\char`\<}
+\def\PYGparaiso-lightZgt{\char`\>}
+\def\PYGparaiso-lightZsh{\char`\#}
+\def\PYGparaiso-lightZpc{\char`\%}
+\def\PYGparaiso-lightZdl{\char`\$}
+\def\PYGparaiso-lightZhy{\char`\-}
+\def\PYGparaiso-lightZsq{\char`\'}
+\def\PYGparaiso-lightZdq{\char`\"}
+\def\PYGparaiso-lightZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYGparaiso-lightZat{@}
+\def\PYGparaiso-lightZlb{[}
+\def\PYGparaiso-lightZrb{]}
+\makeatother
+

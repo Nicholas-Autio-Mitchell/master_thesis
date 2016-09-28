@@ -1,0 +1,149 @@
+
+This file: Notes on tasks completed and those still to be completed for Thesis
+
+
+
+* Introduction
+
+** Motivation for thesis
+An introduction: what are we setting out to better understand? Where can we shed light within the current state of prediction making in a financial context using social media data?
+On top of incorporating social media data, which specific/special statistical methodology are we implementing, and why?
+
+** Literature review (combined with the motivations?)
+An overview of similar projects using social media data to effect (Google work from Okhrin's chair).
+Work using our statistical methodology, a jsutification why it is fitting for our model (boosting allows the inclusion of many factors without necessarily watering down the model at the same time)
+
+** Thesis breakdown
+The order of the thesis -> try to tell a story that can be read from start to finish, each step easily comprehendable.
+List hypotheses?
+
+
+* Data
+
+** Data Overview
+
+*** What data do we aim to use?
+
+*** What is our justification for this data?
+
+    
+** Twitter Mining
+
+*** Overview
+
+**** The end goal
+We want data that looks like *this* which can be edited like *this* and is reliable, reproducible, relevant, ...
+**** The challenges
+Thre are several sources of Twitter data, each with their own strengths and shortcomings. Below is a summary of each.
+*** Twitter API for Developers
+
+**** What is it?
+
+**** How does it work?
+
+**** Advantages
+
+**** Limitations
+
+*** Third party companies
+
+**** What is it?
+
+**** How does it work?
+
+**** Advantages
+
+**** Limitations
+
+*** Twitter advanced search
+
+**** What is it?
+
+**** How does it work?
+
+**** Advantages
+
+**** Limitations
+     
+
+** [Optional] Scraping with Python
+
+*** Overview
+Explain general methodology, difficulties and their solutions
+
+
+** [Include in appendix?] Data Preprocessing 
+
+*** Features of the Twitter data
+*** Our final version of Twitter data
+    
+
+** Inspection of Entire Data Set
+
+*** Starting point for modelling
+
+Having collected and cleaned the Twitter data, the next step is to look at it in context, alongside the common and more directly related financial market data
+It is important that some level of correlation is present.
+Here we could explain our hypotheses (mentioned in first section):
+- Frequency of tweets is telling of near future market movements?
+- Or rather it may give us a measure of momentum? A lot of tweets don't tell us how the direction will change, but rather hopw long it may stay on its present course.
+- Can we measure a general delay between market movements and the respose on Twitter? (Maybe it does indeed run in the opposite direction?)
+
+
+* Basic Model
+
+** Regression analysis
+
+** Principal Component Analysis / (one other common and robust technique after regression?)
+
+
+* Boosting
+
+** Theoretical background
+
+** Strengths & Weaknesses
+
+** Why does it suit the requirements of this research?
+
+
+* Basic Model with Boosting (plus variants?)
+
+** Explanation
+
+** Results
+
+
+* Sentiment Analysis
+  
+** Introduction
+
+** Model to be applied
+
+
+* Basic Model with SA
+
+** Explanation
+
+** Results
+
+
+* Boosting Model with SA
+
+** Explanation
+
+** Results
+
+
+* Discussion of all results / comparison to literature
+
+* Further work
+
+** Other sources of social media data
+
+** Extensions to the model
+
+
+
+
+
+

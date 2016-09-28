@@ -1,0 +1,922 @@
+12:05:25.415688 193.170.244.1.58107 > fgidec1.tuwien.ac.at.www: . ack 1123656193 win 9112 (DF)
+12:05:25.425688 193.170.244.1.58111 > fgidec1.tuwien.ac.at.www: . ack 1123782272 win 9112 (DF)
+12:05:25.425688 galadriel.ci.tuwien.ac.at.739 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:25.425688 193.170.244.1.58111 > fgidec1.tuwien.ac.at.www: F 0:0(0) ack 1 win 9112 (DF)
+12:05:25.425688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.739: udp 32
+12:05:25.425688 galadriel.ci.tuwien.ac.at.1070 > tutimea.tuwien.ac.at.domain: 5858+ (45)
+12:05:25.425688 fgidec1.tuwien.ac.at.www > 193.170.244.1.58111: . ack 1 win 16383
+12:05:25.425688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1070: 5858* 1/3/3 (215)
+12:05:25.425688 galadriel.ci.tuwien.ac.at.740 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:25.435688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.740: udp 32
+12:05:25.435688 galadriel.ci.tuwien.ac.at.1071 > tutimea.tuwien.ac.at.domain: 5859+ (44)
+12:05:25.455688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 1773164230 win 16384
+12:05:25.475688 193.170.244.1.58107 > fgidec1.tuwien.ac.at.www: . ack 535 win 9112 (DF)
+12:05:25.515688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 1 win 16384
+12:05:25.555688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 1 win 16384
+12:05:25.565688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 1 win 16384
+12:05:25.585688 elendil.ci.tuwien.ac.at.5acd2912 > fangorn.ci.tuwien.ac.at.nfs: 116 getattr [|nfs]
+12:05:25.595688 fangorn.ci.tuwien.ac.at.nfs > elendil.ci.tuwien.ac.at.5acd2912: reply ok 96 getattr [|nfs]
+12:05:25.595688 elendil.ci.tuwien.ac.at.5acd2913 > fangorn.ci.tuwien.ac.at.nfs: 124 readdir [|nfs]
+12:05:25.595688 fangorn.ci.tuwien.ac.at > elendil.ci.tuwien.ac.at (frag 45141:528@1480)
+12:05:25.595688 fangorn.ci.tuwien.ac.at.nfs > elendil.ci.tuwien.ac.at.5acd2913: reply ok 1472 readdir [|nfs] (frag 45141:1480@0+)
+12:05:25.595688 elendil.ci.tuwien.ac.at.5acd2914 > fangorn.ci.tuwien.ac.at.nfs: 124 readdir [|nfs]
+12:05:25.595688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 1 win 16384
+12:05:25.595688 fangorn.ci.tuwien.ac.at.nfs > elendil.ci.tuwien.ac.at.5acd2914: reply ok 408 readdir [|nfs]
+12:05:25.615688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 1 win 16384
+12:05:25.655688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 513 win 15872
+12:05:25.785688 tvfa3133.tvfa.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 221
+12:05:25.915688 erpc3.ud.tuwien.ac.at.netbios-ns > tutimea.tuwien.ac.at.domain: 124+ (50)
+12:05:25.915688 tutimea.tuwien.ac.at.domain > erpc3.ud.tuwien.ac.at.netbios-ns: 124* 0/1/0 (114)
+12:05:26.225688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . 513:1025(512) ack 0 win 32256 [tos 0x8]
+12:05:26.275688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 16385 win 512
+12:05:26.275688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . 16385:16897(512) ack 0 win 32256 [tos 0x8]
+12:05:26.275688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 16385 win 4608
+12:05:26.285688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . 16897:17409(512) ack 0 win 32256 [tos 0x8]
+12:05:26.285688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 16385 win 8704
+12:05:26.285688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 16385 win 12800
+12:05:26.285688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 16385 win 16384
+12:05:26.315688 elendil.ci.tuwien.ac.at.5acd2915 > fangorn.ci.tuwien.ac.at.nfs: 136 lookup [|nfs]
+12:05:26.315688 fangorn.ci.tuwien.ac.at.nfs > elendil.ci.tuwien.ac.at.5acd2915: reply ok 28 lookup [|nfs]
+12:05:26.375688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 17409 win 16384
+12:05:26.375688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . 17409:17921(512) ack 0 win 32256 [tos 0x8]
+12:05:26.375688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . 17921:18433(512) ack 0 win 32256 [tos 0x8]
+12:05:26.375688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . 18433:18945(512) ack 0 win 32256 [tos 0x8]
+12:05:26.515688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 17921 win 16384
+12:05:26.515688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . 18945:19457(512) ack 0 win 32256 [tos 0x8]
+12:05:26.515688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . 19457:19969(512) ack 0 win 32256 [tos 0x8]
+12:05:26.555688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 18945 win 16384
+12:05:26.555688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . 19969:20481(512) ack 0 win 32256 [tos 0x8]
+12:05:26.555688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: P 20481:20993(512) ack 0 win 32256 [tos 0x8]
+12:05:26.555688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . 20993:21505(512) ack 0 win 32256 [tos 0x8]
+12:05:26.705688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 19969 win 16384
+12:05:26.705688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: P 21505:21849(344) ack 0 win 32256 (DF) [tos 0x8]
+12:05:26.705688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: F 21849:21849(0) ack 0 win 32256 [tos 0x8]
+12:05:26.795688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 20993 win 16384
+12:05:26.935688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: . ack 21850 win 16040
+12:05:26.945688 sungold1.at.ibm.net.2753 > thorin.ci.tuwien.ac.at.ftp-data: F 0:0(0) ack 21850 win 16384
+12:05:26.945688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2753: . ack 1 win 32256 (DF) [tos 0x8]
+12:05:27.105688 fsph3.htu.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 206
+12:05:27.195688 sungold1.at.ibm.net.4251 > thorin.ci.tuwien.ac.at.ftp: P 613308063:613308091(28) ack 1078962026 win 16384
+12:05:27.195688 thorin.ci.tuwien.ac.at.ftp > sungold1.at.ibm.net.4251: P 1:31(30) ack 28 win 32736 (DF) [tos 0x10]
+12:05:27.285688 sungold1.at.ibm.net.4251 > thorin.ci.tuwien.ac.at.ftp: P 28:49(21) ack 31 win 16384
+12:05:27.285688 thorin.ci.tuwien.ac.at.47154c3b > fangorn.ci.tuwien.ac.at.nfs: 120 lookup [|nfs]
+12:05:27.285688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c3b: reply ok 128 lookup [|nfs]
+12:05:27.285688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: S 74438968:74438968(0) win 512 <mss 1460> [tos 0x8]
+12:05:27.305688 thorin.ci.tuwien.ac.at.ftp > sungold1.at.ibm.net.4251: . ack 49 win 32736 (DF) [tos 0x10]
+12:05:27.325688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: S 3495930504:3495930504(0) ack 74438969 win 16384 <mss 512>
+12:05:27.325688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . ack 1 win 32120 (DF) [tos 0x8]
+12:05:27.325688 thorin.ci.tuwien.ac.at.ftp > sungold1.at.ibm.net.4251: P 31:106(75) ack 49 win 32736 (DF) [tos 0x10]
+12:05:27.325688 thorin.ci.tuwien.ac.at.47154c3c > fangorn.ci.tuwien.ac.at.nfs: 104 getattr [|nfs]
+12:05:27.325688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c3c: reply ok 96 getattr [|nfs]
+12:05:27.325688 thorin.ci.tuwien.ac.at.47154c3d > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:27.425688 erpc3.ud.tuwien.ac.at.netbios-ns > tutimea.tuwien.ac.at.domain: 124+ (50)
+12:05:27.495688 193.170.244.1.58107 > fgidec1.tuwien.ac.at.www: F 0:0(0) ack 535 win 9112 (DF)
+12:05:28.685688 galadriel.ci.tuwien.ac.at.741 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:28.685688 galadriel.ci.tuwien.ac.at.742 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:28.695688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.742: udp 80
+12:05:28.695688 galadriel.ci.tuwien.ac.at.743 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:28.695688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.743: udp 32
+12:05:28.695688 galadriel.ci.tuwien.ac.at.1072 > tutimea.tuwien.ac.at.domain: 5860+ (45)
+12:05:28.695688 galadriel.ci.tuwien.ac.at.744 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:28.695688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.744: udp 80
+12:05:28.695688 galadriel.ci.tuwien.ac.at.745 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:28.705688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 10241 win 16384
+12:05:28.705688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.745: udp 32
+12:05:28.705688 galadriel.ci.tuwien.ac.at.1074 > tutimea.tuwien.ac.at.domain: 5861+ (45)
+12:05:28.705688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: P 15873:16385(512) ack 1 win 32256 [tos 0x8]
+12:05:28.705688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 16385:16897(512) ack 1 win 32256 [tos 0x8]
+12:05:28.705688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 16897:17409(512) ack 1 win 32256 [tos 0x8]
+12:05:28.705688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1074: 5861* 1/3/3 (221)
+12:05:28.705688 galadriel.ci.tuwien.ac.at.746 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:28.705688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.746: udp 32
+12:05:28.705688 galadriel.ci.tuwien.ac.at.1075 > tutimea.tuwien.ac.at.domain: 5862+ (45)
+12:05:28.715688 gw.coco.co.at.63060 > fgidec1.tuwien.ac.at.pop-3: . ack 1124480001 win 17688 (DF)
+12:05:28.715688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1075: 5862* 1/3/3 (216)
+12:05:28.715688 galadriel.ci.tuwien.ac.at.747 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:28.715688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.747: udp 32
+12:05:28.715688 galadriel.ci.tuwien.ac.at.1076 > tutimea.tuwien.ac.at.domain: 5863+ (44)
+12:05:28.725688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1076: 5863* 1/3/3 (216)
+12:05:28.725688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50490:924@7400)
+12:05:28.725688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50490:1480@5920+)
+12:05:28.725688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50490:1480@4440+)
+12:05:28.725688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50490:1480@2960+)
+12:05:28.725688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50490:1480@1480+)
+12:05:28.725688 galadriel.ci.tuwien.ac.at.560f23d4 > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50490:1480@0+)
+12:05:28.735688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23d4: reply ok 96 write [|nfs]
+12:05:28.735688 galadriel.ci.tuwien.ac.at.748 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:28.735688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.748: udp 32
+12:05:28.735688 galadriel.ci.tuwien.ac.at.1077 > tutimea.tuwien.ac.at.domain: 5864+ (45)
+12:05:28.735688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1077: 5864 2/2/2 (197)
+12:05:28.805688 supra2.xphys.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 201
+12:05:28.805688 galadriel.ci.tuwien.ac.at.749 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:28.805688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.749: udp 32
+12:05:28.805688 galadriel.ci.tuwien.ac.at.1078 > tutimea.tuwien.ac.at.domain: 5865+ (45)
+12:05:28.805688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1078: 5865* 1/3/3 (220)
+12:05:28.815688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 11265 win 16384
+12:05:28.815688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 17409:17921(512) ack 1 win 32256 [tos 0x8]
+12:05:28.815688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 17921:18433(512) ack 1 win 32256 [tos 0x8]
+12:05:28.815688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 18433:18945(512) ack 1 win 32256 [tos 0x8]
+12:05:28.865688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 12289 win 16384
+12:05:28.865688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 18945:19457(512) ack 1 win 32256 [tos 0x8]
+12:05:28.865688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 19457:19969(512) ack 1 win 32256 [tos 0x8]
+12:05:28.875688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 19969:20481(512) ack 1 win 32256 [tos 0x8]
+12:05:28.895688 hysterese2.xphys.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 224
+12:05:28.895688 galadriel.ci.tuwien.ac.at.kerberos4 > fangorn.ci.tuwien.ac.at.731:
+12:05:28.895688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.kerberos4:
+12:05:28.895688 galadriel.ci.tuwien.ac.at.1079 > tutimea.tuwien.ac.at.domain: 5866+ (45)
+12:05:28.905688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1079: 5866* 1/3/3 (224)
+12:05:28.905688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 13313 win 16384
+12:05:28.905688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 20481:20993(512) ack 1 win 32256 [tos 0x8]
+12:05:28.905688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 20993:21505(512) ack 1 win 32256 [tos 0x8]
+12:05:28.915688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 21505:22017(512) ack 1 win 32256 [tos 0x8]
+12:05:28.925688 erpc3.ud.tuwien.ac.at.netbios-ns > tutimea.tuwien.ac.at.domain: 124+ (50)
+12:05:28.925688 tutimea.tuwien.ac.at.domain > erpc3.ud.tuwien.ac.at.netbios-ns: 124* 0/1/0 (114)
+12:05:28.925688 fgidec1.tuwien.ac.at.3065 > tutimeb.tuwien.ac.at.domain: 1+ (45)
+12:05:28.925688 tutimeb.tuwien.ac.at.domain > fgidec1.tuwien.ac.at.3065: 1 2/2/2 (197)
+12:05:28.945688 fgidec1.tuwien.ac.at.3066 > tutimeb.tuwien.ac.at.domain: 2+ (31)
+12:05:28.945688 tutimeb.tuwien.ac.at.domain > fgidec1.tuwien.ac.at.3066: 2 1/4/4 (210)
+12:05:28.955688 fgidec1.tuwien.ac.at.pop-3 > gw.coco.co.at.63060: P 1:71(70) ack 0 win 16384
+12:05:28.965688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 14337 win 16384
+12:05:28.965688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 22017:22529(512) ack 1 win 32256 [tos 0x8]
+12:05:28.965688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 22529:23041(512) ack 1 win 32256 [tos 0x8]
+12:05:28.965688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 23041:23553(512) ack 1 win 32256 [tos 0x8]
+12:05:28.995688 fav.ud.tuwien.ac.at.58301 > fgidec1.tuwien.ac.at.6000: P 2565125900:2565125936(36) ack 1823909721 win 8760 (DF)
+12:05:28.995688 galadriel.ci.tuwien.ac.at.kerberos_master > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:28.995688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.kerberos_master: udp 32
+12:05:28.995688 galadriel.ci.tuwien.ac.at.1080 > tutimea.tuwien.ac.at.domain: 5867+ (44)
+12:05:28.995688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1080: 5867* 1/3/3 (213)
+12:05:29.015688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 14849 win 16384
+12:05:29.025688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 23553:24065(512) ack 1 win 32256 [tos 0x8]
+12:05:29.025688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: P 24065:24577(512) ack 1 win 32256 [tos 0x8]
+12:05:29.045688 gw.coco.co.at.63060 > fgidec1.tuwien.ac.at.pop-3: . ack 71 win 17688 (DF)
+12:05:29.055688 gw.coco.co.at.63060 > fgidec1.tuwien.ac.at.pop-3: P 0:12(12) ack 71 win 17688 (DF)
+12:05:29.055688 fgidec1.tuwien.ac.at.pop-3 > gw.coco.co.at.63060: P 71:105(34) ack 12 win 16384
+12:05:29.065688 fgidec1.tuwien.ac.at.6000 > fav.ud.tuwien.ac.at.58301: . ack 36 win 16384
+12:05:29.065688 pc45.atv.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 210
+12:05:29.065688 galadriel.ci.tuwien.ac.at.passwd_server > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:29.065688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.passwd_server: udp 32
+12:05:29.065688 galadriel.ci.tuwien.ac.at.1081 > tutimea.tuwien.ac.at.domain: 5868+ (45)
+12:05:29.075688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1081: 5868* 1/3/3 (216)
+12:05:29.075688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50501:924@7400)
+12:05:29.075688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50501:1480@5920+)
+12:05:29.075688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50501:1480@4440+)
+12:05:29.075688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50501:1480@2960+)
+12:05:29.075688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50501:1480@1480+)
+12:05:29.075688 galadriel.ci.tuwien.ac.at.560f23d5 > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50501:1480@0+)
+12:05:29.075688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 15873 win 16384
+12:05:29.075688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 24577:25089(512) ack 1 win 32256 [tos 0x8]
+12:05:29.075688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 25089:25601(512) ack 1 win 32256 [tos 0x8]
+12:05:29.075688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 25601:26113(512) ack 1 win 32256 [tos 0x8]
+12:05:29.075688 aragorn.ci.tuwien.ac.at.53d80b8d > fangorn.ci.tuwien.ac.at.nfs: 128 lookup [|nfs]
+12:05:29.085688 fangorn.ci.tuwien.ac.at.nfs > aragorn.ci.tuwien.ac.at.53d80b8d: reply ok 128 lookup [|nfs]
+12:05:29.085688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23d5: reply ok 96 write [|nfs]
+12:05:29.085688 galadriel.ci.tuwien.ac.at.753 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:29.085688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.753: udp 80
+12:05:29.085688 gw.coco.co.at.63060 > fgidec1.tuwien.ac.at.pop-3: P 12:26(14) ack 105 win 17688 (DF)
+12:05:29.105688 aragorn.ci.tuwien.ac.at.694 > fangorn.ci.tuwien.ac.at.731: udp 52
+12:05:29.105688 fangorn.ci.tuwien.ac.at.731 > aragorn.ci.tuwien.ac.at.694: udp 28
+12:05:29.135688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 16897 win 16384
+12:05:29.135688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 26113:26625(512) ack 1 win 32256 [tos 0x8]
+12:05:29.135688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 26625:27137(512) ack 1 win 32256 [tos 0x8]
+12:05:29.135688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 27137:27649(512) ack 1 win 32256 [tos 0x8]
+12:05:29.175688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 17921 win 16384
+12:05:29.175688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 27649:28161(512) ack 1 win 32256 [tos 0x8]
+12:05:29.175688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 28161:28673(512) ack 1 win 32256 [tos 0x8]
+12:05:29.175688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 28673:29185(512) ack 1 win 32256 [tos 0x8]
+12:05:29.215688 fgidec1.tuwien.ac.at.pop-3 > gw.coco.co.at.63060: P 105:145(40) ack 26 win 16384
+12:05:29.245688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 18433 win 16384
+12:05:29.245688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 29185:29697(512) ack 1 win 32256 [tos 0x8]
+12:05:29.245688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 29697:30209(512) ack 1 win 32256 [tos 0x8]
+12:05:29.265688 gw.coco.co.at.63060 > fgidec1.tuwien.ac.at.pop-3: P 26:32(6) ack 145 win 17688 (DF)
+12:05:29.275688 fgidec1.tuwien.ac.at.pop-3 > gw.coco.co.at.63060: P 145:154(9) ack 32 win 16384
+12:05:29.305688 gw.coco.co.at.63060 > fgidec1.tuwien.ac.at.pop-3: P 32:38(6) ack 154 win 17688 (DF)
+12:05:29.305688 fgidec1.tuwien.ac.at.pop-3 > gw.coco.co.at.63060: P 154:207(53) ack 38 win 16384
+12:05:29.315688 fgidec1.tuwien.ac.at.pop-3 > gw.coco.co.at.63060: F 207:207(0) ack 38 win 16384
+12:05:29.345688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 19457 win 16384
+12:05:29.345688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 30209:30721(512) ack 1 win 32256 [tos 0x8]
+12:05:29.345688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 30721:31233(512) ack 1 win 32256 [tos 0x8]
+12:05:29.345688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 31233:31745(512) ack 1 win 32256 [tos 0x8]
+12:05:29.365688 gw.coco.co.at.63060 > fgidec1.tuwien.ac.at.pop-3: . ack 208 win 17688 (DF)
+12:05:29.365688 gw.coco.co.at.63060 > fgidec1.tuwien.ac.at.pop-3: F 38:38(0) ack 208 win 17688 (DF)
+12:05:29.365688 fgidec1.tuwien.ac.at.pop-3 > gw.coco.co.at.63060: . ack 39 win 16384
+12:05:29.415688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 20481 win 16384
+12:05:29.415688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 31745:32257(512) ack 1 win 32256 [tos 0x8]
+12:05:29.415688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: P 32257:32769(512) ack 1 win 32256 [tos 0x8]
+12:05:29.415688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 32769:33281(512) ack 1 win 32256 [tos 0x8]
+12:05:29.555688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 21505 win 16384
+12:05:29.555688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 33281:33793(512) ack 1 win 32256 [tos 0x8]
+12:05:29.555688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 33793:34305(512) ack 1 win 32256 [tos 0x8]
+12:05:29.565688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 34305:34817(512) ack 1 win 32256 [tos 0x8]
+12:05:29.565688 thorin.ci.tuwien.ac.at.ftp > sungold1.at.ibm.net.4251: P 106:130(24) ack 49 win 32736 (DF) [tos 0x10]
+12:05:29.655688 sungold1.at.ibm.net.4251 > thorin.ci.tuwien.ac.at.ftp: . ack 130 win 16360
+12:05:29.655688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 22017 win 16384
+12:05:29.655688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 34817:35329(512) ack 1 win 32256 [tos 0x8]
+12:05:29.655688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 35329:35841(512) ack 1 win 32256 [tos 0x8]
+12:05:29.745688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 23041 win 16384
+12:05:29.745688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 35841:36353(512) ack 1 win 32256 [tos 0x8]
+12:05:29.745688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 36353:36865(512) ack 1 win 32256 [tos 0x8]
+12:05:29.745688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 36865:37377(512) ack 1 win 32256 [tos 0x8]
+12:05:29.775688 esbpc12.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 178
+12:05:29.775688 galadriel.ci.tuwien.ac.at.754 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:29.775688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.754: udp 32
+12:05:29.775688 galadriel.ci.tuwien.ac.at.1082 > tutimea.tuwien.ac.at.domain: 5869+ (44)
+12:05:29.785688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1082: 5869* 1/3/3 (214)
+12:05:29.785688 esbpc12.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 178
+12:05:29.785688 knieriem.cg.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 215
+12:05:29.785688 galadriel.ci.tuwien.ac.at.755 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:29.785688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.755: udp 32
+12:05:29.785688 galadriel.ci.tuwien.ac.at.1083 > tutimea.tuwien.ac.at.domain: 5870+ (45)
+12:05:29.795688 knieriem.cg.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 215
+12:05:29.795688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1083: 5870* 1/3/3 (219)
+12:05:29.855688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 24065 win 16384
+12:05:29.855688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 37377:37889(512) ack 1 win 32256 [tos 0x8]
+12:05:29.855688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 37889:38401(512) ack 1 win 32256 [tos 0x8]
+12:05:29.855688 atp6000.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 215
+12:05:29.855688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 38401:38913(512) ack 1 win 32256 [tos 0x8]
+12:05:29.855688 atp6000.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 215
+12:05:29.865688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50507:924@7400)
+12:05:29.865688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50507:1480@5920+)
+12:05:29.865688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50507:1480@4440+)
+12:05:29.865688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50507:1480@2960+)
+12:05:29.865688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50507:1480@1480+)
+12:05:29.865688 galadriel.ci.tuwien.ac.at.560f23d6 > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50507:1480@0+)
+12:05:29.875688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23d6: reply ok 96 write [|nfs]
+12:05:29.875688 galadriel.ci.tuwien.ac.at.756 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:29.875688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.756: udp 32
+12:05:29.875688 galadriel.ci.tuwien.ac.at.1084 > tutimea.tuwien.ac.at.domain: 5871+ (44)
+12:05:29.875688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1084: 5871* 1/3/3 (214)
+12:05:29.965688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 25089 win 16384
+12:05:29.965688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 38913:39425(512) ack 1 win 32256 [tos 0x8]
+12:05:29.965688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 39425:39937(512) ack 1 win 32256 [tos 0x8]
+12:05:29.975688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 39937:40449(512) ack 1 win 32256 [tos 0x8]
+12:05:30.075688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 25601 win 16384
+12:05:30.075688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: P 40449:40961(512) ack 1 win 32256 [tos 0x8]
+12:05:30.075688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 40961:41473(512) ack 1 win 32256 [tos 0x8]
+12:05:30.105688 eturas.kom.tuwien.ac.at > OSPF-ALL.MCAST.NET: OSPFv2-hello 44: rtrid eturas.kom.tuwien.ac.at area 0.0.0.18 [|ospf] [tos 0xc0] [ttl 1]
+12:05:30.115688 galadriel.ci.tuwien.ac.at.757 > fangorn.ci.tuwien.ac.at.731: udp 84
+12:05:30.115688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.757: udp 32
+12:05:30.115688 galadriel.ci.tuwien.ac.at.1085 > tutimea.tuwien.ac.at.domain: 5872+ (40)
+12:05:30.115688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1085: 5872 1/4/5 (257)
+12:05:30.115688 galadriel.ci.tuwien.ac.at.758 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:30.125688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.758: udp 32
+12:05:30.125688 galadriel.ci.tuwien.ac.at.1086 > tutimea.tuwien.ac.at.domain: 5873+ (44)
+12:05:30.125688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1086: 5873* 1/3/3 (213)
+12:05:30.125688 galadriel.ci.tuwien.ac.at.759 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:30.125688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.759: udp 32
+12:05:30.125688 galadriel.ci.tuwien.ac.at.1087 > tutimea.tuwien.ac.at.domain: 5874+ (46)
+12:05:30.135688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1087: 5874* 1/3/3 (215)
+12:05:30.135688 galadriel.ci.tuwien.ac.at.760 > fangorn.ci.tuwien.ac.at.731: udp 80
+12:05:30.135688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.760: udp 32
+12:05:30.135688 galadriel.ci.tuwien.ac.at.1088 > tutimea.tuwien.ac.at.domain: 5875+ (39)
+12:05:30.145688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 26625 win 16384
+12:05:30.145688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 41473:41985(512) ack 1 win 32256 [tos 0x8]
+12:05:30.155688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 41985:42497(512) ack 1 win 32256 [tos 0x8]
+12:05:30.155688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 42497:43009(512) ack 1 win 32256 [tos 0x8]
+12:05:30.255688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 27649 win 16384
+12:05:30.255688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 43009:43521(512) ack 1 win 32256 [tos 0x8]
+12:05:30.255688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 43521:44033(512) ack 1 win 32256 [tos 0x8]
+12:05:30.365688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 28673 win 16384
+12:05:30.365688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 44033:44545(512) ack 1 win 32256 [tos 0x8]
+12:05:30.365688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 44545:45057(512) ack 1 win 32256 [tos 0x8]
+12:05:30.405688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 29697 win 16384
+12:05:30.405688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 45057:45569(512) ack 1 win 32256 [tos 0x8]
+12:05:30.405688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 45569:46081(512) ack 1 win 32256 [tos 0x8]
+12:05:30.425688 erpc3.ud.tuwien.ac.at.netbios-ns > tutimeb.tuwien.ac.at.domain: 124+ (50)
+12:05:30.435688 tutimeb.tuwien.ac.at.domain > erpc3.ud.tuwien.ac.at.netbios-ns: 124* 0/1/0 (114)
+12:05:30.465688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 30721 win 16384
+12:05:30.475688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 46081:46593(512) ack 1 win 32256 [tos 0x8]
+12:05:30.475688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 46593:47105(512) ack 1 win 32256 [tos 0x8]
+12:05:30.495688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 31233 win 16384
+12:05:30.495688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 47105:47617(512) ack 1 win 32256 [tos 0x8]
+12:05:30.535688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 32257 win 16384
+12:05:30.535688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 47617:48129(512) ack 1 win 32256 [tos 0x8]
+12:05:30.535688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 48129:48641(512) ack 1 win 32256 [tos 0x8]
+12:05:30.575688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 33281 win 16384
+12:05:30.575688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: P 48641:49153(512) ack 1 win 32256 [tos 0x8]
+12:05:30.575688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 49153:49665(512) ack 1 win 32256 [tos 0x8]
+12:05:30.625688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 34305 win 16384
+12:05:30.625688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 49665:50177(512) ack 1 win 32256 [tos 0x8]
+12:05:30.625688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 50177:50689(512) ack 1 win 32256 [tos 0x8]
+12:05:30.695688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 35329 win 16384
+12:05:30.695688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 50689:51201(512) ack 1 win 32256 [tos 0x8]
+12:05:30.695688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 51201:51713(512) ack 1 win 32256 [tos 0x8]
+12:05:30.705688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1088: 5875 NXDomain* 0/1/0 (125)
+12:05:30.765688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 36353 win 16384
+12:05:30.765688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 51713:52225(512) ack 1 win 32256 [tos 0x8]
+12:05:30.765688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 52225:52737(512) ack 1 win 32256 [tos 0x8]
+12:05:30.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50518:924@7400)
+12:05:30.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50518:1480@5920+)
+12:05:30.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50518:1480@4440+)
+12:05:30.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50518:1480@2960+)
+12:05:30.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50518:1480@1480+)
+12:05:30.765688 galadriel.ci.tuwien.ac.at.560f23d7 > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50518:1480@0+)
+12:05:30.775688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23d7: reply ok 96 write [|nfs]
+12:05:30.875688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 37377 win 16384
+12:05:30.875688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 52737:53249(512) ack 1 win 32256 [tos 0x8]
+12:05:30.875688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 53249:53761(512) ack 1 win 32256 [tos 0x8]
+12:05:30.915688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 38401 win 16384
+12:05:30.915688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 53761:54273(512) ack 1 win 32256 [tos 0x8]
+12:05:30.915688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 54273:54785(512) ack 1 win 32256 [tos 0x8]
+12:05:30.925688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 38913 win 16384
+12:05:30.925688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 54785:55297(512) ack 1 win 32256 [tos 0x8]
+12:05:30.965688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 39937 win 16384
+12:05:30.965688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 55297:55809(512) ack 1 win 32256 [tos 0x8]
+12:05:30.965688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 55809:56321(512) ack 1 win 32256 [tos 0x8]
+12:05:30.975688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 40961 win 16384
+12:05:30.975688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 56321:56833(512) ack 1 win 32256 [tos 0x8]
+12:05:30.975688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: P 56833:57345(512) ack 1 win 32256 [tos 0x8]
+12:05:30.995688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 41985 win 16384
+12:05:30.995688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 57345:57857(512) ack 1 win 32256 [tos 0x8]
+12:05:30.995688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 57857:58369(512) ack 1 win 32256 [tos 0x8]
+12:05:31.035688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 43009 win 16384
+12:05:31.035688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 58369:58881(512) ack 1 win 32256 [tos 0x8]
+12:05:31.035688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 58881:59393(512) ack 1 win 32256 [tos 0x8]
+12:05:31.115688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 44033 win 16384
+12:05:31.115688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 59393:59905(512) ack 1 win 32256 [tos 0x8]
+12:05:31.115688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 59905:60417(512) ack 1 win 32256 [tos 0x8]
+12:05:31.185688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 45057 win 16384
+12:05:31.185688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 60417:60929(512) ack 1 win 32256 [tos 0x8]
+12:05:31.185688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 60929:61441(512) ack 1 win 32256 [tos 0x8]
+12:05:31.215688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 46081 win 16384
+12:05:31.215688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 61441:61953(512) ack 1 win 32256 [tos 0x8]
+12:05:31.215688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 61953:62465(512) ack 1 win 32256 [tos 0x8]
+12:05:31.285688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 47105 win 16384
+12:05:31.285688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . 62465:62977(512) ack 1 win 32256 [tos 0x8]
+12:05:31.285688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: P 62977:63182(205) ack 1 win 32256 (DF) [tos 0x8]
+12:05:31.285688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: F 63182:63182(0) ack 1 win 32256 [tos 0x8]
+12:05:31.315688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 48129 win 16384
+12:05:31.435688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 49153 win 16384
+12:05:31.545688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 50177 win 16384
+12:05:31.655688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 51201 win 16384
+12:05:31.715688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 52225 win 16384
+12:05:31.755688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 53249 win 16384
+12:05:31.765688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 54273 win 16384
+12:05:31.775688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 55297 win 16384
+12:05:31.815688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 56321 win 16384
+12:05:31.865688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 57345 win 16384
+12:05:31.925688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 58369 win 16384
+12:05:31.935688 erpc3.ud.tuwien.ac.at.netbios-ns > tutimeb.tuwien.ac.at.domain: 124+ (50)
+12:05:31.945688 tutimeb.tuwien.ac.at.domain > erpc3.ud.tuwien.ac.at.netbios-ns: 124* 0/1/0 (114)
+12:05:31.955688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 58881 win 16384
+12:05:31.965688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 59905 win 16384
+12:05:32.005688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 60929 win 16384
+12:05:32.015688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 61953 win 16384
+12:05:32.055688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 62977 win 16384
+12:05:32.055688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: . ack 63183 win 16384
+12:05:32.065688 sungold1.at.ibm.net.2776 > thorin.ci.tuwien.ac.at.ftp-data: F 1:1(0) ack 63183 win 16384
+12:05:32.065688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2776: . ack 2 win 32256 (DF) [tos 0x8]
+12:05:32.385688 sungold1.at.ibm.net.4251 > thorin.ci.tuwien.ac.at.ftp: P 49:77(28) ack 130 win 16384
+12:05:32.385688 thorin.ci.tuwien.ac.at.ftp > sungold1.at.ibm.net.4251: P 130:160(30) ack 77 win 32736 (DF) [tos 0x10]
+12:05:32.425688 sungold1.at.ibm.net.4251 > thorin.ci.tuwien.ac.at.ftp: P 77:98(21) ack 160 win 16384
+12:05:32.425688 thorin.ci.tuwien.ac.at.47154c4d > fangorn.ci.tuwien.ac.at.nfs: 120 lookup [|nfs]
+12:05:32.425688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c4d: reply ok 128 lookup [|nfs]
+12:05:32.425688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: S 2120052361:2120052361(0) win 512 <mss 1460> [tos 0x8]
+12:05:32.425688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50519:924@7400)
+12:05:32.425688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50519:1480@5920+)
+12:05:32.425688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50519:1480@4440+)
+12:05:32.425688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50519:1480@2960+)
+12:05:32.425688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50519:1480@1480+)
+12:05:32.425688 galadriel.ci.tuwien.ac.at.560f23d8 > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50519:1480@0+)
+12:05:32.435688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23d8: reply ok 96 write [|nfs]
+12:05:32.435688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: S 3180604402:3180604402(0) ack 2120052362 win 16384 <mss 512>
+12:05:32.435688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . ack 1 win 32120 (DF) [tos 0x8]
+12:05:32.435688 thorin.ci.tuwien.ac.at.ftp > sungold1.at.ibm.net.4251: P 160:235(75) ack 98 win 32736 (DF) [tos 0x10]
+12:05:32.435688 thorin.ci.tuwien.ac.at.47154c4e > fangorn.ci.tuwien.ac.at.nfs: 104 getattr [|nfs]
+12:05:32.435688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c4e: reply ok 96 getattr [|nfs]
+12:05:32.435688 thorin.ci.tuwien.ac.at.47154c4f > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.435688 thorin.ci.tuwien.ac.at.47154c50 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.435688 thorin.ci.tuwien.ac.at.47154c51 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.435688 thorin.ci.tuwien.ac.at.47154c52 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.435688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45193:1244@2960)
+12:05:32.445688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45193:1480@1480+)
+12:05:32.445688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c4f: reply ok 1472 read [|nfs] (frag 45193:1480@0+)
+12:05:32.445688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45194:1244@2960)
+12:05:32.445688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45194:1480@1480+)
+12:05:32.445688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c50: reply ok 1472 read [|nfs] (frag 45194:1480@0+)
+12:05:32.445688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45195:1244@2960)
+12:05:32.445688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45195:1480@1480+)
+12:05:32.445688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c51: reply ok 1472 read [|nfs] (frag 45195:1480@0+)
+12:05:32.455688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45196:1244@2960)
+12:05:32.455688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45196:1480@1480+)
+12:05:32.455688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c52: reply ok 1472 read [|nfs] (frag 45196:1480@0+)
+12:05:32.455688 thorin.ci.tuwien.ac.at.47154c53 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.455688 thorin.ci.tuwien.ac.at.47154c54 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.455688 thorin.ci.tuwien.ac.at.47154c55 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.455688 thorin.ci.tuwien.ac.at.47154c56 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.455688 thorin.ci.tuwien.ac.at.47154c57 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.455688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45197:1244@2960)
+12:05:32.455688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45197:1480@1480+)
+12:05:32.455688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c53: reply ok 1472 read [|nfs] (frag 45197:1480@0+)
+12:05:32.455688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45198:1244@2960)
+12:05:32.465688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45198:1480@1480+)
+12:05:32.465688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c54: reply ok 1472 read [|nfs] (frag 45198:1480@0+)
+12:05:32.465688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45199:1244@2960)
+12:05:32.465688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45199:1480@1480+)
+12:05:32.465688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c55: reply ok 1472 read [|nfs] (frag 45199:1480@0+)
+12:05:32.465688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45200:1244@2960)
+12:05:32.465688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45200:1480@1480+)
+12:05:32.465688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c56: reply ok 1472 read [|nfs] (frag 45200:1480@0+)
+12:05:32.475688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45201:1244@2960)
+12:05:32.475688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45201:1480@1480+)
+12:05:32.475688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c57: reply ok 1472 read [|nfs] (frag 45201:1480@0+)
+12:05:32.475688 thorin.ci.tuwien.ac.at.47154c58 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.475688 thorin.ci.tuwien.ac.at.47154c59 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.475688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45202:1244@2960)
+12:05:32.475688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 1:513(512) ack 1 win 32256 (DF) [tos 0x8]
+12:05:32.475688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45202:1480@1480+)
+12:05:32.475688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 513:1025(512) ack 1 win 32256 (DF) [tos 0x8]
+12:05:32.475688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c58: reply ok 1472 read [|nfs] (frag 45202:1480@0+)
+12:05:32.475688 thorin.ci.tuwien.ac.at.47154c5a > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.485688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45203:1244@2960)
+12:05:32.485688 thorin.ci.tuwien.ac.at.47154c5b > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.485688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45203:1480@1480+)
+12:05:32.485688 thorin.ci.tuwien.ac.at.47154c5c > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:32.485688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c59: reply ok 1472 read [|nfs] (frag 45203:1480@0+)
+12:05:32.485688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45204:1244@2960)
+12:05:32.485688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45204:1480@1480+)
+12:05:32.485688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c5a: reply ok 1472 read [|nfs] (frag 45204:1480@0+)
+12:05:32.485688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45205:1244@2960)
+12:05:32.485688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45205:1480@1480+)
+12:05:32.495688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c5b: reply ok 1472 read [|nfs] (frag 45205:1480@0+)
+12:05:32.495688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45206:940@1480)
+12:05:32.495688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c5c: reply ok 1472 read [|nfs] (frag 45206:1480@0+)
+12:05:32.525688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 1025 win 16384
+12:05:32.525688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 1025:1537(512) ack 1 win 32256 [tos 0x8]
+12:05:32.525688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 1537:2049(512) ack 1 win 32256 [tos 0x8]
+12:05:32.525688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 2049:2561(512) ack 1 win 32256 [tos 0x8]
+12:05:32.565688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 2049 win 16384
+12:05:32.565688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 2561:3073(512) ack 1 win 32256 [tos 0x8]
+12:05:32.565688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 3073:3585(512) ack 1 win 32256 [tos 0x8]
+12:05:32.565688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 3585:4097(512) ack 1 win 32256 [tos 0x8]
+12:05:32.585688 sungold1.at.ibm.net.4251 > thorin.ci.tuwien.ac.at.ftp: . ack 235 win 16384
+12:05:32.585688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 2561 win 16384
+12:05:32.585688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 4097:4609(512) ack 1 win 32256 [tos 0x8]
+12:05:32.585688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 4609:5121(512) ack 1 win 32256 [tos 0x8]
+12:05:32.585688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50520:924@7400)
+12:05:32.585688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50520:1480@5920+)
+12:05:32.585688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50520:1480@4440+)
+12:05:32.585688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50520:1480@2960+)
+12:05:32.585688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50520:1480@1480+)
+12:05:32.585688 galadriel.ci.tuwien.ac.at.560f23d9 > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50520:1480@0+)
+12:05:32.595688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23d9: reply ok 96 write [|nfs]
+12:05:32.615688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 3585 win 16384
+12:05:32.615688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 5121:5633(512) ack 1 win 32256 [tos 0x8]
+12:05:32.615688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 5633:6145(512) ack 1 win 32256 [tos 0x8]
+12:05:32.615688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 6145:6657(512) ack 1 win 32256 [tos 0x8]
+12:05:32.625688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 4609 win 16384
+12:05:32.625688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 6657:7169(512) ack 1 win 32256 [tos 0x8]
+12:05:32.625688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 7169:7681(512) ack 1 win 32256 [tos 0x8]
+12:05:32.625688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: P 7681:8193(512) ack 1 win 32256 [tos 0x8]
+12:05:32.675688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 5633 win 16384
+12:05:32.675688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 8193:8705(512) ack 1 win 32256 [tos 0x8]
+12:05:32.675688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 8705:9217(512) ack 1 win 32256 [tos 0x8]
+12:05:32.675688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 9217:9729(512) ack 1 win 32256 [tos 0x8]
+12:05:32.685688 dime.fml.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 207
+12:05:32.685688 galadriel.ci.tuwien.ac.at.761 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:32.685688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.761: udp 32
+12:05:32.685688 galadriel.ci.tuwien.ac.at.1089 > tutimea.tuwien.ac.at.domain: 5876+ (46)
+12:05:32.695688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1089: 5876* 1/3/3 (217)
+12:05:32.705688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 6657 win 16384
+12:05:32.705688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 9729:10241(512) ack 1 win 32256 [tos 0x8]
+12:05:32.705688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 10241:10753(512) ack 1 win 32256 [tos 0x8]
+12:05:32.705688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 10753:11265(512) ack 1 win 32256 [tos 0x8]
+12:05:32.735688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 7681 win 16384
+12:05:32.735688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 11265:11777(512) ack 1 win 32256 [tos 0x8]
+12:05:32.735688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 11777:12289(512) ack 1 win 32256 [tos 0x8]
+12:05:32.735688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 12289:12801(512) ack 1 win 32256 [tos 0x8]
+12:05:32.775688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 8705 win 15872
+12:05:32.775688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 12801:13313(512) ack 1 win 32256 [tos 0x8]
+12:05:32.775688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 13313:13825(512) ack 1 win 32256 [tos 0x8]
+12:05:32.775688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 13825:14337(512) ack 1 win 32256 [tos 0x8]
+12:05:32.805688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 9217 win 16384
+12:05:32.805688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 14337:14849(512) ack 1 win 32256 [tos 0x8]
+12:05:32.805688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 14849:15361(512) ack 1 win 32256 [tos 0x8]
+12:05:32.835688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 10241 win 16384
+12:05:32.835688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 15361:15873(512) ack 1 win 32256 [tos 0x8]
+12:05:32.835688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: P 15873:16385(512) ack 1 win 32256 [tos 0x8]
+12:05:32.845688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 16385:16897(512) ack 1 win 32256 [tos 0x8]
+12:05:32.875688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 11265 win 16384
+12:05:32.875688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 16897:17409(512) ack 1 win 32256 [tos 0x8]
+12:05:32.875688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 17409:17921(512) ack 1 win 32256 [tos 0x8]
+12:05:32.875688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 17921:18433(512) ack 1 win 32256 [tos 0x8]
+12:05:32.935688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 12289 win 16384
+12:05:32.935688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 18433:18945(512) ack 1 win 32256 [tos 0x8]
+12:05:32.935688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 18945:19457(512) ack 1 win 32256 [tos 0x8]
+12:05:32.935688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 19457:19969(512) ack 1 win 32256 [tos 0x8]
+12:05:32.995688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 13313 win 15872
+12:05:32.995688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 19969:20481(512) ack 1 win 32256 [tos 0x8]
+12:05:32.995688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 20481:20993(512) ack 1 win 32256 [tos 0x8]
+12:05:32.995688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 20993:21505(512) ack 1 win 32256 [tos 0x8]
+12:05:33.015688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 13825 win 16384
+12:05:33.015688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 21505:22017(512) ack 1 win 32256 [tos 0x8]
+12:05:33.015688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 22017:22529(512) ack 1 win 32256 [tos 0x8]
+12:05:33.095688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 14849 win 16384
+12:05:33.095688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 22529:23041(512) ack 1 win 32256 [tos 0x8]
+12:05:33.095688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 23041:23553(512) ack 1 win 32256 [tos 0x8]
+12:05:33.095688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 23553:24065(512) ack 1 win 32256 [tos 0x8]
+12:05:33.165688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 15873 win 16384
+12:05:33.165688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: P 24065:24577(512) ack 1 win 32256 [tos 0x8]
+12:05:33.165688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 24577:25089(512) ack 1 win 32256 [tos 0x8]
+12:05:33.165688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 25089:25601(512) ack 1 win 32256 [tos 0x8]
+12:05:33.225688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 16897 win 16384
+12:05:33.225688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 25601:26113(512) ack 1 win 32256 [tos 0x8]
+12:05:33.225688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 26113:26625(512) ack 1 win 32256 [tos 0x8]
+12:05:33.235688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 26625:27137(512) ack 1 win 32256 [tos 0x8]
+12:05:33.235688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50523:924@7400)
+12:05:33.235688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50523:1480@5920+)
+12:05:33.235688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50523:1480@4440+)
+12:05:33.235688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50523:1480@2960+)
+12:05:33.235688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50523:1480@1480+)
+12:05:33.235688 galadriel.ci.tuwien.ac.at.560f23da > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50523:1480@0+)
+12:05:33.235688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23da: reply ok 96 write [|nfs]
+12:05:33.255688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 17921 win 16384
+12:05:33.265688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 27137:27649(512) ack 1 win 32256 [tos 0x8]
+12:05:33.265688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 27649:28161(512) ack 1 win 32256 [tos 0x8]
+12:05:33.265688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 28161:28673(512) ack 1 win 32256 [tos 0x8]
+12:05:33.275688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 18945 win 16384
+12:05:33.275688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 28673:29185(512) ack 1 win 32256 [tos 0x8]
+12:05:33.275688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 29185:29697(512) ack 1 win 32256 [tos 0x8]
+12:05:33.275688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 29697:30209(512) ack 1 win 32256 [tos 0x8]
+12:05:33.285688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 19969 win 16384
+12:05:33.285688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 30209:30721(512) ack 1 win 32256 [tos 0x8]
+12:05:33.295688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 30721:31233(512) ack 1 win 32256 [tos 0x8]
+12:05:33.295688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 31233:31745(512) ack 1 win 32256 [tos 0x8]
+12:05:33.345688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 20993 win 16384
+12:05:33.345688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 31745:32257(512) ack 1 win 32256 [tos 0x8]
+12:05:33.345688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: P 32257:32769(512) ack 1 win 32256 [tos 0x8]
+12:05:33.345688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 32769:33281(512) ack 1 win 32256 [tos 0x8]
+12:05:33.425688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 21505 win 15872
+12:05:33.425688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 33281:33793(512) ack 1 win 32256 [tos 0x8]
+12:05:33.425688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 33793:34305(512) ack 1 win 32256 [tos 0x8]
+12:05:33.425688 thorin.ci.tuwien.ac.at.ftp > sungold1.at.ibm.net.4251: P 235:259(24) ack 98 win 32736 (DF) [tos 0x10]
+12:05:33.445688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 22017 win 16384
+12:05:33.445688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 34305:34817(512) ack 1 win 32256 [tos 0x8]
+12:05:33.445688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 34817:35329(512) ack 1 win 32256 [tos 0x8]
+12:05:33.445688 erpc3.ud.tuwien.ac.at.netbios-ns > tutimeb.tuwien.ac.at.domain: 124+ (50)
+12:05:33.455688 tutimeb.tuwien.ac.at.domain > erpc3.ud.tuwien.ac.at.netbios-ns: 124* 0/1/0 (114)
+12:05:33.475688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 23041 win 16384
+12:05:33.475688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 35329:35841(512) ack 1 win 32256 [tos 0x8]
+12:05:33.475688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 35841:36353(512) ack 1 win 32256 [tos 0x8]
+12:05:33.475688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 36353:36865(512) ack 1 win 32256 [tos 0x8]
+12:05:33.485688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 24065 win 16384
+12:05:33.485688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 36865:37377(512) ack 1 win 32256 [tos 0x8]
+12:05:33.495688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 37377:37889(512) ack 1 win 32256 [tos 0x8]
+12:05:33.495688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 37889:38401(512) ack 1 win 32256 [tos 0x8]
+12:05:33.525688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50524:936@7400)
+12:05:33.525688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50524:1480@5920+)
+12:05:33.525688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50524:1480@4440+)
+12:05:33.525688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50524:1480@2960+)
+12:05:33.525688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50524:1480@1480+)
+12:05:33.525688 galadriel.ci.tuwien.ac.at.560f23db > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50524:1480@0+)
+12:05:33.535688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23db: reply ok 96 write [|nfs]
+12:05:33.535688 galadriel.ci.tuwien.ac.at.560f23dc > fangorn.ci.tuwien.ac.at.nfs: 120 getattr [|nfs]
+12:05:33.535688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 25089 win 16384
+12:05:33.535688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23dc: reply ok 96 getattr [|nfs]
+12:05:33.535688 galadriel.ci.tuwien.ac.at.560f23dd > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.535688 galadriel.ci.tuwien.ac.at.560f23de > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.535688 galadriel.ci.tuwien.ac.at.560f23df > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.535688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 38401:38913(512) ack 1 win 32256 [tos 0x8]
+12:05:33.545688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 38913:39425(512) ack 1 win 32256 [tos 0x8]
+12:05:33.545688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 39425:39937(512) ack 1 win 32256 [tos 0x8]
+12:05:33.555688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45212:1244@2960)
+12:05:33.555688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45212:1480@1480+)
+12:05:33.565688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23dd: reply ok 1472 read [|nfs] (frag 45212:1480@0+)
+12:05:33.565688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45213:1244@2960)
+12:05:33.565688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45213:1480@1480+)
+12:05:33.565688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23de: reply ok 1472 read [|nfs] (frag 45213:1480@0+)
+12:05:33.565688 galadriel.ci.tuwien.ac.at.560f23e0 > fangorn.ci.tuwien.ac.at.nfs: 128 lookup [|nfs]
+12:05:33.565688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45214:1244@2960)
+12:05:33.565688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45214:1480@1480+)
+12:05:33.565688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23df: reply ok 1472 read [|nfs] (frag 45214:1480@0+)
+12:05:33.565688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23e0: reply ok 128 lookup [|nfs]
+12:05:33.565688 galadriel.ci.tuwien.ac.at.560f23e1 > fangorn.ci.tuwien.ac.at.nfs: 128 lookup [|nfs]
+12:05:33.565688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23e1: reply ok 128 lookup [|nfs]
+12:05:33.565688 galadriel.ci.tuwien.ac.at.560f23e2 > fangorn.ci.tuwien.ac.at.nfs: 136 lookup [|nfs]
+12:05:33.585688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23e2: reply ok 128 lookup [|nfs]
+12:05:33.595688 galadriel.ci.tuwien.ac.at.560f23e3 > fangorn.ci.tuwien.ac.at.nfs: 120 getattr [|nfs]
+12:05:33.595688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23e3: reply ok 96 getattr [|nfs]
+12:05:33.595688 galadriel.ci.tuwien.ac.at.560f23e4 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.595688 galadriel.ci.tuwien.ac.at.560f23e5 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.595688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 26113 win 16384
+12:05:33.595688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 39937:40449(512) ack 1 win 32256 [tos 0x8]
+12:05:33.595688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50535:924@7400)
+12:05:33.595688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50535:1480@5920+)
+12:05:33.595688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50535:1480@4440+)
+12:05:33.595688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50535:1480@2960+)
+12:05:33.595688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50535:1480@1480+)
+12:05:33.595688 galadriel.ci.tuwien.ac.at.560f23e6 > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50535:1480@0+)
+12:05:33.595688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: P 40449:40961(512) ack 1 win 32256 [tos 0x8]
+12:05:33.595688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 40961:41473(512) ack 1 win 32256 [tos 0x8]
+12:05:33.605688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45219:1244@2960)
+12:05:33.605688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45219:1480@1480+)
+12:05:33.615688 sungold1.at.ibm.net.4251 > thorin.ci.tuwien.ac.at.ftp: . ack 259 win 16384
+12:05:33.615688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 26625 win 16384
+12:05:33.615688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23e4: reply ok 1472 read [|nfs] (frag 45219:1480@0+)
+12:05:33.615688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 41473:41985(512) ack 1 win 32256 [tos 0x8]
+12:05:33.615688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 41985:42497(512) ack 1 win 32256 [tos 0x8]
+12:05:33.615688 nn2.itg.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 204
+12:05:33.615688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23e5: reply ok 1180 read [|nfs]
+12:05:33.615688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23e6: reply ok 96 write [|nfs]
+12:05:33.615688 galadriel.ci.tuwien.ac.at.762 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:33.615688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.762: udp 32
+12:05:33.615688 galadriel.ci.tuwien.ac.at.1090 > tutimea.tuwien.ac.at.domain: 5877+ (46)
+12:05:33.625688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 27649 win 16384
+12:05:33.625688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 42497:43009(512) ack 1 win 32256 [tos 0x8]
+12:05:33.625688 galler.fluid.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 207
+12:05:33.625688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 43009:43521(512) ack 1 win 32256 [tos 0x8]
+12:05:33.625688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 43521:44033(512) ack 1 win 32256 [tos 0x8]
+12:05:33.625688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1090: 5877* 1/3/3 (216)
+12:05:33.625688 pc4.iew.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 206
+12:05:33.635688 pc4.iew.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 206
+12:05:33.635688 galadriel.ci.tuwien.ac.at.763 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:33.635688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.763: udp 32
+12:05:33.635688 galadriel.ci.tuwien.ac.at.1091 > tutimea.tuwien.ac.at.domain: 5878+ (45)
+12:05:33.635688 fsgeod.htu.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 207
+12:05:33.635688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1091: 5878* 1/3/3 (220)
+12:05:33.635688 galadriel.ci.tuwien.ac.at.764 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:33.635688 tp1.ilb.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 204
+12:05:33.635688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.764: udp 32
+12:05:33.635688 galadriel.ci.tuwien.ac.at.1092 > tutimea.tuwien.ac.at.domain: 5879+ (45)
+12:05:33.645688 tp1.ilb.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 204
+12:05:33.645688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1092: 5879* 1/3/3 (215)
+12:05:33.645688 galadriel.ci.tuwien.ac.at.webster > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:33.645688 tp1.ilb.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 204
+12:05:33.645688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.webster: udp 32
+12:05:33.645688 galadriel.ci.tuwien.ac.at.1093 > tutimea.tuwien.ac.at.domain: 5880+ (44)
+12:05:33.645688 fsgeod.htu.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 207
+12:05:33.655688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1093: 5880* 1/3/3 (217)
+12:05:33.655688 galadriel.ci.tuwien.ac.at.766 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:33.655688 tp1.ilb.tuwien.ac.at.netbios-ns > 255.255.255.255.netbios-ns: udp 50
+12:05:33.655688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.766: udp 32
+12:05:33.655688 galadriel.ci.tuwien.ac.at.1094 > tutimea.tuwien.ac.at.domain: 5881+ (44)
+12:05:33.655688 tp1.ilb.tuwien.ac.at.netbios-ns > 255.255.255.255.netbios-ns: udp 50
+12:05:33.655688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 28673 win 16384
+12:05:33.655688 tp1.ilb.tuwien.ac.at.netbios-ns > 255.255.255.255.netbios-ns: udp 50
+12:05:33.655688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1094: 5881* 1/3/3 (214)
+12:05:33.655688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 44033:44545(512) ack 1 win 32256 [tos 0x8]
+12:05:33.655688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 44545:45057(512) ack 1 win 32256 [tos 0x8]
+12:05:33.665688 e119pc33.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 207
+12:05:33.665688 galadriel.ci.tuwien.ac.at.767 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:33.665688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.767: udp 32
+12:05:33.665688 galadriel.ci.tuwien.ac.at.560f23e7 > fangorn.ci.tuwien.ac.at.nfs: 120 getattr [|nfs]
+12:05:33.665688 galadriel.ci.tuwien.ac.at.1095 > tutimea.tuwien.ac.at.domain: 5882+ (45)
+12:05:33.665688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23e7: reply ok 96 getattr [|nfs]
+12:05:33.665688 galadriel.ci.tuwien.ac.at.560f23e8 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.665688 galadriel.ci.tuwien.ac.at.560f23e9 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.665688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45229:1244@2960)
+12:05:33.675688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45229:1480@1480+)
+12:05:33.675688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23e8: reply ok 1472 read [|nfs] (frag 45229:1480@0+)
+12:05:33.675688 galadriel.ci.tuwien.ac.at.560f23ea > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.675688 galadriel.ci.tuwien.ac.at.560f23eb > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.675688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45230:1244@2960)
+12:05:33.675688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45230:1480@1480+)
+12:05:33.675688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1095: 5882* 1/3/3 (216)
+12:05:33.675688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23e9: reply ok 1472 read [|nfs] (frag 45230:1480@0+)
+12:05:33.675688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45231:1244@2960)
+12:05:33.675688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45231:1480@1480+)
+12:05:33.675688 e2pc1.ud.tuwien.ac.at.netbios-dgm > 128.130.170.127.netbios-dgm: udp 207
+12:05:33.675688 e2pc1.ud.tuwien.ac.at.netbios-ns > 128.130.170.127.netbios-ns: udp 50
+12:05:33.675688 galadriel.ci.tuwien.ac.at.768 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:33.685688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23ea: reply ok 1472 read [|nfs] (frag 45231:1480@0+)
+12:05:33.685688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45232:1244@2960)
+12:05:33.685688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45232:1480@1480+)
+12:05:33.685688 galadriel.ci.tuwien.ac.at.560f23ec > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.685688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23eb: reply ok 1472 read [|nfs] (frag 45232:1480@0+)
+12:05:33.685688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.768: udp 32
+12:05:33.685688 galadriel.ci.tuwien.ac.at.1096 > tutimea.tuwien.ac.at.domain: 5883+ (45)
+12:05:33.685688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45234:1244@2960)
+12:05:33.685688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45234:1480@1480+)
+12:05:33.685688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23ec: reply ok 1472 read [|nfs] (frag 45234:1480@0+)
+12:05:33.685688 galadriel.ci.tuwien.ac.at.560f23ed > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.685688 galadriel.ci.tuwien.ac.at.560f23ee > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.695688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45235:1244@2960)
+12:05:33.695688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1096: 5883* 1/3/3 (216)
+12:05:33.695688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50558:924@7400)
+12:05:33.695688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50558:1480@5920+)
+12:05:33.695688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50558:1480@4440+)
+12:05:33.695688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50558:1480@2960+)
+12:05:33.695688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50558:1480@1480+)
+12:05:33.695688 galadriel.ci.tuwien.ac.at.560f23ef > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50558:1480@0+)
+12:05:33.695688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45235:1480@1480+)
+12:05:33.695688 egdpc16.gphys.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 201
+12:05:33.695688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23ed: reply ok 1472 read [|nfs] (frag 45235:1480@0+)
+12:05:33.695688 galadriel.ci.tuwien.ac.at.560f23f0 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.695688 galadriel.ci.tuwien.ac.at.560f23f1 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.695688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45236:1244@2960)
+12:05:33.695688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45236:1480@1480+)
+12:05:33.695688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23ee: reply ok 1472 read [|nfs] (frag 45236:1480@0+)
+12:05:33.695688 egdpc16.gphys.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 201
+12:05:33.705688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23ef: reply ok 96 write [|nfs]
+12:05:33.705688 galadriel.ci.tuwien.ac.at.769 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:33.705688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45238:1244@2960)
+12:05:33.705688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45238:1480@1480+)
+12:05:33.715688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23f0: reply ok 1472 read [|nfs] (frag 45238:1480@0+)
+12:05:33.715688 galadriel.ci.tuwien.ac.at.560f23f2 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.715688 galadriel.ci.tuwien.ac.at.560f23f3 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.715688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45239:1244@2960)
+12:05:33.715688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45239:1480@1480+)
+12:05:33.715688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23f1: reply ok 1472 read [|nfs] (frag 45239:1480@0+)
+12:05:33.715688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.769: udp 32
+12:05:33.715688 galadriel.ci.tuwien.ac.at.1097 > tutimea.tuwien.ac.at.domain: 5884+ (44)
+12:05:33.715688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45241:1244@2960)
+12:05:33.715688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45241:1480@1480+)
+12:05:33.715688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23f2: reply ok 1472 read [|nfs] (frag 45241:1480@0+)
+12:05:33.715688 galadriel.ci.tuwien.ac.at.560f23f4 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.715688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45242:1244@2960)
+12:05:33.715688 galadriel.ci.tuwien.ac.at.560f23f5 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.715688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1097: 5884* 1/3/3 (220)
+12:05:33.725688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45242:1480@1480+)
+12:05:33.725688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23f3: reply ok 1472 read [|nfs] (frag 45242:1480@0+)
+12:05:33.725688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45243:1244@2960)
+12:05:33.725688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45243:1480@1480+)
+12:05:33.725688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23f4: reply ok 1472 read [|nfs] (frag 45243:1480@0+)
+12:05:33.725688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45244:1244@2960)
+12:05:33.725688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45244:1480@1480+)
+12:05:33.725688 galadriel.ci.tuwien.ac.at.560f23f6 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.725688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23f5: reply ok 1472 read [|nfs] (frag 45244:1480@0+)
+12:05:33.735688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45245:1244@2960)
+12:05:33.735688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45245:1480@1480+)
+12:05:33.735688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23f6: reply ok 1472 read [|nfs] (frag 45245:1480@0+)
+12:05:33.735688 galadriel.ci.tuwien.ac.at.560f23f7 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.735688 galadriel.ci.tuwien.ac.at.560f23f8 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.735688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45246:1244@2960)
+12:05:33.735688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45246:1480@1480+)
+12:05:33.735688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23f7: reply ok 1472 read [|nfs] (frag 45246:1480@0+)
+12:05:33.735688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45247:1244@2960)
+12:05:33.745688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45247:1480@1480+)
+12:05:33.745688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 29697 win 16384
+12:05:33.745688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23f8: reply ok 1472 read [|nfs] (frag 45247:1480@0+)
+12:05:33.745688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 45057:45569(512) ack 1 win 32256 [tos 0x8]
+12:05:33.745688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 45569:46081(512) ack 1 win 32256 [tos 0x8]
+12:05:33.745688 galadriel.ci.tuwien.ac.at.560f23f9 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.745688 galadriel.ci.tuwien.ac.at.560f23fa > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.745688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45248:1244@2960)
+12:05:33.745688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45248:1480@1480+)
+12:05:33.755688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23f9: reply ok 1472 read [|nfs] (frag 45248:1480@0+)
+12:05:33.755688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45249:1244@2960)
+12:05:33.755688 galadriel.ci.tuwien.ac.at.560f23fb > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.755688 galadriel.ci.tuwien.ac.at.560f23fc > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.755688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45249:1480@1480+)
+12:05:33.755688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23fa: reply ok 1472 read [|nfs] (frag 45249:1480@0+)
+12:05:33.755688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45250:1244@2960)
+12:05:33.755688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45250:1480@1480+)
+12:05:33.755688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23fb: reply ok 1472 read [|nfs] (frag 45250:1480@0+)
+12:05:33.755688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45251:1244@2960)
+12:05:33.755688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45251:1480@1480+)
+12:05:33.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50574:924@7400)
+12:05:33.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50574:1480@5920+)
+12:05:33.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50574:1480@4440+)
+12:05:33.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50574:1480@2960+)
+12:05:33.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50574:1480@1480+)
+12:05:33.765688 galadriel.ci.tuwien.ac.at.560f23fd > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50574:1480@0+)
+12:05:33.765688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23fc: reply ok 1472 read [|nfs] (frag 45251:1480@0+)
+12:05:33.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50575:1280@2960)
+12:05:33.765688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50575:1480@1480+)
+12:05:33.765688 galadriel.ci.tuwien.ac.at.560f23fe > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50575:1480@0+)
+12:05:33.775688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23fd: reply ok 96 write [|nfs]
+12:05:33.775688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23fe: reply ok 96 write [|nfs]
+12:05:33.775688 galadriel.ci.tuwien.ac.at.560f23ff > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.775688 galadriel.ci.tuwien.ac.at.560f2400 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.775688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45254:1244@2960)
+12:05:33.775688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45254:1480@1480+)
+12:05:33.775688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f23ff: reply ok 1472 read [|nfs] (frag 45254:1480@0+)
+12:05:33.775688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45255:1244@2960)
+12:05:33.775688 galadriel.ci.tuwien.ac.at.560f2401 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.775688 galadriel.ci.tuwien.ac.at.560f2402 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.775688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45255:1480@1480+)
+12:05:33.785688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f2400: reply ok 1472 read [|nfs] (frag 45255:1480@0+)
+12:05:33.785688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45256:1244@2960)
+12:05:33.785688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45256:1480@1480+)
+12:05:33.785688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f2401: reply ok 1472 read [|nfs] (frag 45256:1480@0+)
+12:05:33.785688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45257:1244@2960)
+12:05:33.785688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45257:1480@1480+)
+12:05:33.785688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f2402: reply ok 1472 read [|nfs] (frag 45257:1480@0+)
+12:05:33.795688 galadriel.ci.tuwien.ac.at.560f2403 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.795688 galadriel.ci.tuwien.ac.at.560f2404 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.795688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45258:1244@2960)
+12:05:33.795688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45258:1480@1480+)
+12:05:33.795688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f2403: reply ok 1472 read [|nfs] (frag 45258:1480@0+)
+12:05:33.795688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45259:1244@2960)
+12:05:33.795688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45259:1480@1480+)
+12:05:33.795688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f2404: reply ok 1472 read [|nfs] (frag 45259:1480@0+)
+12:05:33.805688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 30721 win 16384
+12:05:33.805688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 46081:46593(512) ack 1 win 32256 [tos 0x8]
+12:05:33.805688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 46593:47105(512) ack 1 win 32256 [tos 0x8]
+12:05:33.805688 galadriel.ci.tuwien.ac.at.560f2405 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.805688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45260:1244@2960)
+12:05:33.815688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45260:1480@1480+)
+12:05:33.815688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f2405: reply ok 1472 read [|nfs] (frag 45260:1480@0+)
+12:05:33.815688 galadriel.ci.tuwien.ac.at.560f2406 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.815688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45261:1244@2960)
+12:05:33.815688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45261:1480@1480+)
+12:05:33.815688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f2406: reply ok 1472 read [|nfs] (frag 45261:1480@0+)
+12:05:33.825688 galadriel.ci.tuwien.ac.at.560f2407 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.825688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45262:1244@2960)
+12:05:33.825688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45262:1480@1480+)
+12:05:33.825688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f2407: reply ok 1472 read [|nfs] (frag 45262:1480@0+)
+12:05:33.825688 galadriel.ci.tuwien.ac.at.560f2408 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.835688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45263:1244@2960)
+12:05:33.835688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45263:1480@1480+)
+12:05:33.835688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f2408: reply ok 1472 read [|nfs] (frag 45263:1480@0+)
+12:05:33.855688 ivs1.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 206
+12:05:33.865688 galadriel.ci.tuwien.ac.at.560f2409 > fangorn.ci.tuwien.ac.at.nfs: 132 read [|nfs]
+12:05:33.865688 ivs1.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 206
+12:05:33.865688 galadriel.ci.tuwien.ac.at.770 > fangorn.ci.tuwien.ac.at.731: udp 84
+12:05:33.865688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45264:1244@2960)
+12:05:33.865688 fangorn.ci.tuwien.ac.at > galadriel.ci.tuwien.ac.at (frag 45264:1480@1480+)
+12:05:33.865688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f2409: reply ok 1472 read [|nfs] (frag 45264:1480@0+)
+12:05:33.865688 ivs1.tuwien.ac.at.netbios-dgm > 255.255.255.255.netbios-dgm: udp 206
+12:05:33.865688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.770: udp 32
+12:05:33.885688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 31745 win 16384
+12:05:33.885688 galadriel.ci.tuwien.ac.at.1098 > tutimea.tuwien.ac.at.domain: 5885+ (43)
+12:05:33.885688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 47105:47617(512) ack 1 win 32256 [tos 0x8]
+12:05:33.885688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 47617:48129(512) ack 1 win 32256 [tos 0x8]
+12:05:33.895688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1098: 5885* 1/3/3 (210)
+12:05:33.975688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 32769 win 16384
+12:05:33.975688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 48129:48641(512) ack 1 win 32256 [tos 0x8]
+12:05:33.975688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: P 48641:49153(512) ack 1 win 32256 [tos 0x8]
+12:05:34.035688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 33793 win 15872
+12:05:34.035688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 49153:49665(512) ack 1 win 32256 [tos 0x8]
+12:05:34.055688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 34305 win 16384
+12:05:34.055688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 49665:50177(512) ack 1 win 32256 [tos 0x8]
+12:05:34.055688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 50177:50689(512) ack 1 win 32256 [tos 0x8]
+12:05:34.095688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 35329 win 16384
+12:05:34.095688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 50689:51201(512) ack 1 win 32256 [tos 0x8]
+12:05:34.095688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50589:924@7400)
+12:05:34.095688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50589:1480@5920+)
+12:05:34.095688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50589:1480@4440+)
+12:05:34.095688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50589:1480@2960+)
+12:05:34.095688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 51201:51713(512) ack 1 win 32256 [tos 0x8]
+12:05:34.095688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50589:1480@1480+)
+12:05:34.095688 galadriel.ci.tuwien.ac.at.560f240a > fangorn.ci.tuwien.ac.at.nfs: 1472 write [|nfs] (frag 50589:1480@0+)
+12:05:34.105688 fangorn.ci.tuwien.ac.at.nfs > galadriel.ci.tuwien.ac.at.560f240a: reply ok 96 write [|nfs]
+12:05:34.105688 erpc9.ud.tuwien.ac.at.netbios-dgm > 128.130.170.127.netbios-dgm: udp 211
+12:05:34.115688 galadriel.ci.tuwien.ac.at.771 > fangorn.ci.tuwien.ac.at.731: udp 88
+12:05:34.115688 fangorn.ci.tuwien.ac.at.731 > galadriel.ci.tuwien.ac.at.771: udp 32
+12:05:34.115688 galadriel.ci.tuwien.ac.at.1099 > tutimea.tuwien.ac.at.domain: 5886+ (45)
+12:05:34.115688 tutimea.tuwien.ac.at.domain > galadriel.ci.tuwien.ac.at.1099: 5886* 1/3/3 (216)
+12:05:34.135688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 36353 win 16384
+12:05:34.135688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 51713:52225(512) ack 1 win 32256 [tos 0x8]
+12:05:34.135688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 52225:52737(512) ack 1 win 32256 [tos 0x8]
+12:05:34.215688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 37377 win 16384
+12:05:34.215688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 52737:53249(512) ack 1 win 32256 [tos 0x8]
+12:05:34.215688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 53249:53761(512) ack 1 win 32256 [tos 0x8]
+12:05:34.295688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 38401 win 16384
+12:05:34.295688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 53761:54273(512) ack 1 win 32256 [tos 0x8]
+12:05:34.295688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 54273:54785(512) ack 1 win 32256 [tos 0x8]
+12:05:34.325688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 39425 win 16384
+12:05:34.325688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . 54785:55297(512) ack 1 win 32256 [tos 0x8]
+12:05:34.325688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: P 55297:55561(264) ack 1 win 32256 (DF) [tos 0x8]
+12:05:34.325688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: F 55561:55561(0) ack 1 win 32256 [tos 0x8]
+12:05:34.345688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 40449 win 16384
+12:05:34.375688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 41473 win 16384
+12:05:34.385688 tp1.ilb.tuwien.ac.at.netbios-ns > 255.255.255.255.netbios-ns: udp 50
+12:05:34.385688 tp1.ilb.tuwien.ac.at.netbios-ns > 255.255.255.255.netbios-ns: udp 50
+12:05:34.385688 tp1.ilb.tuwien.ac.at.netbios-ns > 255.255.255.255.netbios-ns: udp 50
+12:05:34.415688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 42497 win 16384
+12:05:34.435688 e2pc1.ud.tuwien.ac.at.netbios-ns > 128.130.170.127.netbios-ns: udp 50
+12:05:34.455688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 43009 win 16384
+12:05:34.495688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 44033 win 16384
+12:05:34.545688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 45057 win 16384
+12:05:34.595688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 46081 win 16384
+12:05:34.625688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 47105 win 16384
+12:05:34.645688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 48129 win 16384
+12:05:34.655688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 48641 win 16384
+12:05:34.685688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 49665 win 16384
+12:05:34.705688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 50689 win 16384
+12:05:34.725688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 51713 win 16384
+12:05:34.745688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 52737 win 16384
+12:05:34.765688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 53761 win 16384
+12:05:34.795688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 54785 win 16384
+12:05:34.825688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: . ack 55562 win 16384
+12:05:34.825688 sungold1.at.ibm.net.2797 > thorin.ci.tuwien.ac.at.ftp-data: F 1:1(0) ack 55562 win 16384
+12:05:34.825688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2797: . ack 2 win 32256 (DF) [tos 0x8]
+12:05:34.955688 erpc3.ud.tuwien.ac.at.netbios-ns > tutimea.tuwien.ac.at.domain: 124+ (47)
+12:05:34.965688 tutimea.tuwien.ac.at.domain > erpc3.ud.tuwien.ac.at.netbios-ns: 124* 0/1/0 (108)
+12:05:35.105688 sungold1.at.ibm.net.4251 > thorin.ci.tuwien.ac.at.ftp: P 98:126(28) ack 259 win 16384
+12:05:35.105688 thorin.ci.tuwien.ac.at.ftp > sungold1.at.ibm.net.4251: P 259:289(30) ack 126 win 32736 (DF) [tos 0x10]
+12:05:35.135688 tp1.ilb.tuwien.ac.at.netbios-ns > 255.255.255.255.netbios-ns: udp 50
+12:05:35.145688 tp1.ilb.tuwien.ac.at.netbios-ns > 255.255.255.255.netbios-ns: udp 50
+12:05:35.145688 sungold1.at.ibm.net.4251 > thorin.ci.tuwien.ac.at.ftp: P 126:147(21) ack 289 win 16384
+12:05:35.145688 tp1.ilb.tuwien.ac.at.netbios-ns > 255.255.255.255.netbios-ns: udp 50
+12:05:35.145688 thorin.ci.tuwien.ac.at.47154c5d > fangorn.ci.tuwien.ac.at.nfs: 120 lookup [|nfs]
+12:05:35.145688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c5d: reply ok 128 lookup [|nfs]
+12:05:35.145688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2811: S 3916373758:3916373758(0) win 512 <mss 1460> [tos 0x8]
+12:05:35.165688 thorin.ci.tuwien.ac.at.ftp > sungold1.at.ibm.net.4251: . ack 147 win 32736 (DF) [tos 0x10]
+12:05:35.165688 sungold1.at.ibm.net.2811 > thorin.ci.tuwien.ac.at.ftp-data: S 1918079719:1918079719(0) ack 3916373759 win 16384 <mss 512>
+12:05:35.165688 thorin.ci.tuwien.ac.at.ftp-data > sungold1.at.ibm.net.2811: . ack 1 win 32120 (DF) [tos 0x8]
+12:05:35.165688 thorin.ci.tuwien.ac.at.ftp > sungold1.at.ibm.net.4251: P 289:364(75) ack 147 win 32736 (DF) [tos 0x10]
+12:05:35.165688 thorin.ci.tuwien.ac.at.47154c5e > fangorn.ci.tuwien.ac.at.nfs: 104 getattr [|nfs]
+12:05:35.165688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c5e: reply ok 96 getattr [|nfs]
+12:05:35.165688 thorin.ci.tuwien.ac.at.47154c5f > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:35.165688 thorin.ci.tuwien.ac.at.47154c60 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:35.165688 thorin.ci.tuwien.ac.at.47154c61 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:35.165688 thorin.ci.tuwien.ac.at.47154c62 > fangorn.ci.tuwien.ac.at.nfs: 116 read [|nfs]
+12:05:35.165688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45270:1244@2960)
+12:05:35.165688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45270:1480@1480+)
+12:05:35.175688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c5f: reply ok 1472 read [|nfs] (frag 45270:1480@0+)
+12:05:35.175688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45271:1244@2960)
+12:05:35.175688 fangorn.ci.tuwien.ac.at > thorin.ci.tuwien.ac.at (frag 45271:1480@1480+)
+12:05:35.175688 fangorn.ci.tuwien.ac.at.nfs > thorin.ci.tuwien.ac.at.47154c60: reply ok 1472 read [|nfs] (frag 45271:1480@0+)
+12:05:35.175688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50592:924@7400)
+12:05:35.175688 galadriel.ci.tuwien.ac.at > fangorn.ci.tuwien.ac.at (frag 50592:1480@5920+)

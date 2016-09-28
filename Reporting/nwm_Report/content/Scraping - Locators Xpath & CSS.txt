@@ -1,0 +1,48 @@
+
+
+We can see that there are three reliable ways to pull each of the elements from the page, which would like like to scrape. Below are some examples of each.
+
+HTML Tags are easy to use, clear to read and also quite general. them being general can be good and bad: the good side being that they will always pick up the things that you want, but unfortunaztely also some things that are similar, but not exactly what was required.
+Xpaths are better, as they specify the location of each element. Assuming that the HTML code has a regular form and so a clear tree structure for all its classes, we can locate all the elements precisely on an individual basis. We can then generalise the exypression slightly to simply get all those elements that lie in the specific branches of the tree.
+CSS Tags are the most descriptive, which is reflected in the relative size of the tags in comparison with those of HTML or Xpath. Needless to say, CSS paths locate exactly what is required. The Tags can also be shortened with the help of some free tools, 
+
+
+To decide which is better boils down (in our case) to which locator improves speed and reliability.
+Brief comparison of Xpath and CSS in different browsers: http://elementalselenium.com/tips/32-xpath-vs-css
+A more in depth benchmarking of the methods  in different browsers: http://elementalselenium.com/tips/33-xpath-vs-css-revisited
+A side-by-side comparison of the tags in both Xpath and CSS that would retutn the correct element:http://saucelabs.com/resources/selenium/css-selectors
+
+
+The bottom line is that one must choose the method that suits the task at hand. CSS for example cannot traverse through code, and Xpath can be unreadable and so confusing (just to state a drawback of each method). As can be seen below by the tags required for parsing the Twitter's HTML code, the more descriptive CSS becomes absurdly long due to the 'busy' Twitter pages. the Xpath tags on the other hand remain rather short in comparison. They also still get the job done, and so with this reasoning, Xpath will be the locator method utilised.
+
+Tweet text
+HTML Tags
+<p class="TweetTextSize js-tweet-text tweet-text" lang="en" data-aria-label-part="0">
+<p class="TweetTextSize js-tweet-text tweet-text" lang="en" data-aria-label-part="0">
+<p class="TweetTextSize js-tweet-text tweet-text" lang="en" data-aria-label-part="0">
+
+XPaths
+/html/body/div[2]/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div/div/div[2]/ol[1]/li[2]/div/div[2]/p
+/html/body/div[2]/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div/div/div[2]/ol[1]/li[22]/div/div[2]/p/strong[2]
+/html/body/div[2]/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div/div/div[2]/ol[1]/li[27]/div/div[2]/p
+
+CSS Tags (only one example)
+html body.three-col.logged-out.ms-windows.AdaptiveSearchPage.AdaptiveDefaultPage.supports-drag-and-drop div#doc div#page-outer div#page-container.AppContent.wrapper-search div.AppContainer div.AppContent-main.u-cf div.Grid.Grid--withGutter div.Grid-cell.u-size2of3.u-lg-size3of4 div.Grid.Grid--withGutter div.Grid-cell.u-size2of2.u-lg-size2of3 div#timeline.content-main.AdaptiveSearchTimeline div.stream-container div.stream.search-stream ol#stream-items-id.stream-items.js-navigable-stream li#stream-item-tweet-472813633764749313.js-stream-item.stream-item.stream-item.expanding-stream-item div.tweet.original-tweet.js-original-tweet.js-stream-tweet.js-actionable-tweet.js-profile-popup-actionable div.content p.TweetTextSize.js-tweet-text.tweet-text
+
+
+-------------------------------------------------------------------------------------
+
+Retweets
+HTML Tags
+<button class="ProfileTweet-actionButton js-actionButton js-actionRetweet" type="button" data-modal="ProfileTweet-retweet">
+<button class="ProfileTweet-actionButton js-actionButton js-actionRetweet" type="button" data-modal="ProfileTweet-retweet">
+<button class="ProfileTweet-actionButton js-actionButton js-actionRetweet" type="button" data-modal="ProfileTweet-retweet">
+
+Xpaths
+/html/body/div[2]/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div/div/div[2]/ol[1]/li[8]/div/div[2]/div[3]/div[2]/div[2]/button[1]
+/html/body/div[2]/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div/div/div[2]/ol[1]/li[5]/div/div[2]/div[3]/div[2]/div[2]/button[1]
+/html/body/div[2]/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div/div/div[2]/ol[1]/li[13]/div/div[2]/div[3]/div[2]/div[2]/button[1]
+
+CSS Tags (again, just the one example)
+html body.three-col.logged-out.ms-windows.AdaptiveSearchPage.AdaptiveDefaultPage.supports-drag-and-drop div#doc div#page-outer div#page-container.AppContent.wrapper-search div.AppContainer div.AppContent-main.u-cf div.Grid.Grid--withGutter div.Grid-cell.u-size2of3.u-lg-size3of4 div.Grid.Grid--withGutter div.Grid-cell.u-size2of2.u-lg-size2of3 div#timeline.content-main.AdaptiveSearchTimeline div.stream-container div.stream.search-stream ol#stream-items-id.stream-items.js-navigable-stream li#stream-item-tweet-472856150053228545.js-stream-item.stream-item.stream-item.expanding-stream-item div.tweet.original-tweet.js-original-tweet.js-stream-tweet.js-actionable-tweet.js-profile-popup-actionable div.content div.stream-item-footer div.ProfileTweet-actionList.js-actions div.ProfileTweet-action.ProfileTweet-action--retweet.js-toggleState.js-toggleRt button.ProfileTweet-actionButton.js-actionButton.js-actionRetweet
+-------------------------------------------------------------------------------------

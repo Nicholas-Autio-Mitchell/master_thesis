@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+my\PYGZus{}function \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{k+kr}{function}\PYG{p}{(}input\PYGZus{}1\PYG{p}{,} input\PYGZus{}2\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{matrix}\PYG{p}{(}\PYG{l+m}{0}\PYG{p}{,} \PYG{l+m}{3}\PYG{p}{,} \PYG{l+m}{2}\PYG{p}{)}
+    \PYG{k+kp}{print}\PYG{p}{(}intput\PYGZus{}1 \PYG{o}{+} input\PYGZus{}2\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

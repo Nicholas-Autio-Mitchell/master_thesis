@@ -1,0 +1,122 @@
+## Working Notes
+
+## 06 Aug 2015
+
+script to import data successfulm however the form of the data causes problems in follwing steps i.e. during the data cleansing.
+
+- non-ASCII characters cause errors in some of the tm_map functions.
+- we can see where these are using:
+  grep("I_WAS_NOT_ASCII", iconv(x, "latin1", "ASCII", sub="I_WAS_NOT_ASCII"))
+  grep("I_WAS_NOT_ASCII", iconv(x, "latin1", "ASCII", sub="I_WAS_NOT_ASCII"))
+- We must find a way to systematically remove the characters - deleting the effected tweets isn't an option as there are so many of them.
+The following link helps: http://stackoverflow.com/questions/9934856/removing-non-ascii-characters-from-data-files
+
+## 07 August
+
+Worked on improvements for the initial project poster
+Improved the script for searching twitter to bring the cleaning steps all together into one function
+
+## 10 August
+
+- Meeting with Prof Okhrin
+- Matlab Machinelles Lernen - potentially useful for getting quick overviews. Required a few toolboxes to be really useful.
+
+## 11 August
+
+Cleaning data - how to get rid of emojis and also remove some of the HTML coding for useful characters e.g. Ampersands that appear in some company names
+Learning how to parse and play with text usunf functions: grep, grepl, sub, gsub - along with the ways of working with regular expressions.
+
+End point - have all tweet that include emojis in variable 'y' to work through found methods for one which suits requirements
+
+## 12 August
+
+Start point - use text variable 'y' to remove emojis completely. Possibly go through all UTF-8 coding manually to keep good ones that may otherwise be removed by sweeping tm_map functions to remove punctuation and other stopWords
+
+the order of cleaning the data is important... testing:
+
+1. pull tweets - format is a list
+2. convert into text
+3. pull all standard ASCII text out, to remove emojis
+4. convert HTML ampersands back into just ampersands (stocks and indices may require them e.g. S&P500, H&M, ...)
+5. remove usernames, so who posted the tweet or other users mentioned...? Otherwise they remain there after step 6.
+6. remove all punctuation and other non-standard characters - leaving only alpha-numeric characters (and ampersands!)
+7. remove all links, so everything beginning with "http" --> twitter automatically shrinks links so they don't tell us anything anyway.
+8. Perform any remaining specific parsing using regex - e.g. finding and removing any non-English tweets
+9. convert cleansed text into a corpus for futher manipulation.
+
+
+## 13 August
+
+Refining oder of cleaning steps to be taken for the tweets, also if some are more effective when performed in the tet stage, or after the tweets have been converted into a corpus
+
+Begin writing outline for an introduction chapter - overview to data mining and methods of data analysis.
+Includes information about:
+  - The requirement and expectation of data mining and Big Data implementation
+  - The available data that can be reaily extracted and analysed
+  - Matlab, Python and R
+  - Statistical methods used e.g. classification methods, regression methods
+
+
+## 14 August
+
+Meeting with Rupert and Niko --> presentation of data extraction/cleansing and discussion on next steps.
+
+Discovered that the step to remove foreign tweets (using keyword: abre) will remove ALL tweets from the list if the keyword is not present at least once in the entire text. A fix would be a simple if-statement to check that at least one tweet would be removed.
+
+Discovered the required keys required to pull dates and other info from each of the tweets
+
+
+## 17 August
+
+Begin pulling text and dates of tweets together into text vectors to clean.
+
+Goal 1: be able to plot the information in terms of frequency.
+Overlay frequency/no. of tweets on one specific day with keyword 'Dow Jones OR #DowJones' etc. together with the actual index itself.
+
+Goal 2: Begin working on the creation of a wordcloud for a single source to answer the question (e.g.) "what did NYT say?"
+
+Whilst looking at the dates pulled from the extracted tweets, noticed that not all of the tweets are collected in a chronological manner.
+ Short script simply to output a matrix showing where the timeline of the tweets is not completely chronological
+# a value of 1 shows that the date of that tweet is larger than that of the following, meaning that the tweet at that index was created closer to the present (as the tweet at index 1 is the most recent)
+
+For us, this observation is not an issue as we only hope to classify the tweets into daily intervals.
+There happens due to the way in which the tweets are extracted by the twitteR package (and in general, how tweets are offered via the Twitter API).
+The pages of tweets are scanned, and during the time it takes to scan pages - a paging error.
+In a study of 459 tweets, 398 were correctly ordered chronologically, meaning an 'error rate' of 13.1 %. If this is acceptable or not is still to be decided.
+The problem that is raised on the link below, is that this paging can also lead to tweets being completely missed, due to there position on the page being shifted out of range before being collected.
+Source for in depth explanation: https://dev.twitter.com/rest/public/timelines
+
+
+## 18 August
+
+Finalised method for arranging all (up to now) desired data into a data table with unique identifiers, with the hope that it makes further manipulation more straightforward e.g. when plotting or plugging data into time-series analyses.
+
+Need to decide if it is advantageous to stick with either corpa or data tables for storing the preprocessed/cleaned data
+Can be be seemlessly extracted for use in package 'tseries', as an example? Corpa can hold any data type so will definitely work, even if some conversions are necessary. Data tables: need to research/use them more...
+
+Discovered that sentiment analysis may require a different cleaning approach as many of the, for example punctuation and stop-words ("the", "and", "it", ...) can be utilised to positive effect - smileys that appear as ":-)" and so on my still be there. Tokens can be used to label stop words in terms of their context i.e. position in relation to other words and the sentiment of the tweet up until their appearance, meaning a sentiment score for the stop words themselves may be generated, or they may help improve the comprehension of the tweets by helping with context and so leading to more accurate sentiment scores.
+Consult literature:
+  - "Sentiment Analysis of Twitter Data, Apoorv Agarwal et. al."
+  - "Exploiting Emoticons in Sentiment Analysis, Alexander Hogenboom et. al."
+  - http://instagram-engineering.tumblr.com/post/117889701472/emojineering-part-1-machine-learning-for-emoji
+  - http://instagram-engineering.tumblr.com/post/118304328152/emojineering-part-2-implementing-hashtag-emoji
+
+A possible compromise would be to simply take the most obvious smileys and include them in the data. These should be things that are easy to quantify, such as ":)", ":(" and ":P". Testing has showed that searching for ":)" does also return almost all variants of the 'happy' smiley, presumably also for 'sad'.
+Some smiley even appear in R (no idea how!) ☺️☺️☺️
+
+
+## 19 August
+
+GOAL: Have all data ready for visualisation
+
+It turns out that the function 'searchTwitter' returns zero tweets (claiming that the API was not able to return any) if a 'since' variable is explicitly passed into the function. This means that it will be necessary to visually check the time series of tweets pulled after extraction.
+
+## 20 August
+
+GOAL: Be able to visualise all data together to inspect for correlations and problems. Prepare to present
+
+# Display how many of the tweets that remain are 'retweets', meaning they are duplicates. These are usally left in data sets as someone is sharing that feeling and so, although the 'tetweeter' didn't atually compose the tweet, they did post it. These tweets are therefore quite important because if we quantify sentiment incorrectly, it will produce a large error in the output of sentiment analysis. Conversely it adds strength to our analysis if we can analyse the sentiment accurately.
+
+## 21 August
+
+Meeting with Rupert and Niko --> present new code, chosen data sets and first attempts at visualisation

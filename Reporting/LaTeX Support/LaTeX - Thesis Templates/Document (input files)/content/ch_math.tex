@@ -1,0 +1,132 @@
+\chapter{Math stuff}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Equations and math mode}
+
+We are able to create automatically enumerated equation as the following one
+\begin{equation}
+	f(x)
+	= A^{23}_{ijkl}(x) \int_0^l\limits g(y,x) \frac{\partial h(y,x)}{\partial y} d y \ .
+	\label{math_fe}
+\end{equation}
+Equation can be given a name/label. In order to refer to it later in the text the package \imp{amsmath} has to be included. After including the package, the command to refer to labeled equation is \eqref{math_fe}.
+
+Equation without a number can be created as follows
+\begin{equation*}
+	f(x)
+	= A^{23}_{ijkl}(x) \int_0^l\limits g(y,x) \frac{\partial h(y,x)}{\partial y} d y \ ,
+\end{equation*}
+or alternatively 
+\[
+	f(x)
+	= A^{23}_{ijkl}(x) \int_0^l\limits g(y,x) \frac{\partial h(y,x)}{\partial y} d y \ .
+\]
+
+You can also create a so called equation array with automatic numbering, e.g.,
+\begin{eqnarray}
+	f(x)
+		&=& (x+a)^2 \label{eqna1} \\
+		&=& (x+a)(x+a) \label{eqna2}\\
+		&=& x^2 + 2 x a + a^2
+	\label{eqnaend}
+\end{eqnarray}
+You can refer to \eqref{eqna1} and \eqref{eqnaend} separately. The very same can be created without any numbers as
+\begin{eqnarray*}
+	f(x)
+		&=& (x+a)^2 \\
+		&=& (x+a)(x+a) \\
+		&=& x^2 + 2 x a + a^2
+\end{eqnarray*}
+
+Sometimes math content will be explained directly within the text. For these cases the math mode using \imp{\$\$} can be used, e.g., $f(x) = x^{234}_{ijkl}$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Arrays and matrices}
+
+Arrays can be used within math environments in order to create a grid with math elements, e.g.,
+\begin{equation}
+	\begin{array}{rcr}
+	x + y + z 
+		& m_{1234567} 
+		& 13425436543634 \\
+	A^{23}_{ijkl}(x) \int_0^l\limits g(y,x) \frac{\partial h(y,x)}{\partial y} d y 
+		& n_{k} 
+		& 123
+	\end{array}
+\end{equation}
+A set of equations can also be arranged as follows
+\begin{equation}
+	\begin{array}{rcl}
+	f(x)
+	&=& A^{23}_{ijkl}(x) \int_0^l\limits g(y,x) \frac{\partial h(y,x)}{\partial y} d y \\
+	&=& 7 x \ .
+	\end{array}
+\end{equation}
+This is an alternative to \imp{eqnarray} with a single centered number, but some symbols may not be displayed as wanted. In order to force a full size display of a chosen element of the array the command \imp{displaystyle} can be used
+\begin{equation}
+	\begin{array}{rcl}
+	f(x)
+	&=& \displaystyle A^{23}_{ijkl}(x) \int_0^l\limits g(y,x) \frac{\partial h(y,x)}{\partial y} d y \\
+	&=& 7 x \ .
+	\end{array}
+\end{equation} 
+
+Arrays can also be used in order to represent matrices, e.g., 
+\begin{equation}
+	\left(
+	\begin{array}{cccc}
+	123123 & 324 & 214 & 4 \\
+	43& 345345645 & 45353465 & 346
+	\end{array}
+	\right) \ .
+\end{equation}
+Alternatively matrices can be created with the following environments
+\begin{equation}
+	\begin{pmatrix}
+	123123 & 324 & 214 & 4 \\
+	43& 345345645 & 45353465 & 346
+	\end{pmatrix} 
+	\quad
+	\begin{bmatrix}
+	123123 & 324 & 214 & 4 \\
+	43& 345345645 & 45353465 & 346
+	\end{bmatrix}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Math fonts}
+
+Depending on what is to be presented or discussed in the work, several math fonts might be useful for different concepts. For extended fonts the package \imp{amssymb} is needed. The basic fonts are then
+\[
+	\begin{array}{lccccc}
+	\text{default} & r & R & Sym^+ & \gamma & \Gamma \\
+	\text{bb} & \mathbb{r} & \mathbb{R} & \mathbb{Sym^+} & \mathbb{\gamma}& \mathbb{\Gamma} \\ 
+	\text{bf} & \mathbf{r} & \mathbf{R} & \mathbf{Sym^+} & \mathbf{\gamma}& \mathbf{\Gamma} \\
+	\text{cal} & \mathcal{r} & \mathcal{R} & \mathcal{Sym^+} & \mathcal{\gamma}& \mathcal{\Gamma} \\
+	\text{frak} & \mathfrak{r} & \mathfrak{R} & \mathfrak{Sym^+} & \mathfrak{\gamma}& \mathfrak{\Gamma} \\
+	\text{it} & \mathit{r} & \mathit{R} & \mathit{Sym^+} & \mathit{\gamma}& \mathit{\Gamma} \\
+	\text{rm} & \mathrm{r} & \mathrm{R} & \mathrm{Sym^+} & \mathrm{\gamma}& \mathrm{\Gamma} \\
+	\text{sf} & \mathsf{r} & \mathsf{R} & \mathsf{Sym^+} & \mathsf{\gamma}& \mathsf{\Gamma} \\
+	\text{tt} & \mathtt{r} & \mathtt{R} & \mathtt{Sym^+} & \mathtt{\gamma}& \mathtt{\Gamma} \\
+	\text{boldsymbol} & \boldsymbol{r} & \boldsymbol{R} & \boldsymbol{Sym^+} & \boldsymbol{\gamma}& \boldsymbol{\Gamma} \\
+	\end{array}
+\]
+The commands \imp{mathbb} and others can be changed using different packages, e.g., \imp{euscript} and \imp{lucida} (look for latex math fonts in stackexchange). It is very useful to define the most used fonts as new commands within your personal macros, e.g., $\bbA$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Math symbols}
+\label{math_msymb}
+
+The amount of math symbols offered in latex is immense. Some of them are, e.g., 
+\begin{equation}
+	\sum , \int , \iiint , \nabla , \cdot , \times , \otimes , \rightarrow , \Rightarrow , \bigcup , \in , \subset .
+\end{equation}
+You will have to look for those you might need.

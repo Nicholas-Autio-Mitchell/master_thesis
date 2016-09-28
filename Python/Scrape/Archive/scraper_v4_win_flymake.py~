@@ -1,0 +1,114 @@
+import os
+import time
+from time import strftime
+from selenium import webdriver
+
+STATUS_OK      = 0
+STATUS_ERROR   = 1
+STATUS_FAILURE = 2
+
+date_list = ['2015-09-15', '2015-09-01', '2015-08-15', '2015-08-01','2015-07-15', '2015-07-01', '2015-06-15', '2015-06-01', '2015-05-15', '2015-05-01', '2015-04-15', '2015-04-01', '2015-03-15', '2015-03-01', '2015-02-15', '2015-02-01', '2015-01-15', '2015-01-01', '2014-12-15', '2014-12-01', '2014-11-15', '2014-11-01', '2014-10-15', '2014-10-01','2015-09-15', '2015-09-01', '2015-08-15', '2015-08-01', '2015-07-15', '2015-07-01', '2015-06-15', '2015-06-01', '2015-06-15', '2015-06-01', '2015-06-15', '2015-06-01','2015-09-15', '2015-09-01', '2015-08-15', '2015-08-01', '2015-07-15', '2015-07-01', '2015-06-15', '2015-06-01', '2015-06-15', '2015-06-01', '2015-06-15', '2015-06-01']
+
+scroll_limit = 5
+
+
+print("******* Configuring file paths based on current operating system *******")
+
+# Define the operating system dependent paths
+from sys import platform as operating_system
+
+if operating_system == "darwin":
+    # OS X
+    lite_profile = webdriver.FirefoxProfile("/Users/nicholasmitchell/Library/Application Support/Firefox/Profiles/wrp6us7q.Lite")
+    #output_file = '/Users/nicholasmitchell/Volumes/Mac OS Drive/Documents/Box/scrape_raw/' + search_words + '/' + start_date + '_til_' + end_date + '.txt'
+    print("+ working on operating system: OS x")
+elif operating_system == "win32":
+    # Windows...
+    lite_profile = webdriver.FirefoxProfile('C:\\Users\\dev231\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\o28gcy68.Lite-Firefox')
+    #output_file = 'C:\\Users\\dev231\\Box Sync\\scrape_raw\\' + search_words + '\\' + start_date + '_til_' + end_date + '.txt'
+    print("+ working on operating system: Windows 8")    
+elif operating_system == "linux" or operating_system == "linux2":
+    # linux
+    print("We aren't set up for a Linux system...")
+
+# Create the url - assuming we are always moving backwardsd into time
+
+# Define the class which performs the scrape
+class Scraper:
+        
+    print("******* Creating Chrome instance - " + strftime("%Y-%m-%d %H:%M:%S") + " *******")
+    def iterator(self, end_date, start_date):
+        lite_profile = webdriver.FirefoxProfile("/Users/nicholasmitchell/Library/Application Support/Firefox/Profiles/wrp6us7q.Lite")
+        search_words = 'Merkel Deutschland'       # For the file paths and printed summary
+        search_term = 'Merkel%20Deutschland'      # '%20' is a space in a url
+        # start_date = '2015-09-10'
+        # end_date = '2015-09-01'
+        #url = "https://www.google.de/?gfe_rd=cr&ei=7bgDVsenMouu8weQs4noBA#q=something+funny"
+        url = 'https://twitter.com/search?q=' + search_term + '%20-abre%20lang%3Aen%20since%3A' + end_date + '%20until%3A' + start_date + '&src=typd'
+        output_file = '/Users/nicholasmitchell/Volumes/Mac OS Drive/Documents/Box/scrape_raw/' + search_words + '/' + start_date + '_til_' + end_date + '.txt'
+
+        # Define how many times to scroll to the bottom of the page for Twitter to load more tweets (if still within the date range submitted)
+        # This value should allow for the date range to be completed - heuristic for now...
+
+        print("******* Defining session - " + strftime("%Y-%m-%d %H:%M:%S") + " *******")
+
+        self.init_driver(url, lite_profile)
+        self.scrape(output_file)
+
+
+        # Finish timing and print the results with a summary
+        total_time_elapsed = (time.time() - start_time)
+        m, s = divmod(total_time_elapsed, 60)
+        h, m = divmod(m, 60)
+        d, h = divmod(h, 24)
+
+        # Print scrape summary to Python terminal
+        print("\n+ ---------- Summary ---------- +")
+        print("+ Searched term(s): " + search_words)
+        print("+ Date limits: " + start_date + " to " + end_date)
+        print("+ Number of scrolls: " + str(scroll_limit - 1))
+        print("+ Time taken (D:HH:MM:SS): " + "%d:%02d:%02d:%02d" % (d, h, m, s) + "\n")
+    
+    def init_driver(self, url, lite_profile):
+        self.driver = webdriver.Firefox(firefox_profile = lite_profile)
+        print("+ Opened Firefox instance")
+        self.driver.implicitly_wait(3)
+        self.base_url = url
+        print("+ inserted url...")
+        self.verificationErrors = []
+        self.accept_next_alert = True
+        
+    def scrape(self, output_file):
+        driver = self.driver
+        time.sleep(3)
+        driver.get(self.base_url)
+        print("******* Beginning scroll sequence - " + strftime("%Y-%m-%d %H:%M:%S") + " *******")
+        
+        for i in range(1, scroll_limit):
+            if divmod(i, 100) == 0:
+                print("Currently at scroll number: " + i)
+            self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(2)
+
+        print("******* Scrolling completed - " + strftime("%Y-%m-%d %H:%M:%S") + " *******")
+        print("******* Creating and saving output file - " + strftime("%Y-%m-%d %H:%M:%S") + " *******")    
+
+        # Create the firectory for the result of necessary, then put the output file there...
+        if not os.path.exists(os.path.dirname(output_file)):
+            os.makedirs(os.path.dirname(output_file))
+        with  open(output_file, "w") as file:
+              file.write(driver.page_source.encode('utf-8'))
+
+        time.sleep(5)
+        driver.quit()
+        
+        print("******* Finished saving output file... Closing Firefox instance - " + strftime("%Y-%m-%d %H:%M:%S") + " *******")
+
+# start the stopwatch and create an instance of the Scraper class
+start_time = time.time()
+# Make an instance of the Scraper class
+scrape_session = Scraper()
+# Loop through the date list
+for ii in range(1, len(date_list)):
+    scrape_session.iterator(date_list[ii], date_list[ii -1])
+    print("Scrape session for dates: " + date_list[ii] + date_list[ii -1] + " complete")

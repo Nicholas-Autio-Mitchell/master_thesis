@@ -1,0 +1,27 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{} Hex codes: http://www.asciitable.com/}
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{} The characters each line removes are written on the right}
+tweet.cleaner \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{k+kr}{function}\PYG{p}{(}x\PYG{p}{)} \PYG{p}{\PYGZob{}}
+
+    \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZam{}amp;\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZam{}\PYGZdq{}}\PYG{p}{,} x\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}[\PYGZca{}\PYGZbs{}\PYGZbs{}x\PYGZob{}20\PYGZcb{}\PYGZhy{}\PYGZbs{}\PYGZbs{}x\PYGZob{}7F\PYGZcb{}]\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} Leaves only ascii characters}
+                                                  \PYG{c+c1}{\PYGZsh{} Removes:}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZbs{}x\PYGZob{}22\PYGZcb{}*\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} \PYGZdq{}}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZbs{}x\PYGZob{}23\PYGZcb{}*\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} \PYGZsh{}}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZbs{}x\PYGZob{}24\PYGZcb{}*\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} \PYGZdl{}}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZbs{}x\PYGZob{}25\PYGZcb{}*\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} \PYGZpc{}}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZca{}\PYGZbs{}\PYGZbs{}x\PYGZob{}27\PYGZcb{}\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} \PYGZsq{}}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZbs{}.\PYGZob{}2,\PYGZcb{}\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{} \PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} two or more .}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZbs{}x\PYGZob{}2A\PYGZcb{}*\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} *}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZbs{}x\PYGZob{}5B\PYGZcb{}*\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} [}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZbs{}x\PYGZob{}5D\PYGZcb{}*\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} ]}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZbs{}x\PYGZob{}5F\PYGZcb{}*\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} \PYGZus{}}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZbs{}\PYGZbs{}x\PYGZob{}60\PYGZcb{}*\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} `}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}[\PYGZbs{}\PYGZbs{}x\PYGZob{}7B\PYGZcb{}\PYGZhy{}\PYGZbs{}\PYGZbs{}x\PYGZob{}7F\PYGZcb{}]\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{,} perl \PYG{o}{=} \PYG{k+kc}{TRUE}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} 5 characters: \PYGZob{} | \PYGZcb{} \PYGZti{} DEL}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}http\PYGZbs{}\PYGZbs{}S+\PYGZbs{}\PYGZbs{}s*\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} remove URLs}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZca{}\PYGZbs{}\PYGZbs{}.?\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}  \PYG{c+c1}{\PYGZsh{} Remove any . at beginning of string}
+        stripWhitespace\PYG{p}{()} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZca{} \PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{)} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}
+        \PYG{k+kp}{gsub}\PYG{p}{(}\PYG{l+s}{\PYGZdq{} \PYGZdl{}\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+m}{.}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

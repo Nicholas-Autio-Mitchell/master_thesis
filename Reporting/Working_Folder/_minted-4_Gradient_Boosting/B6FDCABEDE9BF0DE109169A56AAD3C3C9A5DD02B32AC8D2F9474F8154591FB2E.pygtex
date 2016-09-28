@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+ \PYG{o}{\PYGZgt{}} \PYG{k+kn}{library}\PYG{p}{(}mboost\PYG{p}{)}                    \PYG{p}{(}lib\PYG{p}{)}
+
+ \PYG{o}{\PYGZgt{}} Gaussian\PYG{p}{()}                         \PYG{p}{(}fam\PYG{p}{)}
+
+     Squared Error \PYG{p}{(}Regression\PYG{p}{)}
+
+     Loss \PYG{k+kr}{function}\PYG{o}{:} \PYG{p}{(}y \PYG{o}{\PYGZhy{}} f\PYG{p}{)}\PYG{o}{\PYGZca{}}\PYG{l+m}{2}
+
+
+ \PYG{o}{\PYGZgt{}} slot\PYG{p}{(}Gaussian\PYG{p}{(),} \PYG{l+s}{\PYGZdq{}ngradient\PYGZdq{}}\PYG{p}{)}      \PYG{p}{(}ngrad\PYG{p}{)}
+
+     \PYG{k+kr}{function} \PYG{p}{(}y\PYG{p}{,} f\PYG{p}{,} w \PYG{o}{=} \PYG{l+m}{1}\PYG{p}{)}
+
+     y \PYG{o}{\PYGZhy{}} f
+\end{Verbatim}

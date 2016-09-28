@@ -1,0 +1,55 @@
+\chapter{Basics}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[OC]{\leftmark}
+\fancyhead[EC]{\rightmark}
+%\renewcommand{\footrulewidth}{1pt}
+\cfoot{\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Section types}
+
+The basic sections in a book are chapter, section, subsections and so on. These sections will appear in the \imp{tableofcontents} of the book.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Example subsection}
+
+This is just one example for a subsection.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Basic page settings}
+
+In order to show how the basic page settings are set up, we will use a long dummy text with the package \imp{blindtext}.
+
+\blindtext[6]
+
+\blindtext
+
+\blindtext[7]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Head and foot}
+
+The head and foot of the document can be adapted using the packages \imp{fancyhdr}. The using the commands, e.g., \imp{pagestyle\{fancy\}}, \imp{l/c/rhead/foot} or with \imp{fancyhead/foot[EL,CO]} the respective parts can be edited as needed.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{New commands and input}
+
+If some long commands for formatting or other utilities are use very often, e.g., \textbf{test}, \textit{test}, \textbf{\textit{test}}, then the definition of new personal commands is very useful. For this the command \imp{newcommand} is used before the document, e.g., \tbi{test}. Over time the collection of personal commands will grow, so for these it is better to create a separate file and copy this file to the current project folder. The file can be then loaded within the project with the command \imp{input} before the document.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Language}
+
+The default language for the document is English. This can be changed, e.g., in German (with the package \imp{ngerman}) or whatever you need. This changes the language of automatically generated words like chapter, figure, table, and others. It should be also noted that in most latex editors dictionaries for several languages can be used (see \imp{options}).

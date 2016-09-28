@@ -1,0 +1,385 @@
+
+
+
+\documentclass{pracjourn}
+\usepackage{fancyvrb}
+
+%% Revision Control
+\TPJrevision{2007}{28}{12} %% First Draft
+
+
+%% Mandatory Data
+\title{Using \LaTeX\ for writing a Thesis}
+\author{Rohit Vishal Kumar}
+\abstract{\LaTeX\ has been successfully used for typesetting widely different
+document format.  However, the complexity of typesetting some commonly used
+documents, normally acts as a deterrent for various people, who would like to
+use \LaTeX\ for their work. Over the years, I have noticed that students who
+come to \LaTeX, eager in their anticipation of using \LaTeX, loose their
+enthusiasm, midway, and revert back to using MS Word. In this article, I have
+tried to described my own experiences of typesetting a doctoral thesis using
+widely available packages; in the hope that students can see the the ease with
+which \LaTeX\ can be used for complex work.}
+
+
+%% Additional Data
+\email{rohitvishalkumar@yahoo.com}
+\address{Department of Marketing \\
+Xavier Institute of Social Science \\
+Ranchi, 834001, Jharkhand, India}
+\license{Copyright \textcopyright\ 2007 Rohit Vishal Kumar}
+
+
+%% Begin Writing the Document
+\begin{document}
+\maketitle
+
+
+\section{Introduction}
+
+A Thesis or a dissertation is probably the most complex document that a student
+of higher  studies is compelled to write at some point of his academic career.
+The complexity of thesis arises from various factors some of which are beyond
+the control of student and have to be taken for granted. For example, the
+discipline in which the student is pursuing his studies may require use of
+special characters, shapes or formulas which may be difficult to typeset in a
+word processor. The university in which the student is enrolled may have its
+own requirements as to how to format the various parts of the thesis. Besides
+these, the viewpoint put forward by the student in the thesis may have its own
+peculiar requirements. Furthermore, the thesis normally requires that
+bibliography be provided in a particular style. Social sciences, for example,
+mostly require in-line citations where as more rigorous science may well
+require numerical citation.
+
+So when a student first sits down to write the thesis, his first choice is the
+word processor with which he  is most familiar with. Unfortunately, word
+processors are normally not designed for writing thesis. Their forte lies in
+writing official documents like letters, small reports etc. \dash documents
+which do not require complex formatting; but which may require a plethora of
+eye candy.
+
+\LaTeX\ is a \TeX\ macro package, originally written by Leslie Lamport, that
+provides a document  processing system \cite{LAMPORT}. It allows markup to
+describe the structure of the document and the underlying \TeX\ program reads
+the markup and format the document accordingly. This allows for significant
+advantage, in the sense, that the person can focus more or content, than on
+formatting the document. Beside this generic advantage, various other
+advantages are offered by \LaTeX. The \BibTeX\ program helps to insert the
+citation's in the document and provides the bibliography in almost any desired
+format. \LaTeX\ can also be used for creating glossaries and indexes and of
+course, \LaTeX\ excels in typesetting mathematical formulas. There are other
+advantages also \dash the \LaTeX\ source code is a text file which is editable
+on almost any computer and operating system and does not run the risk of being
+corrupted with viruses. This makes the task of making backup simpler. Larger
+documents in \LaTeX\ can be split up into smaller parts, which can then be
+inserted into the correct place with the minimum of effort. This also allows
+the user the flexibility to work on individual chapters, rather than the whole
+document at one go. Finally, \LaTeX\ is adept at producing \PS\ (PS) or
+Portable document File (PDF) \dash which can be printed on any printer without
+any loss of formatting.
+
+Perhaps the paean of \LaTeX\ may jar on some ear's, specially of the students
+used to word processors, but the jackpot  at the end of the day is really huge.
+This article assumes that the reader has rudimentary knowledge of \LaTeX\ and
+understands the basics. In the next section,  we take a look at the parts of
+the thesis and subsequently we take a look at how to format a basic thesis
+which should meet the requirement of most universities.
+
+In what follows, we assume the reader is already familiar with the basics of
+\LaTeX\ and we shall use freely the \LaTeX\ jargon.
+
+\section{A review of current solutions}
+
+Let us now take a look at how to write a thesis using \LaTeX. A simple search
+of the Comprehensive  \TeX{} archive Network (CTAN) produces a fairly large
+number of thesis packages which can be used by the beginner in \LaTeX. For
+example, \texttt{muthesis} \cite{MUTHESIS} aimed at University of Manchester,
+Department of Computer Science, thesis style;   \texttt{ut-thesis}
+\cite{UTTHESIS1} aimed at University of Toronto thesis style; \texttt{utthesis}
+\cite{UTTHESIS}for University of Texas (Austin), \texttt{uwthesis}
+\cite{UWTHESIS} for University of Washington thesis stye; \texttt{uaclasses}
+\cite{UACLASSES} for University of Arizona theis style. The above classes can
+be found at \ctanloc{/Formats/LaTeX/Contrib/}. Searching for other thesis
+classes, some more were found at the \ctanloc{/Uncategorized} section, namely
+\texttt{thutthesis} (Tsinghua University), \texttt{stellenbosch} (University of
+Stellenbosch), \texttt{nddiss} (University of Notre Dame), \texttt{fbithesis}
+(University of Dortmund) \texttt{toptesi} (Polytechnique of Turin) etc. As can
+be seen, almost all of the thesis classes are geared to meet the requirements
+of a particular university. Any of these can be used as a starting point and
+then customised for writing the thesis. However, that may not be feasible for a
+new person who has just started using \LaTeX.
+
+Some other packages which are more flexible and generic in nature are  reviewed
+here:  (i) \texttt{hepthesis} \cite{ABUCKLEY} a special thesis class aimed at
+writing thesis in the field of high energy particle physics. The package is
+flexible enough to be used as a general thesis package, but is dependent on
+various other packages which are available on CTAN. The package provides
+significant advantages without being too complex in nature. The problem is that
+if some non-standard specifications are required then the student may not have
+an easy way of making the changes. For example, the package provides for
+predefined margins and any changes are not easily made. (ii)
+\texttt{classicthesis} \cite{AMIEDE} is another package which provides the
+first time users with an easy way of writing the thesis. However, the
+typographical formatting is done in homage to Robert Bringhurst book ``The
+Elements of Typographic Style'' and is overtly classical in nature. Another
+point of dispute is that it presumes that the thesis is a book and uses a wide
+outer margin on the right and the left hand pages. Customisation seems to be a
+problem, as the author himself requests the user not to change the style
+\cite[pp. 2]{AMIEDE}. (iii) \texttt{jkthesis} \cite{JKUPPER} seems to be
+another generic thesis class. However as the documentation was in German, I
+could not do justice to the class. Prima Facie it seems to be reasonably
+flexible class for preparation of thesis.
+
+Besides the above, some other classes were also found, but the documentation
+was not  enough to form a definite opinion. Almost all the solutions given
+above seems to be hardwired to a particular university or a style and were not
+flexible enough, from the point of view of a layman. In search of something
+more flexible, I made two  assumptions that the thesis is not a book but a
+report and that there should be flexibility in adopting the thesis to ones
+needs.
+
+\section{Using \LaTeX{} for Thesis Writing}
+
+The thesis can be looked upon as consisting of three basic parts which are
+discussed below.
+
+The first part is the \textbf{Front Matter} In the front matter comes various
+parts which can be listed as follows : (i) Title page - which is in most of the
+cases also the cover page of the thesis (ii) Table of Contents (iii) List of
+tables and (iv) List of Figures. A dedication page or a quotation page can also
+be included.
+
+The second and the longer part is the \textbf{main matter} The main matter
+would consist of the chapters of the thesis such as (i) Introduction (ii)
+Problem statement (iii) review of literature (iv) methodology (v) data analysis
+(vi) findings and (vii) conclusion. From the viewpoint of using \LaTeX{},
+appendicies can also be included in the main matter. This is where the student
+would develop the rationale for undergoing the research work and defend his or
+her findings. It is in this section, the student would include the mathematical
+equations, charts and graphs and other illustrations.
+
+Finally at the end comes the \textbf{Back Matter}. This is the tail of the
+thesis and  consist of some things which are extremely difficult to produce
+using a normal word processor. This normally consist of (i) Bibliography or
+References (ii) Glossary and (iii) Index. \LaTeX{}, which was designed for
+typesetting takes care of the various aspects of the back matter in a more
+efficient way than any word processor and saves a lot of time and energy for
+the researcher.
+
+\subsection{Packages and Assumptions}
+
+The first assumption that I made is that the thesis is a report and not a book.
+This is because, almost universally, the thesis is printed on only the right
+hand side of a page. Secondly, thesis requires that one-half or double spacing
+be followed while typing the matter. And thirdly, it should conform to the
+margin requirements of the page setup. Most universities require that the left
+margin include a gutter or space for binding.
+
+Based on these assumptions, I have selected the following packages which are
+needed for our task  \dash \texttt{url}, \texttt{setspace} and
+\texttt{geometry}. The \texttt{url} package is a much needed package which
+helps in formatting the long web url's, email id's etc. properly both in the
+document and in the bibliography. The usage is extremely simple and any url
+which needs to be typeset just needs to be enclosed in a \verb|\url{...}|
+command.  The \texttt{setspace} package provides a much easier method of
+controlling spacing in the document. Where ever we need a single spacing the
+command \verb|\singlespacing| does the job. Similarly \verb|\onehalfspacing|
+and \verb|doublespacing| provides easy switch based mechanism to turn on or off
+the style of spacing desired. I made acquaintance with the \texttt{geometry}
+package much later in my thesis work but I wished I had done it sooner. It is
+an extremely powerful package which provides numerous options to control the
+page layout.
+
+\section{Laying out the Front Matter}
+
+\subsection{Preamble}
+
+Given the above assumptions, and the objective to provide the user with control over the flexibility, the preamble looked as follows:
+
+\begin{Verbatim}[frame=lines, xleftmargin=2mm, framesep=2mm, numbers=left]
+\documentclass[12pt, a4paper]{report}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=1.2in, right=1in, top=1in, bottom=1in]{geometry}
+\begin{document}
+\pagenumbering{roman}
+\end{Verbatim}
+
+The standard 12 point type is used on a4paper. Two additional package seen
+\dash namely the \texttt{graphicx} ---  is the well know package for inclusion
+of graphics in to the final document.  The use of \verb|\pagenumbering{roman}|
+changes the default page numbering to small roman numerals in the front matter
+of the thesis.
+
+\subsection{Title Page}
+
+The title page normally requires five elements --- the title of the thesis, the
+degree for which  the thesis has been submitted, the name of the author, the
+department in which the work was undertaken and the year of submission. To
+achieve this, we have provided a flexible alternative which is easy to
+understand and can be customized by anyone to meet his own requirement.
+
+\begin{Verbatim}[frame=lines, xleftmargin=2mm, framesep=2mm, numbers=left, firstnumber=last]
+\begin{titlepage}
+\vspace*{\stretch{1}}
+\begin{center}
+\Huge{\textsc{Title of the Thesis}} \\
+\vspace{4em}
+\large{Thesis Submitted To} \\
+\vspace{2em}
+\Large{\textsc{Name of the University}} \\
+\vspace{1em}
+\large{in partial fulfilment of the requirements} \\
+\large{of the award of the degree} \\
+\vspace{2em}
+\Large{\textsc{Name of the Degree}} \\
+\vspace{2em}
+by \\
+\vspace{1em}
+\textbf{\textsc{Name of Candidate}} \\
+\vspace{4em}
+\Large{\textsc{Name of the Department}} \\
+\Large{\textsc{Name of the University}} \\
+\Large{Year}
+\end{center}
+\vspace*{\stretch{1}}
+\end{titlepage}
+\end{Verbatim}
+
+This approach to title page design provides flexibility into the hands on
+newbie. The new user can also  customize the cover page to meet the requirement
+of his university by inserting logo's, or incorporating relevant information.
+The generous use of spaces (\verb|\vspace{}|) allows the user to customize the
+placements of the various elements on the title page.
+
+\subsection{Other Elements of Front Matter}
+
+The other elements that would require to appear in the front matter are the
+table of contents, tables and figures.  This process is fairly straightforward
+and uses the standard \LaTeX\ commands.
+
+\begin{Verbatim}[frame=lines, xleftmargin=2mm, framesep=2mm, numbers=left, firstnumber=last]
+\tableofcontents
+\listoftables
+\listoffigures
+\newpage
+\end{Verbatim}
+
+This brings us to the end of setting up the front matter of the thesis.
+
+\section{Laying out the Main Matter}
+
+Next, we turn our attention to designing the main matter. The main body of the
+thesis consists of the chapters and annexes, which are generally typeset in
+one-half or double spacing. The page numbering used is the Arabic numeral
+system and this continues till the end of the thesis.
+
+Laying out the main matter, is perhaps, the easiest task in \LaTeX\ and is
+accomplished by dividing the various  chapters into individual files. I have
+assumed that each chapter is broken into a file. Each of these chapter files
+being with the command \verb|\chapter{....}| and then has the necessary
+material which needs to be typeset; except for the ``acknowledgement'' which
+starts with the starred version of the chapter command viz
+\verb|\chapter*{....}|. This is because, we don't want the acknowledgement to
+have a chapter number.
+
+Under the assumption that there are five chapters and three annexes, we can set
+up the main body as follows:
+
+\begin{Verbatim}[frame=lines, xleftmargin=2mm, framesep=2mm, numbers=left, firstnumber=last]
+\doublespacing
+\include{CHAP_00}           % 0. Acknowledgement
+\pagenumbering{arabic}
+\part*{T H E S I S}
+\include{CHAP_01}           % 1. Introduction
+\include{CHAP_02}           % 2. Literature Review
+\include{CHAP_03}           % 3. Research Methodology
+\include{CHAP_04}           % 4. Findings and Outputs
+\include{CHAP_05}           % 5. Conclusions
+\part*{A P P E N D I X}
+\appendix
+\include{APD_01}            % Appendix I
+\include{APD_02}            % Appendix II
+\include{APD_03}            % Appendix III
+\end{Verbatim}
+
+This is all there is to set up the main body of the thesis. All a  newbie has
+to take care is that he should remember to change the page numbering back into
+arabic. The \verb|\part{}| command, in my opinion are purely decorative and may
+be dropped without much loss of formatting. However, keeping them in place
+produces a separator page with ``T H E S I S'' and ``A P P E N D I X'' written
+in the center, which help in demarcating the appendix from the main set of
+chapters.
+
+\section{Laying out the Back Matter}
+
+We are almost at the end of our thesis layout. In the back matter, I have made
+a simplifying assumption  that the student has only to submit the bibliography.
+Bibliography can either be set up within the document or it can be done as a
+separate file. To produce the bibliography within the document we normally use
+the \verb|\thebibliography| environment.
+
+As this method is cumbersome and does not lead to easy use with the various
+bibliographical packages, this method  is not recommended. It is always much
+better to go in for a separate bibliography file and the best way to create a
+bibliography file would be to use a graphical bibliography manager such as
+Jabref (\url{http://jabref.sourceforge.net/}). Once the user has created the
+bibliography file, it needs to be inserted in the document.
+
+\begin{Verbatim}[frame=lines, xleftmargin=2mm, framesep=2mm, numbers=left, firstnumber=last]
+\newpage
+\footnotesize
+\singlespacing
+\bibliographystyle{plain}
+\bibliography{mybib}
+\end{document}
+\end{Verbatim}
+
+The \verb|\newpage| command forces \LaTeX{} to insert a new page. The
+\verb|\footnotesize| changes the default  font size to a smaller font size and
+the \verb|\singlespacing| turns on the single spacing for the bibliography. The
+\verb|\bibliographystyle{plain}| tells \LaTeX{} to use the \texttt{plain}
+bibliographical style.
+
+\LaTeX{}, by default provides the following four styles \dash \texttt{alpha}
+for producing a bibliography which  is sorted alphabetically, the labels being
+formed from the name of the author and the year of publication, \texttt{unsrt}
+for producing bibliography similar to the \texttt{plain} style, but the entries
+are in the order of citation, \texttt{abbrev} for producing the abbreviated
+bibliography and \texttt{plain} for producing the alphabetically sorted with
+numerical label styles. The command \verb|\bibliography{mybib}| tells \LaTeX{}
+to use the bibliographical file named \texttt{mybib.bib}. More than one
+bibliography file can be used by passing on the names as arguments as shown:
+\verb|\bibliography{file1,file2,...,fileN}|.
+
+For getting the author-date citation style, more common in social sciences, it
+requires additional packages.  Some packages that can be used to provide
+``author-date'' citation style are \texttt{apacite} and \texttt{natbib}. All it
+requires is that one additional command be used in the preamble like \dash
+\verb|\usepackage{apacite}|. As each of the packages have different ways of
+usage and modify the default \verb|\cite{}| command, it is suggested that the
+student familiarize himself with the package before using it.
+
+
+\section{In Sum}
+
+This bring us to an end of trying to write a thesis in \LaTeX{}. The above
+format is  generic enough to meet many requirements and is flexible enough to
+meet the need's of the advanced user and specific subjects. Packages desired
+for a specific discipline can be included in the preamble. Another major
+advantage of such an approach is that the students can work on any chapter of
+their choice and compile only the desired chapter. Say, for example, we are
+working on the chapter 3 of our hypothetical thesis. We can only compile this
+chapter by issuing the command \verb|\includeonly{CHAP_03}| in the preamble.
+
+The included zip file contains the skeleton structure of the thesis, along with
+the chapters. The bibliography of this article has been included. It is hoped
+that this article will provide encouragement to the students writing their
+thesis and encourage them to use \LaTeX{} for the same.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+\bibliographystyle{alpha}
+\bibliography{mybib}
+\end{document}

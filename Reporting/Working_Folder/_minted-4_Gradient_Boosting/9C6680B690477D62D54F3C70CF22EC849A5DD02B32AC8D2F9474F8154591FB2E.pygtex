@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{library}\PYG{p}{(}mboost\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{} In R, enter the family name at the promt:}
+\PYG{k+kp}{print}\PYG{p}{(}Gaussian\PYG{p}{())}
+
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{} This displays the information pertaining to the loss function}
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{} In order to see the programmed expression for the negative gradient, one enters:}
+\PYG{k+kp}{print}\PYG{p}{(}slot\PYG{p}{(}Gaussian\PYG{p}{(),} \PYG{l+s}{\PYGZdq{}ngradient\PYGZdq{}}\PYG{p}{))}
+\end{Verbatim}

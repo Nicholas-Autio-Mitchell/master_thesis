@@ -1,0 +1,39 @@
+In order to get sytax highlighted code in PDF output it is necessary to have the following 
+in .emacs init file.
+
+(add-to-list 'org-latex-packages-alist '("" "listingsutf8"))
+(add-to-list 'org-latex-packages-alist '("" "minted"))
+(setq org-latex-listings 'minted)
+
+(setq org-latex-pdf-process
+      '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+
+(setq org-src-fontify-natively t)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((R . t)
+   (latex . t)
+   (python . t)))
+
+
+########
+the following can be added to an org file (not all required if the above is in .emacs)
+########
+\usepackage{listingsutf8}
+\usepackage[]{minted}
+
+
+
+###### Current header in working document ######
+
+#+LATEX_HEADER: \usepackage{blindtext}
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry} 
+#+LATEx_HEADER: \usepackage{comment}
+#+latex_header: \usepackage[]{algorithm2e}
+#+latex_header: \usepackage[space]{grffile}
+
+grffile deals with included paths that contains spaces
+algorithm2e is used for including algorithms (has great support pdf online)

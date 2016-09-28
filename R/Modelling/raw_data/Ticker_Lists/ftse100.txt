@@ -1,0 +1,99 @@
+Symbol	Name	Last Trade	Change	Volume
+AAL.L	Anglo American plc	740.70 5:16AM EDT	Down 14.50 (1.92%)	816,278
+ABF.L	Associated British Foods plc	3,283.00 5:16AM EDT	Up 6.00(0.18%)	71,972
+ADM.L	Admiral Group plc	1,467.00 5:13AM EDT	Down 4.00 (0.27%)	54,011
+ADN.L	Aberdeen Asset Management PLC	337.70 5:16AM EDT	Down 1.90 (0.56%)	457,787
+AHT.L	Ashtead Group plc	945.50 5:15AM EDT	Down 6.50 (0.68%)	367,579
+ANTO.L	Antofagasta plc	560.73 5:15AM EDT	Down 12.77 (2.23%)	461,823
+ARM.L	ARM Holdings plc	925.50 5:15AM EDT	Up 6.00(0.65%)	812,908
+AV.L	Aviva plc	511.00 5:16AM EDT	Up 1.00(0.20%)	1,497,048
+AZN.L	AstraZeneca PLC	4,267.50 5:16AM EDT	Down 10.50 (0.25%)	283,772
+BA.L	BAE Systems plc	468.35 5:16AM EDT	Down 0.45 (0.10%)	684,585
+BAB.L	Babcock International Group plc	999.50 5:15AM EDT	Down 5.50 (0.55%)	95,361
+BARC.L	Barclays PLC	273.95 5:16AM EDT	0.00(0.00%)	5,497,088
+BATS.L	British American Tobacco p.l.c.	3,692.50 5:16AM EDT	Down 34.00 (0.91%)	519,951
+BDEV.L	Barratt Developments plc	645.50 5:15AM EDT	Down 7.50 (1.15%)	1,303,793
+BLND.L	The British Land Company PLC	873.50 5:15AM EDT	Down 3.50 (0.40%)	244,391
+BLT.L	BHP Billiton plc	1,108.00 5:16AM EDT	Down 25.50 (2.25%)	1,284,820
+BNZL.L	Bunzl plc	1,854.00 5:16AM EDT	Down 1.00 (0.05%)	91,903
+BP.L	BP p.l.c.	374.65 5:16AM EDT	Down 3.50 (0.93%)	3,680,195
+BRBY.L	Burberry Group plc	1,485.00 5:15AM EDT	Down 7.00 (0.47%)	166,390
+BT-A.L	BT Group plc	455.70 5:16AM EDT	Up 0.25(0.05%)	1,668,831
+CCH.L	COCA-COLA HBC N	1,417.00 5:13AM EDT	Up 8.00(0.57%)	149,892
+CCL.L	Carnival plc	3,494.00 5:15AM EDT	Down 15.00 (0.43%)	29,680
+CNA.L	Centrica plc	268.60 5:16AM EDT	Down 0.30 (0.11%)	749,349
+CPG.L	Compass Group PLC	1,036.66 5:15AM EDT	Up 0.66(0.06%)	512,065
+CPI.L	Capita plc	1,294.00 5:12AM EDT	Down 6.00 (0.46%)	112,278
+CRH.L	CRH plc	1,970.00 5:12AM EDT	Up 1.00(0.05%)	281,855
+DC.L	DIXONS CARPHONE	442.10 5:16AM EDT	Down 5.70 (1.27%)	358,338
+DGE.L	Diageo plc	1,769.50 5:15AM EDT	Down 2.50 (0.14%)	888,976
+DLG.L	Direct Line Insurance Group PLC	369.90 5:15AM EDT	Down 0.10 (0.03%)	772,606
+EXPN.L	Experian plc	1,157.00 5:16AM EDT	Down 5.00 (0.43%)	226,429
+EZJ.L	easyJet plc	1,730.00 5:16AM EDT	Up 5.00(0.29%)	98,469
+FRES.L	Fresnillo PLC	666.50 5:16AM EDT	Down 4.50 (0.67%)	120,489
+GFS.L	G4S plc	257.60 5:16AM EDT	Up 0.40(0.16%)	687,992
+GKN.L	GKN plc	299.20 5:16AM EDT	Down 0.70 (0.23%)	432,356
+GLEN.L	Glencore Plc	170.55 5:16AM EDT	Up 0.55(0.32%)	11,550,618
+HIK.L	Hikma Pharmaceuticals PLC	2,412.00 5:12AM EDT	Down 6.00 (0.25%)	65,870
+HL.L	Hargreaves Lansdown plc	1,177.00 5:14AM EDT	Up 2.00(0.17%)	46,337
+HMSO.L	Hammerson plc	683.50 5:15AM EDT	Up 0.50(0.07%)	236,148
+HSBA.L	HSBC Holdings plc	556.40 5:16AM EDT	Down 1.20 (0.22%)	3,384,298
+IAG.L	International Consolidated Airlines Group, S.A.	546.00 5:15AM EDT	Up 3.00(0.55%)	957,470
+IHG.L	Intercontinental Hotels Group plc	2,498.00 5:15AM EDT	Down 10.00 (0.40%)	74,095
+III.L	3i Ord	527.00 5:14AM EDT	Down 0.50 (0.09%)	75,499
+IMT.L	Imperial Tobacco Group PLC	3,257.00 5:16AM EDT	Down 17.00 (0.52%)	421,396
+INTU.L	intu properties plc	340.80 5:16AM EDT	0.00(0.00%)	176,894
+ISAT.L	Inmarsat Plc	1,000.00 5:16AM EDT	Up 7.00(0.70%)	122,645
+ITRK.L	Intertek Group plc	2,662.00 5:13AM EDT	0.00(0.00%)	26,403
+ITV.L	ITV plc	259.40 5:16AM EDT	Down 0.10(0.04%)	1,383,835
+JMAT.L	Johnson Matthey Plc	2,787.00 5:17AM EDT	Down 21.00 (0.75%)	32,136
+KGF.L	Kingfisher plc	369.90 5:17AM EDT	Down 0.10 (0.03%)	570,282
+LAND.L	Land Securities Group plc	1,323.00 5:16AM EDT	Up 1.00 (0.08%)	211,626
+LGEN.L	Legal & General Group Plc	265.30 5:17AM EDT	Down 1.30 (0.49%)	2,509,129
+LLOY.L	Lloyds Banking Group plc	80.28 5:17AM EDT	Up 0.28 (0.35%)	24,879,328
+LSE.L	London Stock Exchange Group plc	2,613.00 5:16AM EDT	Down 5.00 (0.19%)	88,372
+MERL.L	Merlin Entertainments plc	399.60 5:17AM EDT	Up 1.40 (0.35%)	232,138
+MGGT.L	Meggitt PLC	497.40 5:16AM EDT	Down 3.60 (0.72%)	295,181
+MKS.L	Marks & Spencer Group plc	534.00 5:16AM EDT	0.00 (0.00%)	529,295
+MNDI.L	Mondi plc	1,561.00 5:16AM EDT	Down 5.00 (0.32%)	401,862
+MRW.L	Wm. Morrison Supermarkets plc	175.30 5:17AM EDT	Down 0.40 (0.23%)	337,977
+NG.L	National Grid plc	875.90 5:17AM EDT	Down 3.30 (0.38%)	1,086,112
+NXT.L	Next Plc	7,990.00 5:15AM EDT	0.00 (0.00%)	48,744
+OML.L	Old Mutual plc	215.20 5:17AM EDT	Down 0.90 (0.42%)	917,824
+PRU.L	Prudential plc	1,527.00 5:16AM EDT	Down 4.00 (0.26%)	644,331
+PSN.L	Persimmon plc	2,078.00 5:16AM EDT	Down 43.00 (2.03%)	556,342
+PSON.L	Pearson plc	1,163.65 5:14AM EDT	Up 1.65 (0.14%)	479,241
+RB.L	Reckitt Benckiser Group plc	5,974.00 5:17AM EDT	Down 18.00 (0.30%)	167,982
+RBS.L	The Royal Bank of Scotland Group plc	342.20 5:16AM EDT	Up 2.30 (0.68%)	2,319,430
+RDSA.L	Royal Dutch Shell plc	1,767.00 5:17AM EDT	Down 26.00 (1.45%)	954,664
+RDSB.L	Royal Dutch Shell plc	1,786.00 5:17AM EDT	Down 26.00 (1.43%)	578,324
+REL.L	RELX PLC	1,086.00 5:17AM EDT	Up 2.00 (0.18%)	390,826
+RIO.L	Rio Tinto plc	2,400.00 5:17AM EDT	Down 45.00 (1.84%)	714,461
+RMG.L	Royal Mail plc	473.59 5:15AM EDT	Down 2.71 (0.57%)	451,039
+RR.L	Rolls Royce Holdings plc	788.33 5:17AM EDT	Down 8.17 (1.03%)	604,327
+RRS.L	Randgold Resources Limited	3,991.00 5:16AM EDT	Up 8.00 (0.20%)	88,073
+RSA.L	RSA Insurance Group plc	509.50 5:15AM EDT	Up 1.50 (0.30%)	485,504
+SAB.L	SABMiller plc	3,287.00 5:17AM EDT	Down 10.00 (0.30%)	270,177
+SBRY.L	J Sainsbury plc	253.70 5:16AM EDT	Up 0.30 (0.12%)	1,358,325
+SDR.L	Schroders plc	3,001.00 5:14AM EDT	Up 1.00 (0.03%)	32,951
+SGE.L	Sage Group plc	525.50 5:15AM EDT	Down 0.50 (0.10%)	171,424
+SHP.L	Shire plc	5,234.75 5:16AM EDT	Up 74.75 (1.45%)	268,378
+SKY.L	SKY	1,087.00 5:16AM EDT	Up 3.00 (0.28%)	169,088
+SL.L	Standard Life plc	439.00 5:17AM EDT	Up 1.20 (0.27%)	356,477
+SMIN.L	Smiths Group plc	1,166.00 5:15AM EDT	Down 2.00 (0.17%)	111,207
+SN.L	Smith & Nephew plc	1,192.70 5:13AM EDT	Up 1.70 (0.14%)	588,447
+SPD.L	Sports Direct International plc	804.00 5:16AM EDT	0.00 (0.00%)	82,591
+SSE.L	SSE plc	1,530.90 5:16AM EDT	Down 5.10 (0.33%)	368,160
+STAN.L	Standard Chartered PLC	847.70 5:17AM EDT	Down 4.80 (0.56%)	1,086,627
+STJ.L	St. James's Place plc	965.00 5:16AM EDT	0.00 (0.00%)	598,595
+SVT.L	Severn Trent Plc	2,179.00 5:14AM EDT	Down 5.00 (0.23%)	51,982
+TPK.L	Travis Perkins plc	2,114.00 5:15AM EDT	Down 5.00 (0.24%)	65,342
+TSCO.L	Tesco PLC	201.50 5:17AM EDT	Down 0.70 (0.35%)	2,891,125
+TUI.L	TUI AG	1,175.00 5:17AM EDT	Down 6.00 (0.51%)	179,764
+TW.L	Taylor Wimpey plc	203.80 5:17AM EDT	Down 1.20 (0.59%)	3,502,828
+ULVR.L	Unilever plc	2,780.00 5:16AM EDT	Down 20.00 (0.71%)	423,178
+UU.L	United Utilities Group PLC	896.50 5:16AM EDT	Down 1.50 (0.17%)	159,129
+WEIR.L	The Weir Group PLC	1,422.20 5:16AM EDT	Down 20.80 (1.44%)	114,642
+WOS.L	Wolseley plc	4,291.00 5:16AM EDT	Down 9.00 (0.21%)	52,705
+WPP.L	WPP plc	1,425.00 5:15AM EDT	Up 2.00 (0.14%)	585,052
+WTB.L	Whitbread PLC	5,110.00 5:16AM EDT	Down 35.00 (0.68%)	64,166

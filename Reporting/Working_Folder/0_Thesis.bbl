@@ -1,0 +1,217 @@
+\begin{thebibliography}{10}
+
+\bibitem{russell2013miningSocialMediaData}
+M.~A. Russell, {\em Mining the Social Web: Data Mining Facebook, Twitter,
+  LinkedIn, Google+, GitHub, and More}.
+\newblock " O'Reilly Media, Inc.", 2013.
+
+\bibitem{hamid2015forecasting}
+A.~Hamid and M.~Heiden, ``Forecasting volatility with empirical similarity and
+  google trends,'' {\em Journal of Economic Behavior \& Organization},
+  vol.~117, pp.~62--81, 2015.
+
+\bibitem{pak2010twitterMiningEx1}
+A.~Pak and P.~Paroubek, ``Twitter as a corpus for sentiment analysis and
+  opinion mining.,'' in {\em LREc}, vol.~10, pp.~1320--1326, 2010.
+
+\bibitem{bian2012towardsMiningEx2}
+J.~Bian, U.~Topaloglu, and F.~Yu, ``Towards large-scale twitter mining for
+  drug-related adverse events,'' in {\em Proceedings of the 2012 international
+  workshop on Smart health and wellbeing}, pp.~25--32, ACM, 2012.
+
+\bibitem{ediger2010massiveMiningEx3}
+D.~Ediger, K.~Jiang, J.~Riedy, D.~A. Bader, C.~Corley, R.~Farber, and W.~N.
+  Reynolds, ``Massive social network analysis: Mining twitter for social
+  good,'' in {\em Parallel Processing (ICPP), 2010 39th International
+  Conference on}, pp.~583--593, IEEE, 2010.
+
+\bibitem{krijnen:automated}
+D.~Krijnen, R.~Bot, and G.~Lampropoulos, ``Automated web scraping apis,'' 2014.
+
+\bibitem{turing1950computing}
+A.~M. Turing, ``Computing machinery and intelligence,'' {\em Mind}, vol.~59,
+  no.~236, pp.~433--460, 1950.
+
+\bibitem{Saygin2003}
+A.~P. Saygin, I.~Cicekli, and V.~Akman, {\em The Turing Test: The Elusive
+  Standard of Artificial Intelligence}, ch.~Turing Test: 50 Years Later,
+  pp.~23--78.
+\newblock Dordrecht: Springer Netherlands, 2003.
+
+\bibitem{dostert1955georgetown}
+L.~E. Dostert, ``The georgetown-ibm experiment,'' {\em 1955). Machine
+  translation of languages. John Wiley \& Sons, New York}, pp.~124--135, 1955.
+
+\bibitem{Liu:sentiment-analysis}
+B.~Liu, ``Sentiment analysis and opinion mining,'' {\em Synthesis lectures on
+  human language technologies}, vol.~5, no.~1, pp.~1--167, 2012.
+
+\bibitem{shiller2015irrational}
+R.~J. Shiller, {\em Irrational Exuberance}.
+\newblock Princeton university press, 2015.
+
+\bibitem{kahneman2011thinking}
+D.~Kahneman, {\em Thinking, Fast and Slow}.
+\newblock Macmillan, 2011.
+
+\bibitem{Mohammad13}
+S.~M. Mohammad and P.~D. Turney, ``Crowdsourcing a word-emotion association
+  lexicon,'' vol.~29, no.~3, pp.~436--465, 2013.
+
+\bibitem{plutchik1980general}
+R.~Plutchik, ``A general psychoevolutionary theory of emotion,'' {\em Theories
+  of emotion}, vol.~1, pp.~3--31, 1980.
+
+\bibitem{MohammadKZ2013}
+S.~Mohammad, S.~Kiritchenko, and X.~Zhu, ``Nrc-canada: Building the
+  state-of-the-art in sentiment analysis of tweets,'' in {\em Proceedings of
+  the seventh international workshop on Semantic Evaluation Exercises
+  (SemEval-2013)}, (Atlanta, Georgia, USA), June 2013.
+
+\bibitem{Thelwall:2010:SSS:1890706.1890713}
+M.~Thelwall, K.~Buckley, G.~Paltoglou, D.~Cai, and A.~Kappas, ``Sentiment in
+  short strength detection informal text,'' {\em J. Am. Soc. Inf. Sci.
+  Technol.}, vol.~61, pp.~2544--2558, Dec. 2010.
+
+\bibitem{hutto2014vader}
+C.~J. Hutto and E.~Gilbert, ``Vader: A parsimonious rule-based model for
+  sentiment analysis of social media text,'' in {\em Eighth International AAAI
+  Conference on Weblogs and Social Media}, 2014.
+
+\bibitem{NielsenF2011New}
+F.~A. Nielsen, ``A new anew: Evaluation of a word list for sentiment analysis
+  in microblogs,'' in {\em Proceedings of the ESWC2011 Workshop on 'Making
+  Sense of Microposts': Big things come in small packages} (M.~Rowe,
+  M.~Stankovic, A.-S. Dadzie, and M.~Hardey, eds.), vol.~718 of {\em CEUR
+  Workshop Proceedings}, pp.~93--98, May 2011.
+
+\bibitem{JOFI:JOFI885}
+M.~BAKER and J.~WURGLER, ``Investor sentiment and the cross-section of stock
+  returns,'' {\em The Journal of Finance}, vol.~61, no.~4, pp.~1645--1680,
+  2006.
+
+\bibitem{malkiel1970efficient}
+B.~G. Malkiel and E.~F. Fama, ``Efficient capital markets: A review of theory
+  and empirical work,'' {\em The journal of Finance}, vol.~25, no.~2,
+  pp.~383--417, 1970.
+
+\bibitem{jensen1978some}
+M.~C. Jensen, ``Some anomalous evidence regarding market efficiency,'' {\em
+  Journal of financial economics}, vol.~6, no.~2/3, pp.~95--101, 1978.
+
+\bibitem{DBLP:journals/corr/abs-1010-3003}
+J.~Bollen, H.~Mao, and X.~Zeng, ``Twitter mood predicts the stock market,''
+  {\em CoRR}, vol.~abs/1010.3003, 2010.
+
+\bibitem{freund1996experiments}
+Y.~Freund, R.~E. Schapire, {\em et~al.}, ``Experiments with a new boosting
+  algorithm,'' {\em ICML}, vol.~96, pp.~148--156, 1996.
+
+\bibitem{Freund1997119}
+Y.~Freund and R.~E. Schapire, ``A decision-theoretic generalization of on-line
+  learning and an application to boosting,'' {\em Journal of Computer and
+  System Sciences}, vol.~55, no.~1, pp.~119 -- 139, 1997.
+
+\bibitem{Breiman97arcingthe}
+L.~Breiman, ``Arcing the edge,'' tech. rep., University of California,
+  Berkeley, 1997.
+
+\bibitem{breiman1998arcing}
+L.~Breiman {\em et~al.}, ``Arcing classifier (with discussion and a rejoinder
+  by the author),'' {\em The annals of statistics}, vol.~26, no.~3,
+  pp.~801--849, 1998.
+
+\bibitem{friedman2001greedy}
+J.~H. Friedman, ``Greedy function approximation: a gradient boosting machine,''
+  {\em Annals of statistics}, pp.~1189--1232, 2001.
+
+\bibitem{friedman2000additive}
+J.~Friedman, T.~Hastie, R.~Tibshirani, {\em et~al.}, ``Additive logistic
+  regression: a statistical view of boosting (with discussion and a rejoinder
+  by the authors),'' {\em The annals of statistics}, vol.~28, no.~2,
+  pp.~337--407, 2000.
+
+\bibitem{hyndman2014forecasting}
+R.~J. Hyndman and G.~Athanasopoulos, {\em Forecasting: Principles and
+  Practice}.
+\newblock OTexts, 2014.
+
+\bibitem{Hastie2009}
+T.~Hastie, R.~Tibshirani, and J.~Friedman, {\em The Elements of Statistical
+  Learning}.
+\newblock Springer New York, 2009.
+
+\bibitem{Fukunaga1990441}
+K.~Fukunaga, ``Chapter 10 - feature extraction and linear mapping for
+  classification,'' in {\em Introduction to Statistical Pattern Recognition
+  (Second Edition)} (K.~Fukunaga, ed.), pp.~441 -- 507, Boston: Academic Press,
+  second edition~ed., 1990.
+
+\bibitem{pfanzagl1994parametric}
+J.~Pfanzagl, {\em Parametric Statistical Theory}.
+\newblock Walter de Gruyter, 1994.
+
+\bibitem{dimitrakakis2013differential}
+C.~Dimitrakakis, B.~Nelson, A.~Mitrokotsa, and B.~Rubinstein, ``Differential
+  privacy in a bayesian setting through posterior sampling,'' {\em arXiv
+  preprint arXiv:1306.1066}, 2013.
+
+\bibitem{Hofner2012}
+B.~Hofner, A.~Mayr, N.~Robinzonov, and M.~Schmid, ``Model-based noosting in r:
+  a hands-on tutorial using the r package mboost,'' {\em Computational
+  Statistics}, vol.~29, no.~1, pp.~3--35, 2012.
+
+\bibitem{schmid2008boosting}
+M.~Schmid and T.~Hothorn, ``Boosting additive models using component-wise
+  p-splines,'' {\em Computational Statistics \& Data Analysis}, vol.~53, no.~2,
+  pp.~298--311, 2008.
+
+\bibitem{breiman2001random}
+L.~Breiman, ``Random forests,'' {\em Machine learning}, vol.~45, no.~1,
+  pp.~5--32, 2001.
+
+\bibitem{friedmanstochastic}
+J.~H. Friedman, ``Stochastic gradient boosting,'' 1999.
+
+\bibitem{choi1969maximum}
+S.~Choi and R.~Wette, ``Maximum likelihood estimation of the parameters of the
+  gamma distribution and their bias,'' {\em Technometrics}, vol.~11, no.~4,
+  pp.~683--690, 1969.
+
+\bibitem{gondhalekar2003blue}
+V.~Gondhalekar and S.~Mehdian, ``The blue-monday hypothesis: Evidence based on
+  nasdaq stocks, 1971-2000,'' {\em Quarterly Journal of Business and
+  Economics}, pp.~73--89, 2003.
+
+\bibitem{kamstra2003winter}
+M.~J. Kamstra, L.~A. Kramer, and M.~D. Levi, ``Winter blues: A sad stock market
+  cycle,'' {\em The American Economic Review}, vol.~93, no.~1, pp.~324--343,
+  2003.
+
+\bibitem{mandelbrot1997multifractal}
+B.~B. Mandelbrot, A.~J. Fisher, and L.~E. Calvet, ``A multifractal model of
+  asset returns,'' 1997.
+
+\bibitem{calvet1997large}
+L.~E. Calvet, A.~J. Fisher, and B.~B. Mandelbrot, ``Large deviations and the
+  distribution of price changes,'' 1997.
+
+\bibitem{fisher1997multifractality}
+A.~J. Fisher, L.~E. Calvet, and B.~B. Mandelbrot, ``Multifractality of
+  deutschemark/us dollar exchange rates,'' 1997.
+
+\bibitem{friedman2002stochastic}
+J.~H. Friedman, ``Stochastic gradient boosting,'' {\em Computational Statistics
+  \& Data Analysis}, vol.~38, no.~4, pp.~367--378, 2002.
+
+\bibitem{bradley1997use}
+A.~P. Bradley, ``The use of the area under the roc curve in the evaluation of
+  machine learning algorithms,'' {\em Pattern recognition}, vol.~30, no.~7,
+  pp.~1145--1159, 1997.
+
+\bibitem{le2008factominer}
+S.~L{\^e}, J.~Josse, F.~Husson, {\em et~al.}, ``Factominer: an r package for
+  multivariate analysis,'' {\em Journal of statistical software}, vol.~25,
+  no.~1, pp.~1--18, 2008.
+
+\end{thebibliography}

@@ -1,0 +1,71 @@
+% Mathekram
+
+\chapter{Mathekram}
+\label{mk}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Gleichungen}
+
+Hin und wieder wird man eine Gleichung schreiben müssen. Wie diese z.B.
+\begin{equation}
+	f(x)
+	= x_i^{234} \hspace{1mm} \frac{a}{c+d}
+		\int_0^l\limits{
+		g(y) \ \frac{\partial h(z(y))}{\partial z}
+		}{\rm d} y
+	\label{mk_bla}
+\end{equation}
+Auf Gleichungen, die einen Label bekommen haben, kann man referenzieren, z.B. ich finde die Gleichung \eqref{mk_bla} super!
+
+Die Gleichungen in der \verb=\equation=-Umgebung werden automatisch nummeriert, genauso so wie alle Kapitel, Sektionen und Untersektionen (ohne Stern). Entsprechend kann man nicht nummerierte Gleichungen mit 
+\begin{equation*}
+	f(x)
+	= x_{ijkllmnopqrst}^{234} \hspace{1mm} \frac{a}{c+d}
+		\int_0^l\limits{
+		g(y) \ \frac{\partial h(z(y))}{\partial z}
+		}{\rm d} y
+\end{equation*}
+erstellen.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Mathe im Text}
+
+Manchmal wird man auch mitten im Text ein Stückchen Mathe haben wollen oder eine definierte Größe wie zum Beispiel $f(x)$ schreiben wollen. Hierzu verwendet man die Mathemodus \verb=$$= im Text, wie auch hier $g(x) = x^7 + a_i$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Matrizen}
+
+Hier gibt es viele Möglichkeiten, eine Matrix bzw. ein Array darzustellen, wie z.B.
+\begin{equation}
+	\begin{array}{lrc}
+	12 & 1234 & 2 \\
+	\mbox{Dies ist einfach Text} & Text im Array & 234567 \\
+	\frac{345}{4}
+	\end{array}
+\end{equation}
+\begin{equation}
+	\left(
+	\begin{array}{lrc}
+	12 & 1234 & 2 \\
+	\mbox{Dies ist einfach Text} & Text im Array & 234567 \\
+	\displaystyle \frac{345}{4}
+	\end{array}
+	\right)
+\end{equation}
+\begin{eqnarray}
+	\begin{pmatrix}
+	12 & 1234 & 2 \\
+	\mbox{Dies ist einfach Text} & Text im Array & 234567 \\	
+	\end{pmatrix}
+	\\ % Nächste Gleichung
+	\begin{bmatrix}
+	12 & 1234 & 2 \\
+	\mbox{Dies ist einfach Text} & Text im Array & 234567 \\	
+	\end{bmatrix}
+\end{eqnarray}

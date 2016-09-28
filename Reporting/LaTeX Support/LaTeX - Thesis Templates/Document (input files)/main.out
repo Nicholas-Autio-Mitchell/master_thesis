@@ -1,0 +1,27 @@
+\BOOKMARK [0][-]{chapter.1}{Basics}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Section types}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Example subsection}{section.1.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Basic page settings}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Head and foot}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{New commands and input}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.5}{Language}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Math stuff}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Equations and math mode}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Arrays and matrices}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Math fonts}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Math symbols}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Hyperlinks and references}{}% 13
+\BOOKMARK [1][-]{section.3.1}{The package hyperref}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{Hyperlinks to internet sites, email and attached files}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Literature references}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{Figures, tables, enumerate and itemize}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Figures}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Tables}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.3}{Enumerate and itemize}{chapter.4}% 20
+\BOOKMARK [0][-]{appendix.A}{Just an example appendix}{}% 21
+\BOOKMARK [1][-]{section.A.1}{Bla blup}{appendix.A}% 22
+\BOOKMARK [0][-]{appendix.B}{Another example}{}% 23
+\BOOKMARK [1][-]{section.B.1}{More stuff}{appendix.B}% 24
+\BOOKMARK [0][-]{appendix*.3}{Bibliography}{}% 25
+\BOOKMARK [0][-]{appendix*.4}{List of Figures}{}% 26
+\BOOKMARK [0][-]{appendix*.5}{List of Tables}{}% 27

@@ -1,0 +1,23 @@
+% Pakete
+
+\usepackage[utf8]{inputenc} % zur Erkennung von ä,ö,ü und ß (funktioniert nur, wenn ALLE *.tex-Dateien in UTF8 kodiert sind)
+\usepackage{graphicx} % benötigt für \includegraphics und EPS-Figuren
+\usepackage{amsmath} % benötigt für \eqref 
+\usepackage[colorlinks=true,ngerman,breaklinks=true]{hyperref} % benötigt für \autoref und klickbare Hyperlinks, ngerman für deutsche Referenzen, colorlinks färbt die Referenzen (Boxen weg), breaklinks bricht lange Referenzen wie in Abbildungsverzeichnis
+\usepackage{xcolor}
+\definecolor{c1}{rgb}{0.8,0,0.4}
+\definecolor{c2}{rgb}{0,0.3,0.4}
+\definecolor{c3}{rgb}{0,0,0.7}
+\hypersetup{
+	linkcolor=c3, % interne Links
+	citecolor=c2, % Zitate, Literatur
+	urlcolor=c1 % externe Links
+}
+\usepackage{enumerate} % für die Freigaben der Einstellung von enumerate und itemize
+\usepackage{longtable} % erlaubt die Benutzung von longtable-Umgebung
+\usepackage{bigstrut} % benötigt für \bigstrut 
+\usepackage{psfrag} % benötigt für \psfrag 
+\usepackage{ngerman} % benötigt für alle automatisch generierte Worte bis auf Referenzen
+\usepackage[round]{natbib} % benötigt für \cite 
+\usepackage{makeidx} % benötigt für die Erstellung vom Index
+\makeindex

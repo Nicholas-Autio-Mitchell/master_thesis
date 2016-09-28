@@ -1,0 +1,97 @@
+% Created 2016-03-30 Wed 09:23
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\usepackage{listingsutf8}
+\usepackage{pdfpages}
+\usepackage[bottom]{footmisc} %% to keep entire footers on one page
+\usepackage[]{graphicx}
+\usepackage[]{minted}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{comment}
+\usepackage[linesnumbered,ruled,lined,shortend]{algorithm2e}
+\usepackage[space]{grffile}
+\setcounter{secnumdepth}{4}
+\author{Nicholas Mitchell}
+\date{\today}
+\title{1\_Intro}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\pagebreak
+
+\section{Introduction}
+\label{sec-1}
+
+\subsection{Acknowledgements}
+\label{sec-1-1}
+
+I would first like to thank my two magnificent champions, Rupert Hughes and Nikolay Robinzonov. They have both invested their own time, spending many a late evening with me discussing ideas and helping make the hardest of the decisions. I would also like to thank Michael Scherer for invaluable feedback and an eagle eye, helping bring everything together at the end. The help of all three would not have been possible without the blessing of DEVnet GmbH, to whom I express my gratitude for all the support they have provided.\\
+
+\noindent
+From the academic side, I would like to thank Professor Yarema Okhrin of the Chair for Statistics at the University of Augsburg. I greatly appreciated his feedback, ideas, and patience with me from day one.\\
+
+\noindent
+Lastly, I must thank my brother and two sisters - not least for their proof-reading, but for their lasting support; giving me the inspiration and courage to live abroad and fulfil a dream. \\ I dedicate this work to our amazing and loving parents, \emph{Mum and Dad}.
+
+
+\pagebreak
+
+
+\subsection{Abstract}
+\label{sec-1-2}
+
+The emergence and ensuing explosion in popularity of social media platforms since the beginning of the twenty-first century, facilitated and catalysed by technological advancements in global connectivity, has created an abundance of data in completely new dimensions to traditionally available data. This has lead to rise in popularity of terms such as \emph{big data}, \emph{sentiment analysis} and \emph{machine learning}, to name but just a few. The task of the data scientist is to extract information from masses of information in a way that allows new insights to be made.
+
+This study utilises a combination of these developments with the aim of enhancing data sets commonly used to analyse and predict the movements of stock markets; with particularly interest given to the Dow Jones Industrial Average (DJIA). Social media data from the Twitter platform has been used to add greater breadth to our data set; the results of multi-model sentiment analysis performed on individual tweets being incorporated as additional covariates into a forecasting model.
+
+Component-wise gradient boosting was selected as the methodology for its inherent features, such as variable selection and scalability to high-dimensional data sets. These are major advantages, considering both the large number of covariates produced by sentiment analysis and the scarcity of prior knowledge regarding their individual influence levels.
+
+The aim of this study was to determine whether or not the addition of social media data, in the form of sentiment analysis, to traditional financial market data would enhance the predictive accuracy of a set of forecasting models. Over numerous modelling conditions, we were able to show that the predictive accuracy was indeed increased through the inclusion of social media data
+
+
+Expectations/Results:
+
+
+\subsection{Thesis overview}
+\label{sec-1-3}
+
+There are three main parts to this study, with each phase feeding directly into the next. Each of the three phases required considerable independent effort, which contained little overlap; only the flow of raw data linked them. They were all, however, completely necessary in order to accomplish the aim of this study. The steps may be summarised as follows:
+
+\begin{center}
+\begin{tabular}{lll}
+ &  & \\
+\textbf{Twitter mining} &  & $\rightarrow$ obtaining social media data associated with certain topics\\
+ &  & \\
+\hookrightarrow \textbf{Sentiment analysis} &  & $\rightarrow$ quantifying the sentiment contained of the collected data\\
+ &  & \\
+\hspace{10pt} \hookrightarrow \textbf{Market forecasting} &  & $\rightarrow$ using sentiment data to enhance traditional forecasting models\\
+ &  & \\
+\end{tabular}
+\end{center}
+
+
+The structure of this report follows the path laid out above. Each of the three phases has a dedicated chapter, including: a brief background, the methodologies employed for this study, and  lastly the results. An overview of the steps involved for \emph{twitter mining} and \emph{sentiment analysis} are additionally visualised using flowchart diagrams, which can be found in the Appendices. The flowchart describing the workflow for Twitter mining and scraping is given by Figure \texttt{flowchart-scraping} and may be found in Section \texttt{flowchart-twitter-mining}. The entire modelling process is put into perspective by Figures \texttt{flowchart-modelling1} and \texttt{flowchart-modelling2}, both found in Section \texttt{flowchart-mod}. A summary of all results and some ideas for future work are given in a final 
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

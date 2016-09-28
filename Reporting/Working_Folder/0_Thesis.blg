@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: 0_Thesis.aux
+The style file: ieeetr.bst
+Database file #1: references.bib
+Repeated entry---line 129 of file references.bib
+ : @article{schmid2008boosting
+ :                            ,
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 279 of file references.bib
+ :   
+ :   volume    = {abs/1308.6297},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 465 of file references.bib
+ :   
+ :   journal={URL http://www-stat.stanford.edu/\~{}jhf/ftp/stobst.ps}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in krijnen:automated
+Warning--can't use both author and editor fields in Saygin2003
+Warning--empty journal in Mohammad13
+Warning--empty journal in friedmanstochastic
+Warning--empty journal in mandelbrot1997multifractal
+Warning--empty journal in calvet1997large
+Warning--empty journal in fisher1997multifractality
+You've used 46 entries,
+            1876 wiz_defined-function locations,
+            771 strings with 11028 characters,
+and the built_in function-call counts, 12409 in all, are:
+= -- 1271
+> -- 399
+< -- 0
++ -- 153
+- -- 107
+* -- 851
+:= -- 1709
+add.period$ -- 53
+call.type$ -- 46
+change.case$ -- 41
+chr.to.int$ -- 0
+cite$ -- 53
+duplicate$ -- 659
+empty$ -- 1226
+format.name$ -- 107
+if$ -- 3054
+int.to.chr$ -- 0
+int.to.str$ -- 46
+missing$ -- 52
+newline$ -- 148
+num.names$ -- 50
+pop$ -- 158
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 427
+stack$ -- 0
+substring$ -- 897
+swap$ -- 263
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 135
+width$ -- 48
+write$ -- 448
+(There were 3 error messages)

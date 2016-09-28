@@ -1,0 +1,2 @@
+_def fun(input):
+     input + 1

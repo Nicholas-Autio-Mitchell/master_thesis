@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{for} \PYG{n}{model} \PYG{o+ow}{in} \PYG{n}{set\PYGZus{}of\PYGZus{}models}\PYG{p}{:}
+    \PYG{k}{print} \PYG{n}{model}
+\end{Verbatim}

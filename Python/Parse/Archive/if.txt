@@ -1,0 +1,7 @@
+﻿[‎28.‎08.‎2015 10:12] Rafal Sytek: 
+    if(not len(timestamps)==len(texts)==len(retweets)==len(favs)):
+        logging.warn('Length of parsed HTML data not equal: timestamps = %i, texts = %i, retweets = %i, favs = %i' % (len(timestamps),len(texts),len(retweets),len(favs))) 
+
+
+
+Adding this text to test that Git is workin!!!!!!!!!!!!!  Delete afterwards :-)

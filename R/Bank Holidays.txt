@@ -1,0 +1,53 @@
+From and including: Monday, January 14, 2013
+To and including: Friday, September 11, 2015
+
+Excluding Weekends and public holidays in United States – Nationwide
+
+Result: 670 days
+
+971 calendar days – 301 days skipped:
+Excluded 138 Saturdays
+Excluded 138 Sundays
+Excluded 25 holidays:
+
+- Martin Luther King Day (Monday, January 21, 2013, Monday, January 20, 2014, Monday, January 19, 2015)
+- Presidents' Day (Monday, February 18, 2013, Monday, February 17, 2014, Monday, February 16, 2015)
+- Memorial Day (Monday, May 27, 2013, Monday, May 26, 2014, Monday, May 25, 2015)
+- Independence Day (Thursday, July 4, 2013, Friday, July 4, 2014, Friday, July 3, 2015)
+- Labor Day (Monday, September 2, 2013, Monday, September 1, 2014, Monday, September 7, 2015)
+- Columbus Day (Monday, October 14, 2013)
+- Veterans Day (Monday, November 11, 2013, Tuesday, November 11, 2014)
+- Thanksgiving Day (Thursday, November 28, 2013, Thursday, November 27, 2014)
+- Christmas Day (Wednesday, December 25, 2013, Thursday, December 25, 2014)
+- New Year's Day (Wednesday, January 1, 2014, Thursday, January 1, 2015)
+- Columbus Day (Monday, October 13, 2014)
+
+
+Extra days where some markets are closed (not included in is.holiday column):
+Good Friday - 2013-03-29, 2014-04-18, 2015-04-03
+
+
+** Asian Markets
+## Japan - Nikkei 225
+January 14th 2013 is missing - a bank holiday in Japan?
+A complete list can be found here:
+http://markets.on.nytimes.com/research/markets/holidays/holidays.asp?display=market&timeOffset=-1&exchange=TYO
+
+## China - Shanghei SE
+
+A complete list cna be found here:
+http://markets.on.nytimes.com/research/markets/holidays/holidays.asp?display=market&exchange=SHH
+
+Example Bank holidays:
+
+"2013-11-28" - Thanks Giving
+"2013-12-25" - Christmas
+
+
+"2015-01-01" - New Years Day
+"2015-01-19" - Martin Luther King, Jr. Day
+"2015-02-16" - Washington's Birthday
+"2015-04-03" - Good Friday
+"2015-05-25" - Memorial Day
+"2015-07-03" - Independence Day
+"2015-09-07" - Labor Day

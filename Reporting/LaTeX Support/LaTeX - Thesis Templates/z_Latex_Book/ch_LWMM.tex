@@ -1,0 +1,32 @@
+% Literatur, Weblinks, Mail und eigene Macros
+
+\chapter{LWMM}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Literaturreferenzen}
+
+In so ziemlich jeder wissenschaftlichen Arbeit wird man Literatur zitieren müssen. Die Gesamte Literatur importiert man aus einem *.bib-Datei und zitiert wie folgt \citep{Adams.2002}, \cite{Adams.2002,Adams.2004} oder \citep[siehe, z.B.,][]{Fullwood.2010}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Weblink und Mail}
+
+In Latex-Dokumenten ist man auch in der Lage Weblinks anzugeben, die den Internetbrowser aufrufen und auf die referenzierte Seite direkt verweisen. Man kann auf diese Links direkt mitten im Text verweisen, \url{http://www-e.uni-magdeburg.de/mertens/teaching/mech/skript/variationen.pdf} oder separat
+\begin{center}
+	\url{http://www-e.uni-magdeburg.de/mertens/teaching/mech/skript/variationen.pdf}
+\end{center}
+Alternativ kann man auf die Seite mit einem Stichwort verweisen, \href{http://www-e.uni-magdeburg.de/mertens/teaching/mech/skript/variationen.pdf}{klick mich}.
+
+Witzig ist noch dazu, dass man auch eine Email direkt einrichten kann mit dem im PC definierten Befehl mailto, welcher dein Emailprogramm aufruft und eine Email auf die referenzierte Adresse schickt, \href{mailto:name@email.com}{name@email.com}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Eigene Macros}
+
+Mit der Zeit entwickelt man seinen eigenen Stil, wann manche Sachen angeht, und man verwendet häufig bestimmte Befehle und Kombinationen dieser. Wie z.B. \hspace{2cm} \emph{\textbf{Banane}}. Da ich diese Befehle in fast allen meinen Dokumenten verwenden möchte, lohnt es sich eine separate Datei zu erzeugen, in der man all diese Befehle in einer kurzen persönlichen Form drin sind, sodass ich nur diese Datei anzubinden brauche, um die Befehle wie ich sie mag zu verwenden, z.B. \hs \fk{Banane}.
+
+Alternativ kann man irgendwo im PC die EINE Datei mit Macros halten und im Code den Absolutpfad auf diese angeben. Der Vorteil dieser Variante ist, dass man natürlich dann nur eine Datei immer aktualisieren muss, sodass man in allen Projekten die neusten Macros verwenden kann. Dies kann aber auch gefährlich sein, da man in alten Projekten vielleicht andere Kürzeln verwendet hat, sodass der erste Versuch zu kompilieren in der Regel nicht erfolgreich sein wird.

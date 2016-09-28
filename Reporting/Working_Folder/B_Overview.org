@@ -1,0 +1,42 @@
+
+#+LaTeX_HEADER: \usepackage{pdfpages}
+#+latex_header: \usepackage[bottom]{footmisc} %% to keep entire footers on one page
+#+LATEX_HEADER: \usepackage[]{graphicx}
+#+LATEX_HEADER: \usepackage[]{minted} 
+#+LATEX_HEADER: \usepackage[a4paper,margin=1in]{geometry} 
+#+LATEx_HEADER: \usepackage{comment}
+#+latex_header: \usepackage[linesnumbered,ruled,lined,shortend]{algorithm2e}
+#+latex_header: \usepackage[space]{grffile}
+
+#+OPTIONS: todo:nil
+#+OPTIONS: H:4
+#+OPTIONS: num:4
+
+\pagebreak
+
+
+* DONE Thesis structure
+
+There are three main parts to this study, with each phase feeding directly into the next. There is little overlap contained within the details of the work that was completed; however, the flow of raw data unifies them, and they were all completely necessary in order to accomplish the aim of this study, namely to assess the impact that social media data can make within the framework of financial market forecasting.
+
+\vspace{5mm} 
+
+\noindent
+
+The three main steps may be summarised as follows:
+
+|                                                    |   |                                                                            |
+| *Twitter mining*                                   |   | \rightarrow obtaining social media data associated with certain topics     |
+|                                                    |   |                                                                            |
+| \hookrightarrow *Sentiment analysis*               |   | \rightarrow quantifying the sentiment contained of the collected data      |
+|                                                    |   |                                                                            |
+| \hspace{10pt} \hookrightarrow *Market forecasting* |   | \rightarrow using sentiment data to enhance traditional forecasting models |
+|                                                    |   |                                                                            |
+
+
+The structure of this report follows these three stages in sequence. Each phase is presented in a dedicated chapter, containing: (1) a brief background, (2) the particular methodologies employed within this study and, lastly, results. A slightly more detailed overview of the steps involved for Twitter mining, sentiment analysis and the general modelling work are additionally visualised using flowchart diagrams, which are to be found in the Appendices. The flowchart describing the workflow for Twitter mining and web-scraping is given in Appendix [[flowcharts]], Section [[flowchart-scraping]]. The entire modelling process, from sentiment analysis through to to component-wise gradient boosting, is put into perspective via the flowcharts in Appendix [[flowcharts]], Sections [[flowchart-mod1]] and [[flowchart-mod2]]. A summary of all results with some ideas for future work are given in Chapter [[conclusions]].
+
+
+\vfill
+
+Note: throughout this thesis, a dagger symbol ( \dag ) is used to mark a link to a website, which may be visited by clicking on the hyperlink if reading an electronic version of this document. The information that is linked is supplementary for the interested. It is not essential.

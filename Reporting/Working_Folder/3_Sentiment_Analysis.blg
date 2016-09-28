@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: 3_Sentiment_Analysis.aux
+The style file: plain.bst
+Database file #1: references.bib
+I was expecting an "="---line 279 of file references.bib
+ :   
+ :   volume    = {abs/1308.6297},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 465 of file references.bib
+ :   
+ :   journal={URL http://www-stat.stanford.edu/\~{}jhf/ftp/stobst.ps}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in Mohammad13
+Warning--can't use both author and editor fields in Saygin2003
+You've used 16 entries,
+            2118 wiz_defined-function locations,
+            617 strings with 6838 characters,
+and the built_in function-call counts, 5203 in all, are:
+= -- 512
+> -- 204
+< -- 5
++ -- 84
+- -- 64
+* -- 361
+:= -- 856
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 75
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 213
+empty$ -- 438
+format.name$ -- 64
+if$ -- 1091
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 19
+newline$ -- 83
+num.names$ -- 34
+pop$ -- 83
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 142
+stack$ -- 0
+substring$ -- 354
+swap$ -- 44
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 58
+warning$ -- 2
+while$ -- 57
+width$ -- 18
+write$ -- 176
+(There were 2 error messages)

@@ -1,0 +1,34 @@
+This is a list of the top tweet for each search term.
+In each case, it is the tweet with the most number of retweets and favourites
+
+The tweetIDs are obtained in the script: "sentiment_importer_upgrade.R" at this line:
+## Have a look at the tweets with the most actions
+    dt_combined[order(-tweet_actions)]
+
+
+"bull market"           (tweetID: 558404670037954560)  --> highest score actually went to "The End Of Another Great Bull Market?" on 14th March 2015
+                        tweet: "Our new black jerseys are now available at the Bull Market store at the @unitedcenter"   -->  Hahahaha!!
+"bear_market"           (tweetID: )
+                        tweet:
+"Dow_Jones"             (tweetID: )
+                        tweet:
+"dow_SPDR"              (tweetID: )
+                        tweet:
+"dow_wallstreet"        (tweetID: )
+                        tweet:
+"federal_reserve"       (tweetID: )
+                        tweet:
+"financial_crisis"      (tweetID: )
+                        tweet:
+"goldman_sachs"         (tweetID: )
+                        tweet:
+"interest_rates"        (tweetID: )
+                        tweet:
+"market_volatility"     (tweetID: )
+                        tweet:
+"obama_economy"         (tweetID: )
+                        tweet:
+"oil_prices"            (tweetID: )
+                        tweet:
+"stock_prices"          (tweetID: )
+                        tweet:

@@ -1,0 +1,15 @@
+This file is where notes for citations using org-ref in emacs are stored.
+
+** TODO 2011 - In Search of Attention
+ :PROPERTIES:
+  :Custom_ID: da11_in_searc_atten
+  :AUTHOR: ZHI DA, JOSEPH ENGELBERG \& PENGJIE GAO
+  :JOURNAL: The Journal of Finance
+  :YEAR: 2011
+  :VOLUME: 66
+  :PAGES: 1461-1499
+  :DOI: 10.1111/j.1540-6261.2011.01679.x
+  :URL: http://dx.doi.org/10.1111/j.1540-6261.2011.01679.x
+ :END:
+[[cite:da11_in_searc_atten]] [[file:/Volumes/Mac OS Drive/Thesis/Literature/bibliography/bibtex-pdfs/da11_in_searc_atten.pdf][pdf]]
+

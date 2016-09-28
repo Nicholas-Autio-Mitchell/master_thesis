@@ -1,0 +1,31 @@
+Symbol	Name	Last Trade	Change	Volume
+AAPL	Apple Inc.	117.16 Aug 17	Up 1.20 (1.03%)	40,890,109
+AXP	American Express Company	81.00 Aug 17	Up 0.09 (0.11%)	4,574,700
+BA	The Boeing Company	144.44 Aug 17	Down 0.65 (0.45%)	3,745,958
+CAT	Caterpillar Inc.	78.54 Aug 17	Up 0.05 (0.06%)	5,226,840
+CSCO	Cisco Systems, Inc.	28.83 Aug 17	Down 0.21 (0.71%)	21,263,997
+CVX	Chevron Corporation	83.23 Aug 17	Down 1.69 (1.99%)	12,602,751
+DD	E. I. du Pont de Nemours and Company	54.27 Aug 17	Up 0.41 (0.76%)	5,133,890
+DIS	The Walt Disney Company	109.05 Aug 17	Up 1.89 (1.76%)	7,954,244
+GE	General Electric Company	26.21 Aug 17	Up 0.13 (0.50%)	19,223,741
+GS	The Goldman Sachs Group, Inc.	202.57 Aug 17	Up 0.55 (0.27%)	1,600,721
+HD	The Home Depot, Inc.	119.70 Aug 17	Down 0.05 (0.04%)	7,255,643
+IBM	International Business Machines Corporation	156.31 Aug 17	Up 0.56 (0.36%)	2,249,554
+INTC	Intel Corporation	29.08 Aug 17	Up 0.06 (0.21%)	15,548,322
+JNJ	Johnson & Johnson	99.87 Aug 17	Up 1.06 (1.07%)	6,901,809
+JPM	JPMorgan Chase & Co.	68.07 Aug 17	Up 0.18 (0.27%)	10,326,540
+KO	The Coca-Cola Company	41.35 Aug 17	Up 0.10 (0.24%)	8,272,813
+MCD	McDonald's Corp.	100.66 Aug 17	Up 1.39 (1.40%)	5,204,060
+MMM	3M Company	149.24 Aug 17	Up 0.96 (0.65%)	1,648,944
+MRK	Merck & Co. Inc.	59.71 Aug 17	Up 0.53 (0.90%)	6,113,739
+MSFT	Microsoft Corporation	47.32 Aug 17	Up 0.32 (0.68%)	21,099,946
+NKE	NIKE, Inc.	114.98 Aug 17	Up 0.62 (0.54%)	1,958,730
+PFE	Pfizer Inc.	35.50 Aug 17	Up 0.18 (0.51%)	13,881,656
+PG	The Procter & Gamble Company	75.53 Aug 17	Down 0.09 (0.12%)	8,683,913
+TRV	The Travelers Companies, Inc.	107.71 Aug 17	0.00 (0.00%)	1,213,996
+UNH	UnitedHealth Group Incorporated	123.82 Aug 17	Up 2.80 (2.31%)	2,951,800
+UTX	United Technologies Corporation	99.36 Aug 17	Up 0.66 (0.67%)	4,228,442
+V	Visa Inc.	74.41 Aug 17	Up 0.19 (0.26%)	3,473,502
+VZ	Verizon Communications Inc.	47.52 Aug 17	Up 0.03 (0.06%)	7,784,321
+WMT	Wal-Mart Stores Inc.	71.91 Aug 17	Down 0.47 (0.65%)	7,604,473
+XOM	Exxon Mobil Corporation	78.77 Aug 17	Up 0.41 (0.52%)	9,365,458

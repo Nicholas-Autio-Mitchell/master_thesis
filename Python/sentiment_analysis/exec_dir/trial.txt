@@ -1,0 +1,1 @@
+Finished! Results in: /Volumes/Mac OS Drive/Thesis/Data/sentiment_analysis/input/clean/stock prices/2015-09-15_til_2015-09-05_clean_text0_out.txt

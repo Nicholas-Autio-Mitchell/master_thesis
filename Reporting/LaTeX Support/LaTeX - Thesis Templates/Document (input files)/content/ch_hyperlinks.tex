@@ -1,0 +1,23 @@
+\chapter{Hyperlinks and references}
+\label{href}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The package hyperref}
+
+The package \imp{hyperref} is the package for referring to labeled elements of a document and hyperlinks. Now, chapters, sections, equations, figures, tables and other elements can be labeled and referred to, e.g., \autoref{math_fe}, \autoref{math_msymb} and \autoref{href}. These are clickable links which in the pdf redirects the reader to the referred element (with ALT+LEFT you can then go back to where you were reading). Here, different alternatives can be used, e.g., \ref{href}, \autoref{href} or \hyperref[href]{Chapter \ref*{href}}. Depending on which language you have to write something, you may need language options (e.g., ngerman for German hyperlinks).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hyperlinks to internet sites, email and attached files}
+
+Hyperlinks can be added as, e.g., \url{http://miktex.org/} or \href{http://miktex.org/}{click me}. Sending an email to a prescribed address can be done by \href{mailto:name.lastname@address.org}{name.lastname@address.org}. If the pdf is delivered within a folder with useful files, these files can be linked in the pdf, e.g., \href{run:attachments/manipulate.nb}{manipulate} or \href{run:attachments/video.mp4}{video}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Literature references}
+
+Bibtex files with literature information can be created either manually or using literature manager programs like \href{http://www.mendeley.com/}{Mendeley} or \href{http://citavi.com/en/index.html}{Citavi}. The bibtex file must be included in the project with \imp{bibliography} pointing to the file, together with \imp{bibliographystyle} and a packages for citing commands. With the commands \imp{cite/p} elements of the included file are then cited, e.g., \cite{Hill1952} and \citep{Kroner1977}. Make sure that while compiling you have chosen a procedure including bibtex (see compiling options). Sometimes it may be necessary to delete all files but not the main.tex file in order to be able to compile again the project, if bibliography styles have been changed.

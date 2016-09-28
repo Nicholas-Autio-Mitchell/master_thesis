@@ -1,0 +1,35 @@
+A summary of the lagged subsets.
+
+We can see the number of observations and number of variables/predictors in each subset
+
+List of 5
+ $ Lag.1:List of 5
+  ..$ trad_small:Classes 'data.table' and 'data.frame':	695 obs. of  7 variables:
+  ..$ trad_large:Classes 'data.table' and 'data.frame':	695 obs. of  37 variables:
+  ..$ sent_small:Classes 'data.table' and 'data.frame':	695 obs. of  23 variables:
+  ..$ sent_large:Classes 'data.table' and 'data.frame':	695 obs. of  101 variables:
+  ..$ combined  :Classes 'data.table' and 'data.frame':	695 obs. of  143 variables:
+ $ Lag.2:List of 5
+  ..$ trad_small:Classes 'data.table' and 'data.frame':	694 obs. of  12 variables:
+  ..$ trad_large:Classes 'data.table' and 'data.frame':	694 obs. of  69 variables:
+  ..$ sent_small:Classes 'data.table' and 'data.frame':	694 obs. of  41 variables:
+  ..$ sent_large:Classes 'data.table' and 'data.frame':	694 obs. of  197 variables:
+  ..$ combined  :Classes 'data.table' and 'data.frame':	694 obs. of  281 variables:
+ $ Lag.3:List of 5
+  ..$ trad_small:Classes 'data.table' and 'data.frame':	693 obs. of  17 variables:
+  ..$ trad_large:Classes 'data.table' and 'data.frame':	693 obs. of  101 variables:
+  ..$ sent_small:Classes 'data.table' and 'data.frame':	693 obs. of  59 variables:
+  ..$ sent_large:Classes 'data.table' and 'data.frame':	693 obs. of  293 variables:
+  ..$ combined  :Classes 'data.table' and 'data.frame':	693 obs. of  419 variables:
+ $ Lag.4:List of 5
+  ..$ trad_small:Classes 'data.table' and 'data.frame':	692 obs. of  22 variables:
+  ..$ trad_large:Classes 'data.table' and 'data.frame':	692 obs. of  133 variables:
+  ..$ sent_small:Classes 'data.table' and 'data.frame':	692 obs. of  77 variables:
+  ..$ sent_large:Classes 'data.table' and 'data.frame':	692 obs. of  389 variables:
+  ..$ combined  :Classes 'data.table' and 'data.frame':	692 obs. of  557 variables:
+ $ Lag.5:List of 5
+  ..$ trad_small:Classes 'data.table' and 'data.frame':	691 obs. of  27 variables:
+  ..$ trad_large:Classes 'data.table' and 'data.frame':	691 obs. of  165 variables:
+  ..$ sent_small:Classes 'data.table' and 'data.frame':	691 obs. of  95 variables:
+  ..$ sent_large:Classes 'data.table' and 'data.frame':	691 obs. of  485 variables:
+  ..$ combined  :Classes 'data.table' and 'data.frame':	691 obs. of  695 variables:

@@ -1,0 +1,44 @@
+
+#+latex_header: \usepackage{enumitem}  %% for lists (in algorithm)         
+#+latex_header: \usepackage{mathtools} %% for \coloneqq
+#+latex-header: \@addtoreset{algorithm}{chapter}% algorithm counter resets every chapter
+
+#+latex_header: \usepackage{pdflscape}                                   
+#+latex_header: \usepackage{afterpage}                                   
+#+latex_header: \usepackage{capt-of}  % or use the larger `caption` package
+#+latex-header: \usepackage{caption}
+
+#+latex_header: \usepackage[bottom]{footmisc} %% to keep entire footers on one page
+#+LATEX_HEADER: \usepackage[]{graphicx}
+#+LATEX_HEADER: \usepackage[]{minted} 
+#+LATEX_HEADER: \usepackage[a4paper,margin=1in]{geometry} 
+#+LATEx_HEADER: \usepackage{comment}
+#+latex_header: \usepackage[linesnumbered,ruled,lined,shortend]{algorithm2e}
+#+latex_header: \usepackage[space]{grffile}
+
+#+OPTIONS: todo:nil
+#+OPTIONS: H:4
+#+OPTIONS: num:4
+
+\pagebreak
+
+* DONE Conclusions <<results-summary>> <<conclusions>> <<results-summary>>
+
+The premise of this study was to embed social media data as predictors - in the form of sentiment analysis performed on Twitter data - into traditional models, which would commonly make use only of financial market data, and investigate changes in the predictive capabilities of the resulting models. Comparisons were made between (1) traditional subsets, (2) subsets containing purely sentiment analysis data, and (3) subsets combining traditional market data together with sentiment data variables. The use of five such subsets provided the primary source for comparison. The principal modelling tool was component-wise functional gradient boosting, with the additional variation of stochastic gradient boosting being utilised on a small subset of the data.
+
+The results demonstrate that the inclusion of social media data does indeed enhance the performance of the forecasting models compared, in the vast majority cases. Results from the Gaussian family showed the subsets containing social media data outperforming the traditional subsets across the board, with comparable levels of mean-square error. In the parameter combinations of the correlation threshold $\kappa$ = 70 % and 80 %, the errors produced by the subset containing both financial market data and social media data gave the highest predictive accuracy with the lowest errors. The binomial modelling produced overall better results to those from the Gaussian modelling, and was additionally able to amplify the performance advantage offered by the two larger data sets containing social media data in the parameter combinations using a larger frame-size. There were differences of up to 4 % in predictive accuracy between traditional subsets and the combined subset, with improvements of at least 2 % in predictive accuracy within every individual value of lag used (with a frame-size of 60 days). 
+
+Price paths created using daily predictions, based on a nominal start value, showed that the best performing subset containing sentiment analysis data was able to more closely track the movements of the market, with the best performing traditional subset failing to react as quickly to market conditions and generally returning a much lower level of sensitivity to the market's momentum.
+
+The decision to model the time-series on a rolling basis with a fixed frame-size was shown to be the correct decision, with comparative modelling using an increasing frame-size producing overall inferior results, most noticeably with the binomial family being heavily affected and not being able to exploit the extra information presented at each increment of the model along the timeline. The predictive accuracy of all subsets was suppressed dramatically in comparison to the Gaussian model, which did manage to deal with the increased amount of information respectably, not appearing to return diminishing results, with market momentum and directional trends not necessarily being confined to the frame-size.
+
+The utilisation of component-wise gradient boosting was instrumental in reaching the outcomes presented in Chapter [[chapter-empirical-studies]]. It provided a transparent method of handling large numbers of predictors efficiently by providing a statistically systematic method of variable selection while minimising the specified loss function. Stochastic gradient boosting was carried out on the same data sets as a comparison, introducing a factor of randomisation to the gradient descent in an order to reduce variance within the model. This, however, failed to outperform the component-wise boosting algorithm, with several models failing to produce predictive accuracies above 50 %. 
+
+
+** Further comparisons
+
+A continuation of this study could move in two potential directions. The first would be to follow the direction of modelling technique, enhancing the performance of component-wise boost and comparing it to other powerful forecasting and machine learning algorithms. The second direction would be that of social media data and its role within financial market forecasting, and within wider arenas.
+
+The first direction may involve comparisons to further /ensemble/ methods, combining several weak learners sequentially to optimise a loss function. One could consider various loss functions, and additionally the metric by which e.g. the best base-learner is selected in component-wise boosting at each iteration. In this study, the SSE of each base-learner was used, however there are further metrics that apply to further base-learners that may be able to further enhance performance. A different approach to further validation and comparison of this study's results would be to compare powerful /black box/ methods, which may improve performance, albeit with less transparency. Neural networks appear to present a strong case, having already been shown to deliver high predictive accuracy in studies similar to this one, cite:DBLP:journals/corr/abs-1010-3003.
+
+A convenient side-effect of component-wise boosting inherently providing variable selection, is that it is no longer necessary to separate variable selection and model fitting, such as is often the case with wide data sets. An interesting topic might be the effectiveness of feature selection, in comparison to techniques of /feature reduction/ such as principal component analysis (PCA), where condensing many predictors into a handful that are frequently able to explain large amounts of the variance in a data set. Such models, however, usually do not allow results to be linked retrospectively to the input, meaning it can be impossible to describe the impact of each individual predictor on the final model. An R package exists, named FactoMinoR cite:le2008factominer, which allows some level of further analysis and interpretation of PCA results with respect to the input variables and so may provide insight that could be transposed into further enhancements to component-wise gradient boosting.

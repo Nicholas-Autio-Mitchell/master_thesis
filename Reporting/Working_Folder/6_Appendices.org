@@ -1,0 +1,23 @@
+
+#+latex_header: \usepackage[bottom]{footmisc} %% to keep entire footers on one page
+#+LATEX_HEADER: \usepackage[]{graphicx}
+#+LATEX_HEADER: \usepackage[]{minted} 
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry} 
+#+LATEx_HEADER: \usepackage{comment}
+#+latex_header: \usepackage[linesnumbered,ruled,lined,shortend]{algorithm2e}
+#+latex_header: \usepackage[space]{grffile}
+
+#+OPTIONS: todo:nil
+#+OPTIONS: H:4
+#+OPTIONS: num:4
+
+
+* Appendices 
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/6e_flowcharts.org" :minlevel 2
+
+\pagebreak
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/6b_public_holidays.org" :minlevel 2
+
+\pagebreak

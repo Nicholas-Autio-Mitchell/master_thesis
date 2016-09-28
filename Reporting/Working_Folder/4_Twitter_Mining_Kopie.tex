@@ -1,0 +1,264 @@
+% Created 2016-03-13 Sun 03:20
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\usepackage[margin=1in]{geometry}
+\usepackage{comment}
+\usepackage[]{algorithm2e}
+\usepackage[space]{grffile}
+\setcounter{secnumdepth}{4}
+\author{Nicholas Mitchell}
+\date{\today}
+\title{4\_Twitter\_Mining\_Kopie}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Social media data}
+\label{sec-1}
+
+There are many possible sources of social media data that could be incorporated into a statistical model, and naturally it is the \emph{Big Three}: Google, Facebook and Twitter, who spring to mind. While the means exist to obtain data from all three, there are also limitations that apply to each.
+
+
+\subsection{Google Trends}
+\label{sec-1-1}
+Google makes a lot of data freely available, for example the number of times a given word or phrase was 'Googled'. The search engine does however apply certain filter and pre-processing steps to the data before making it available. What remains is a great tool for making comparisons between terms, plotting their relative popularity against one another over a long time period, an example of which is shown in FigX. 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{/Volumes/SSDizzle/Users/nicholasmitchell/Desktop/Bereichsaufnahme 4.png}
+\caption{\label{img:funny}A funny image}
+\end{figure}
+
+There are two issues that make Google Trends data difficult (but not impossible) to use in the context of this study. The first issue is that the frequency of the data is (at the time of writing) limited to weekly aggregates for timelines longer than three months. This means a method of interpolation would have to be implemented before the data could be combined with daily financial market data over this study's desired time-line of two or more years. Daily data is available for time-lines shorter that three months, which leads nicely on to the second issue. The pre-processing of the data is not transparent; the exact methods used are not published and so any interpretation could perhaps be fallacious. The data is clearly normalised, the maximum 'popularity' in each extracted data set being 100 and so \emph{naïve} attempts to stitch many three-month data sets together - such as linear combinations - would be in vain, as the final time-line could not be considered homogeneous in scale. With a different objective in mind, the Google search data does present an interesting case. Hamid and Heiden (2014) were able to show how Google search volumes could be used to increase forecasting accuracy for market phases of relatively high volatility\footnote{This is an interesting direction that could potentially be built upon with the Twitter data accumulated for this study}. In the context of this study, however, the task must be deferred as discussed in \texttt{Future extensions}.
+
+
+\subsection{Facebook}
+\label{sec-1-2}
+To use Facebook as a source of data, it is necessary to create a special account for software developers (which is free). The downside, however, is that only the publicly available information of your own friends \emph{who also have a developer account} may freely be obtained. This is a large limitation, as it would significantly reduce the amount of data available and narrows down the pool of social media data specifically to a biased subset of users, i.e. data for people who are involved in software development and data mining. This is unfortunately not the target group of this study and so rules out the use of data Facebook.
+
+
+\subsection{Twitter}
+\label{sec-1-3}
+The third option is Twitter, which has been extensively \emph{mined} for its large flow of information [References to several examples]. The following section explains why Twitter is such a popular choice as a source of social media data, justifying its selection for this study. The current best practices of extracting data are then summarised, along with a brief explanation of the procedure defined by this study.
+
+
+\section{Twitter Mining}
+\label{sec-2}
+
+\subsection{Why use Twitter?}
+\label{sec-2-1}
+The social media data used for sentiment analysis (see ChapterX) was sourced exclusively from the online social media platform \texttt{Twitter}. The first post (in Twitter terminology, a \emph{tweet}) was made in March 2006 via short message service (SMS), the entire service running off of a single laptop. In the ensuing months the platform began its ascent to popularity, steadily expanding its user-base after its official launch in summer 2006. Not only individuals, but everyone from news companies and sports teams to artists and presidents use Twitter to update their follows, with the potential to reach anybody with an internet connection.
+A study into the monthly count of unique visitors that top digital media properties receive showed that Twitter was ranked 14$^{\text{th}}$ with 118,000 unique visitors \footnote{Statistics compiled by \href{http://www.comscore.com/Insights/Rankings/comScore-Ranks-the-Top-50-US-Digital-Media-Properties-for-January-2016}{comScore}. \emph{Unique} signifies a user with identifiable IP address. Total numbers of hits, i.e. simple page visits, including those from machines and referals over other sites reach around 3 billion per month according to \href{https://www.similarweb.com/website/twitter.com#overview}{SimilarWeb}.} in January 2016 alone. Perhaps somewhat unsurprisingly, the top two spots for the same time period were occupied by Google and Facebook, each with ca. 245,000 and ca. 207,000 unique visitors, respectively.
+
+There are several reasons why Twitter data is an attractive candidate as an explanatory variable in a study such as this one. First and foremost, it is content that is created on a continuous basis with almost no filter \footnote{The only limit imposed on users is the 140-character limit placed on each tweet. \href{https://dev.twitter.com/overview/api/counting-characters}{Twitter's actual definition is slightly more detailed.}}. In short, users may post their thoughts regarding any topic, at any time, for anyone to read. This makes the data an excellent tool for capturing the sentiments and emotions across extremely large demographics of users, in real time.
+
+At the time of writing there are clear ways in which it is possible to obtain Twitter data, each outlined in \texttt{the section Sources of Twitter data} along with their corresponding benefits and drawbacks. When considering which route to take, it should be kept in mind exactly what kind of analysis will ultimately be performed on the data. The context of this study requires that the information received fulfils certain criteria. the following requirements are defined:
+
+\begin{enumerate}
+\item For each individual tweet, the data must contain the tweet text.
+\item For each individual tweet, the data must contain a timestamp allowing accurate temporal aggregation into \emph{daily} data.
+\item The collective corpus of tweets must span a timeline of at least two years.
+\end{enumerate}
+
+In order to perform sentiment analysis on the Twitter data, it is of course imperative that the text string is obtained, fulfilling \textbf{criterion 1}. If only meta-data were to be received, e.g. the time and point of origin of the tweets, sentiment analysis would be impossible. Although the timeline specified by \textbf{criterion 2} may appear somewhat arbitrary (and it is!), a minimum timeline of several years is commonly desired for time-series analysis of financial markets. For discussion as to why this is the case, please refer to sectionX ('Time series analysis - N versus P'). \textbf{Criterion 3} is important because the results of the sentiment analysis must be coherent with daily financial market data, with which they are to be combined.
+
+
+\subsection{Sources of Twitter data}
+\label{sec-2-2}
+
+
+\subsubsection{Twitter API}
+\label{sec-2-2-1}
+Twitter offers an application programme interface (API) to allow programmatic connections to its databases. This is commonly achieved using languages such as python, JavaScript and R, but can be implemented using any language capable of establishing an API connection.
+The service is free, requiring only that users create a developer account, obtaining secure identification methods using a token system. Furthermore, the tweet data is very clean and there are many tools\footnote{The most useful implementation in R is currently the \textbf{twitteR} package, which is a one-stop-shop for cleanly extracting tweets, ready for analysis with common R functions.} already available that parse and display that data.
+
+There are two restrictions placed on the API. The first is to safeguard the Twitter servers from being overrun, namely that each user may make only \href{https://dev.twitter.com/rest/public/rate-limits}{a certain number of requests} in a given time-frame. The second restriction limits the API's reach into the past to approximately seven days. This means that it is impossible to collect and create a time-series of the required length for this study. While it is possible to implement and automate a script to collect tweets at a given frequency\footnote{The author has already implemented such as system, available on request.}, one would have to still wait e.g. two years minus seven days to obtain a time-series that is two years in length. For this reason, the Twitter API methodology was not a feasible option for this study.
+
+
+\subsubsection{Third Party Providers}
+\label{sec-2-2-2}
+It is possible to gain access to the complete Twitter archives, spanning back to Twitter's inception. This is facilitated by a third party company called \href{https://unionmetrics.com/product/echo-twitter-archive-search/}{Union Metrics via their Echo product line}. There are interactive analytics tools built in to the console, which allow the slicing and drilling of the entire database with visual representations. This is aimed at commercial users needing to make strategic marketing decisions, rather than perform statistical analysis or make quantitative forecasts.
+
+Although the product is extensive and offers many features, it has two drawbacks. Firstly it is not a free service; requiring a corporate level monthly subscription. Secondly, the offering is not optimised for independent data analysis, as restrictions on exporting the data would impede full usage of the data within alternative software packages. Both constraints void this option.
+
+
+\subsubsection{\label{TAS}Twitter Advanced Search}
+\label{sec-2-2-3}
+The \href{https://twitter.com/search-advanced?lang\%3Den}{Twitter Advanced Search (TAS)} web interface allows any user to search for tweets in any time period, displaying tweets that match a given search term. The tweets are displayed in reverse chronological order (the most recent tweet is at the top of the webpage) and each tweet is displayed with its key information. The HTML code being rendered, however, holds additional information, matching all that is available via the API and third party options. There isn't only the tweet text, username and timestamp, but rather a whole host of meta data including e.g. the number of times the tweet has since been \emph{retweeted} (re-posted or shared by another user) or \emph{favourited} (marked as a favourite by another user) and even the longitude-latitude coordinates of the user at the time of posting\footnote{The coordinates accuracy is approximately a 1.5km radius, which should guarantee some level of privacy.}. SectionX goes into more detail about how this data may be located and extracted from the HTML code.
+
+The web interface is free to use, contains the entire Titter archive and also, being Twitter's \emph{advanced search}, allowed for filtering of tweets beyond a date range. For example, the language of the tweets can be used as a filter as well as a longitude-latitude range from which tweets were posted. Tweets for individual users or containing specific hashtags\footnote{Hashtags provide and unmoderated way to help to link tweets from different users and locales by theme.} can also be selected. This study uses solely the common search function, returning all tweets that contain the user-specified word(s).
+
+The single disadvantage of this approach is that involves using an interactive interface, i.e. it is not designed to be utilised programmatically. This created significant challenges within the scope of this study, including the development of a customised web-scraper, as shall be explained in the following section.
+
+
+\section{Constructing a web-scraper}
+\label{sec-3}
+
+
+\subsection{What is a web-scraper?}
+\label{sec-3-1}
+To explain this, a good analogy between the internet and an encyclopaedia can be used. Imagine we would like to find all the pages in the encyclopaedia that contain information regarding a topic of interested, for example "chocolate". We would look in the index for our search term and find all topics involving chocolate to be listed with their page and section numbers. The term given to such a mechanism is \textbf{\href{https://en.wikipedia.org/wiki/Web_crawler}{\emph{web-crawler}}} and is (simplistically speaking) approximately what search engines such as Google, Yahoo and Bing carry out each time somebody uses their search functions. They look all the pages in their encyclopaedia and the returned search results are those (web-)pages containing the word "chocolate"\footnote{Web-crawling also includes \emph{how} the search engines obtain their information (i.e. the encyclopaedia) to begin with. An explanation of this does not however lie within the scope of this study. \href{http://link.springer.com/article/10.1023/A:1019213109274}{Heydon and Najork (1999)} provide a good starting point.}. The data that this study is interested in, however, is not the page number i.e. the internet address of certain information, but rather the contents held at those addresses.
+\noindent
+Assuming the the information provided by a web-crawler is already known (in our case the internet address of \hyperref[TAS]{TAS}), using our analogy, we visit the specified page and make a copy of all the information that is stored there. Just as one could write out a copy of any information visible in an encyclopaedia, it is possible to make a copy of all visible information (plus additional background \emph{meta} data) presented on a website. This is because, in order for the website to be displayed in a browser, all the required information must first be transferred (downloaded) to the local device and stored in the form of HTML code, which the browser then interprets and renders. It is then this HTML code that is copied, or \emph{scraped}, leading to the term \textbf{\emph{web-scraper}} \footnote{Also referred to as web harvesting and web data extraction.}.
+\noindent
+In order to obtain all required information from \hyperref[TAS]{TAS}, the first major objective of this study was to create a web-scraper that was able to visit the \hyperref[TAS]{TAS} interface, manipulate the webpage and make a copy of the underlying information i.e. the HTML code.
+\noindent
+
+
+\subsubsection{Types of web-scraping}
+\label{sec-3-1-1}
+Web-scraping can be performed in two ways: with a visible browser interface (e.g. what a user sees when using Microsoft Internet Explorer or Google Chrome), or via a \emph{headless browser}. The latter refers to a method whereby a computer connects to a web-address and collects the information held there (the HTML code), but does not render that code in a browser, meaning the user does not see anything. This method is preferable over the former as it does not require as much computational power and does not consume much working memory on the local device, meaning it can be executed relatively quickly and for a large number of websites. In such a framework it is the connection speed between local device and target that is the limitation. Headless browsers are however (for now\footnote{\href{http://stackoverflow.com/questions/34942103/headless-endless-scroll-selenium}{Progress is being made} in the development of headless browsers for tasks such as scrolling dynamically loading pages}) limited to static web-addresses, meaning that the information is held at an address and does not change. However as was previously mentioned, \hyperref[TAS]{TAS} has a dynamically loading interface and so requires the former approach, which is described in the following section.
+
+
+\subsection{How does our web-scraper work?}
+\label{sec-3-2}
+Given that a full browser with graphical interface must be used to scrape information from \hyperref[TAS]{TAS}, the tool that was used Selenium Web-driver\footnote{A detailed technical explanation of this step shall not be provided here. Please}, which allows the automation of web-page manipulation.
+
+A programme was written using the Selenium software imported into Python. Using this programme is was possible to automate the process of scrolling to the bottom of the target address, which in turn prompts \ref{TAS} to load the next 10 tweets to be displayed.
+
+As previously mentioned there are computational constraints to consider when working with a browser. In the case of this task it was the working memory\footnote{Random Access Memory (RAM).} that posed this problem. Because the web browser receives, stores and renders the information for all tweets, 
+Certain steps can be taken to reduce this burden. The greatest gain in performance was gained by creating custom broswer profile the Selenium package then called upon when opening the browser. Within such a profile (depending on the choice of browser used\footnote{Drivers for Mozilla Firefox, Google Chrome and others exist, however Chrome proved to be the most reliable when being highly customised.}, it is possible to make tweaks such as to prevent images from being downloaded and rendered, which is of course the main cause of memory allocation. Furthermore, one can provide a chosen identity to present a target address with, which can determine the form of the data that the target responds to requests with. Presenting oneself as an older 2008 version of a browser could limit the quality of certain meta data that a target sends, with lower quality meaning less information, leading to lower memory requirements.
+These 'tricks' were necessary to allow each scrolling \emph{session} to run as long as possible before significantly eroding performance or possibly crashing, losing all progress.
+
+In order to design an algorithm capable of recursing over the desired time-span of over two years on the \ref{TAS} interface, it was necessary to first carry out many tests to obtain some heuristic parameters for a batch-process.
+When the Twitter timeline is being \emph{scrolled}, it is thought of as reaching ever further back into the past. Each time the user scrolls downards and loads more tweets, the newly loaded tweets are \emph{older} than the previous tweets.
+
+\begin{algorithm}[H]
+ \KwIn{time-span start and end dates}
+ \KwOut{HTML code of TAS results}
+ \While{scroll.count less than scroll.limit}{
+  scroll to bottom of page\;
+  \eIf{at end of page}{
+   wait 3 seconds for next tweets to load\;
+   current position becomes this one\;
+   }{
+   scroll to bottom of page\;
+  }
+ }
+ \Begin{copy HTML source code}
+ \caption{Batch-process algorithm to recursively scrape over desired time-span}
+\end{algorithm}
+
+The target URL is composed manually for each batch, including start and end dates for one of the two week time blocks and one of the thirteen seach terms. This URL is then fed into 
+
+\begin{algorithm}[H]
+ \KwIn{target URL}
+ \KwOut{HTML code of TAS results}
+ \While{scroll.count less than scroll.limit}{
+  scroll to bottom of page\;
+  \eIf{at end of page}{
+   wait 3 seconds for next tweets to load\;
+   current position becomes this one\;
+   }{
+   scroll to bottom of page\;
+  }
+ }
+ \Begin{copy HTML source code}
+ \caption{Iterative web-scraping algorithm for a dynamically loading website}
+\end{algorithm}
+
+
+\subsection{Parsing the HTML code}
+\label{sec-3-3}
+The parts of the data that are useful for this study are summarised in Table \ref{table:twitter-data-usage} below. The \emph{Description} column outlines the data available for each tweet, whereas the \emph{Usage} column describes what was ultimately extracted for use in the modelling.
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{l|l|l}
+Data & Description & Usage\\
+\hline
+timestamp & A millisecond accurate timestamp & The calendar day\\
+tweet-ID & A unique identifier & Remove any duplicates\\
+tweet text & The text string (max.140 characters) & Sentiment analysis\\
+times retweeted & Number of times a tweet was retweeted & As variable and weighting factor$^{\text{*}}$\\
+times favourites & Number of times a tweet was favourited & As variable and weighting factor$^{\text{*}}$\\
+ &  & \\
+\end{tabular}\caption{\label{table:twitter-data-usage}Summary of Twitter data usage}
+
+\end{table}
+
+\mbox{*} This is explained in detail in Section 
+
+
+\subsection{How is the HTML code parsed?}
+\label{sec-3-4}
+
+As was alluded to in the \hyperref[TAS]{previous section}, TAS represents the most accessible means of obtaining the desired Twitter data. Before a suitable web-scraper can be outlined, a description of the interface offered by TAS must be given. TAS is a \emph{dynamically loading} webpage interface to a database. This means, that it holds a great deal of information, but when it called upon it displays only a small portion of the results to begin with; the next portion of results being loaded as soon as the user has scrolled to the bottom of the webpage. This is common feature implemented by many websites that host data-heavy content, as it enhances the user experience by delivering a \emph{lazy evaluation} or \emph{just in time} approach - data is loaded only at the moment it is required. Other examples are the Google image search results page and a Facebook user's main news feed.
+
+In the case of TAS, roughly 20 results (i.e. 20 tweets) for a given search are first returned, with the next 10 being loaded dynamically once the user has scrolled to bottom of the page. Given this, it immediately becomes clear, which difficulties are introduced by using TAS when trying to obtain data over a time-span of several years: it is necessary to scroll to the bottom of a webpage for every 10 tweets.
+
+To put this into perspective, the Twitter data that was used in the final analysis of this study contained \textbf{2,350,217 tweets}.
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{l|r|rr}
+Search term & Total tweets &  & Time-span coverage\\
+\hline
+ &  & (days) & (\% of 982 days)\\
+\hline
+bear market & 47,924 & 963 & 98.1\\
+bull market & 74,937 & 965 & 98.3\\
+dow jones & 250,112 & 982 & 100.0\\
+dow SPDR & 1,628 & 700 & 71.3\\
+dow wallstreet & 26,395 & 921 & 93.8\\
+federal reserve & 378,970 & 904 & 92.1\\
+financial crisis & 261,500 & 922 & 93.9\\
+goldman sachs & 289,485 & 909 & 92.6\\
+interest rates & 396,765 & 857 & 87.3\\
+market volatility & 60,858 & 970 & 98.8\\
+obama economy & 202,654 & 908 & 92.5\\
+oil prices & 219,766 & 785 & 79.9\\
+stock prices & 139,223 & 982 & 100.0\\
+\end{tabular}\caption{\label{tab.tweet-breakdown}Breakdown of the total number of tweets extracted by search term}
+
+\end{table}
+
+
+
+\subsection{Pre-processing tweet text}
+\label{sec-3-5}
+\begin{enumerate}
+\item Here we show what kind of things had to be removed (example of the hex code for smileys etc.)
+\item Some things left in because certain sentiment models actually use them, e.g. \textbf{:-)}
+\item Explanation of how regex code using Perl engine and hex-codes was used with a code snippet linked in the appendix.
+\item Before and after of one tweet.
+\end{enumerate}
+
+
+\subsection{Final output for sentiment analysis}
+\label{sec-3-6}
+Everything can be interpreted by the SA models to produce reliable results.
+Here we summarise the final product of the work detailed in the chapter and summarise how it is stored. Description of overall process. "Gone from HTML code to raw text, cleaned text, ready to process. Next chapter explains how SA was performed."
+Link here to the flow-charts in appendix?
+
+
+
+\section{Time-series analysis - N versus P}
+\label{sec-4}
+When conducting time-series analysis, there are no hard-and-fast rules governing how many time-periods must be included to guarantee model robustness. It is a question whose answer changes depending on the data being used. There is a trade-off to be found between three main components: the number of periods available, the number of covariates used (i.e. the number of model parameters to be estimated) and lastly the level of noise within the data. [Reference - Book by Hyndman?].
+
+There are other considerations that should be taken into consideration in the context of financial markets, and that is of trends and cycles. There are times in which an asset (e.g. a single company stock, oil prices or an entire index) tends to move in one directions. It shows some level of momentum. The event of such a cycle changing may be labelled a \emph{fraction} or \emph{break} in the assets price-path. The approach taken here to deal with this facet of financial time-series is to make extensive use of a model parameters named \textbf{frame-size}, which describes how many time-periods are used for each model that is fitted. Its usage is explained in more details in [section: modelling, parameters, shifting the time-frame]
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

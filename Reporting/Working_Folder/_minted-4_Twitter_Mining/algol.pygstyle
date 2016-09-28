@@ -1,0 +1,72 @@
+
+\makeatletter
+\def\PYGalgol@reset{\let\PYGalgol@it=\relax \let\PYGalgol@bf=\relax%
+    \let\PYGalgol@ul=\relax \let\PYGalgol@tc=\relax%
+    \let\PYGalgol@bc=\relax \let\PYGalgol@ff=\relax}
+\def\PYGalgol@tok#1{\csname PYGalgol@tok@#1\endcsname}
+\def\PYGalgol@toks#1+{\ifx\relax#1\empty\else%
+    \PYGalgol@tok{#1}\expandafter\PYGalgol@toks\fi}
+\def\PYGalgol@do#1{\PYGalgol@bc{\PYGalgol@tc{\PYGalgol@ul{%
+    \PYGalgol@it{\PYGalgol@bf{\PYGalgol@ff{#1}}}}}}}
+\def\PYGalgol#1#2{\PYGalgol@reset\PYGalgol@toks#1+\relax+\PYGalgol@do{#2}}
+
+\expandafter\def\csname PYGalgol@tok@vc\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@cm\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGalgol@tok@vg\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@vi\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@ch\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGalgol@tok@cs\endcsname{\let\PYGalgol@bf=\textbf\def\PYGalgol@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGalgol@tok@cp\endcsname{\let\PYGalgol@bf=\textbf\def\PYGalgol@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGalgol@tok@nn\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@no\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@s2\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@nb\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit}
+\expandafter\def\csname PYGalgol@tok@nc\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@si\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@nf\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@sh\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@nv\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@ow\endcsname{\let\PYGalgol@bf=\textbf}
+\expandafter\def\csname PYGalgol@tok@bp\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit}
+\expandafter\def\csname PYGalgol@tok@c1\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGalgol@tok@kc\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@ul=\underline}
+\expandafter\def\csname PYGalgol@tok@c\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGalgol@tok@sx\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@err\endcsname{\def\PYGalgol@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PYGalgol@tok@kd\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@it=\textit\let\PYGalgol@ul=\underline}
+\expandafter\def\csname PYGalgol@tok@ss\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@sr\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@k\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@ul=\underline}
+\expandafter\def\csname PYGalgol@tok@kn\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@ul=\underline}
+\expandafter\def\csname PYGalgol@tok@cpf\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PYGalgol@tok@kr\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@ul=\underline}
+\expandafter\def\csname PYGalgol@tok@s\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@kp\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@ul=\underline}
+\expandafter\def\csname PYGalgol@tok@kt\endcsname{\let\PYGalgol@bf=\textbf\let\PYGalgol@ul=\underline}
+\expandafter\def\csname PYGalgol@tok@sc\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@sb\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@s1\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@se\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PYGalgol@tok@sd\endcsname{\let\PYGalgol@it=\textit\def\PYGalgol@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+
+\def\PYGalgolZbs{\char`\\}
+\def\PYGalgolZus{\char`\_}
+\def\PYGalgolZob{\char`\{}
+\def\PYGalgolZcb{\char`\}}
+\def\PYGalgolZca{\char`\^}
+\def\PYGalgolZam{\char`\&}
+\def\PYGalgolZlt{\char`\<}
+\def\PYGalgolZgt{\char`\>}
+\def\PYGalgolZsh{\char`\#}
+\def\PYGalgolZpc{\char`\%}
+\def\PYGalgolZdl{\char`\$}
+\def\PYGalgolZhy{\char`\-}
+\def\PYGalgolZsq{\char`\'}
+\def\PYGalgolZdq{\char`\"}
+\def\PYGalgolZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYGalgolZat{@}
+\def\PYGalgolZlb{[}
+\def\PYGalgolZrb{]}
+\makeatother
+

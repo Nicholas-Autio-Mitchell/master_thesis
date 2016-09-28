@@ -1,0 +1,87 @@
+
+
+
+
+#+latex_header: \usepackage{enumitem}  %% for lists (in algorithm)                       
+#+latex_header: \usepackage{mathtools} %% for \coloneqq
+#+latex-header: \@addtoreset{algorithm}{chapter}% algorithm counter resets every chapter
+
+#+latex_header: \usepackage{enumitem}  %% for lists (in algorithm)         
+#+latex_header: \usepackage{mathtools} %% for \coloneqq
+#+latex-header: \@addtoreset{algorithm}{chapter}% algorithm counter resets every chapter
+
+#+latex_header: \usepackage[bottom]{footmisc} %% to keep entire footers on one page
+#+latex_header: \usepackage[]{graphicx}
+#+latex_header: \usepackage[]{minted} 
+#+latex_header: \usepackage{listings}
+#+latex_header: \usepackage[a4paper,margin=1in]{geometry} 
+#+latex_header: \usepackage{comment}
+#+latex_header: \usepackage[linesnumbered,ruled,lined,shortend]{algorithm2e}
+#+latex_header: \usepackage[space]{grffile}
+
+#+options: title:nil
+#+options: todo:nil
+#+options: h:5
+#+options: num:4
+#+options: date:nil
+#+options: author:nil
+#+OPTIONS: toc:nil
+
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/Acknowledgements.org" 
+
+\pagebreak
+
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/A_Abstract.org" :minlevel 1
+
+
+\pagebreak
+
+
+\tableofcontents
+
+\pagebreak
+
+\listoffigures
+\listoftables
+\listofalgorithms
+
+\pagebreak
+
+
+
+
+
+\pagebreak
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/B_Overview.org" :minlevel 1
+
+\pagebreak
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/2_Twitter_Mining.org" :minlevel 1
+
+\pagebreak
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/3_Sentiment_Analysis.org" :minlevel 1
+
+\pagebreak
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/4_Gradient_Boosting.org" :minlevel 1
+
+\pagebreak
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/5_Empirical_Studies.org" :minlevel 1
+
+\null\newpage
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/7_Conclusions.org" :minlevel 1
+
+\pagebreak
+
+#+include: "/Volumes/Mac OS Drive/Thesis/Source Code/Reporting/Working_Folder/6_Appendices.org" :minlevel 1
+
+\pagebreak
+
+bibliographystyle:ieeetr
+bibliography:references.bib

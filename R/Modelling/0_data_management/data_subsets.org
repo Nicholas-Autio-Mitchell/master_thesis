@@ -1,0 +1,200 @@
+## ==================================================== ##
+##  Display the subsets of the data used for modelling  ##
+## ==================================================== ##
+
+
+
+* DONE create the lagged data sets for the log returns (of indices and other macro data)
+This means loading all sentiment data then following the receipe in "data_enhancer.R"
+At the end we should have the equivalent of 'ready_to_boost.rda', but with log returns.
+
+Then create the subsets to use for modelling --> grep worked well for extracting variables
+
+
+
+* DONE We create the following subsets, for each of the sets of data created so far
+
+| Name       | Components (log_ret ~ ...)  | Reasoning                                    |
+|------------+-----------------------------+----------------------------------------------|
+| dow_only   | lagged log_ret              | Most basic example for comparison            |
+| dow_trad   | gold, oil, sp500, int_rates | traditional model factors                    |
+| dow_macro  | all macro data              | Many macro factors handled well              |
+| dow_SA_avg | average sentiment scores    | Sentiment analysis explains var.             |
+| dow_SA_all | all individual SA results   | SA from certain models might perform better  |
+|            |                             |                                              |
+|------------+-----------------------------+----------------------------------------------|
+| dow_best   | trad + macro + best of SA   | All data to showcase component-wise boosting |
+|------------+-----------------------------+----------------------------------------------|
+
+<2016-02-18 Thu>
+| Name       | Components (dow ~ ...)                                              | Reasoning                                                                | Dummy Vars. | # Vars. |
+|------------+---------------------------------------------------------------------+--------------------------------------------------------------------------+-------------+---------|
+| trad_small | Traditional factors used for market predictions.                    | Most basic example. Shows simple models work                             | No          | 5       |
+| trad_large | All macro data: indices, commodities, volatility and interest rates | Compare boosting to simpler models using wide data sets                  | Yes         | 31      |
+| sent_small | Only model averages, plus variable with weekend information         | See how averaging the SA results performs. Can simple models still work? | Yes         | 17      |
+| sent_large | All individual model results, plus variable with weekend info       | Are certain models selected more often? compare to the sent_small set    | Yes         | 95      |
+| combined   | contains all data: dummy variables, macroeconomic and sentiment     | Does adding sentiment data improve results over the traditional models?  | Yes         | 137     |
+|            |                                                                     |                                                                          |             |         |
+
+
+
+
+* Here is the structure of the final object
+
+> ls.str(boost_subsets)
+dow_all : List of 6            -->    i'th level - 1:6
+ $ ds_caret_L0   : NULL        -->    i = 1    --> names() to grep variables
+ $ ds_locf_L0    : NULL        -->    i = 2    --> names() to grep variables
+ $ ds_caret_lags :List of 5    -->    i = 3    --> j'th level - 1:5  --> names() to grep variables 
+ $ ds_locf_lags  :List of 5    -->    i = 4    --> j'th level - 1:5  --> names() to grep variables
+ $ ds_spline_lags:List of      -->    i = 5    --> j'th level - 1:5  --> names() to grep variables
+ $ ds_spline_L0  : NULL        -->    i = 6    --> names() to grep variables
+dow_macro : List of 6      
+ $ ds_caret_L0   : NULL                          |
+ $ ds_locf_L0    : NULL                          |
+ $ ds_caret_lags :List of 5                      v
+ $ ds_locf_lags  :List of 5                   repeats
+ $ ds_spline_lags:List of 5
+ $ ds_spline_L0  : NULL    
+dow_only : List of 6       
+ $ ds_caret_L0   : NULL    
+ $ ds_locf_L0    : NULL    
+ $ ds_caret_lags :List of 5
+ $ ds_locf_lags  :List of 5
+ $ ds_spline_lags:List of 5
+ $ ds_spline_L0  : NULL    
+dow_SA_all : List of 6     
+ $ ds_caret_L0   : NULL    
+ $ ds_locf_L0    : NULL    
+ $ ds_caret_lags :List of 5
+ $ ds_locf_lags  :List of 5
+ $ ds_spline_lags:List of 5
+ $ ds_spline_L0  : NULL    
+dow_SA_avg : List of 6     
+ $ ds_caret_L0   : NULL    
+ $ ds_locf_L0    : NULL    
+ $ ds_caret_lags :List of 5
+ $ ds_locf_lags  :List of 5
+ $ ds_spline_lags:List of 5
+ $ ds_spline_L0  : NULL    
+dow_trad : List of 6       
+ $ ds_caret_L0   : NULL    
+ $ ds_locf_L0    : NULL    
+ $ ds_caret_lags :List of 5
+ $ ds_locf_lags  :List of 5
+ $ ds_spline_lags:List of 5
+ $ ds_spline_L0  : NULL    
+
+* Each data.table contains the following variables, plus their lags if given
+
+
+> names(ds_locf_1)                                                                                                                          
+  [1] "dates"                                  "L1_is.monday"                           "L1_is.weekend"                                     
+  [4] "L1_is.holiday"                          "L1_avg_bull_market"                     "L1_avg_bear_market"                                
+  [7] "L1_avg_Dow_Jones"                       "L1_avg_dow_SPDR"                        "L1_avg_dow_wallstreet"                             
+ [10] "L1_avg_federal_reserve"                 "L1_avg_financial_crisis"                "L1_avg_goldman_sachs"                              
+ [13] "L1_avg_interest_rates"                  "L1_avg_market_volatility"               "L1_avg_obama_economy"                              
+ [16] "L1_avg_oil_prices"                      "L1_avg_stock_prices"                    "L1_bull_market_num_tweets"                         
+ [19] "L1_bull_market_times_retweeted"         "L1_bull_market_times_favourited"        "L1_bull_market_Sentistrength_pos"                  
+ [22] "L1_bull_market_Sentistrength_neg"       "L1_bull_market_Emolex_raw"              "L1_bull_market_Sentiment140"                       
+ [25] "L1_bull_market_Vader_Afinn"             "L1_bull_market_Vader_decimal"           "L1_bear_market_num_tweets"                         
+ [28] "L1_bear_market_times_retweeted"         "L1_bear_market_times_favourited"        "L1_bear_market_Sentistrength_pos"                  
+ [31] "L1_bear_market_Sentistrength_neg"       "L1_bear_market_Emolex_raw"              "L1_bear_market_Sentiment140"                       
+ [34] "L1_bear_market_Vader_Afinn"             "L1_bear_market_Vader_decimal"           "L1_Dow_Jones_num_tweets"                           
+ [37] "L1_Dow_Jones_times_retweeted"           "L1_Dow_Jones_times_favourited"          "L1_Dow_Jones_Sentistrength_pos"                    
+ [40] "L1_Dow_Jones_Sentistrength_neg"         "L1_Dow_Jones_Emolex_raw"                "L1_Dow_Jones_Sentiment140"                         
+ [43] "L1_Dow_Jones_Vader_Afinn"               "L1_Dow_Jones_Vader_decimal"             "L1_dow_SPDR_num_tweets"                            
+ [46] "L1_dow_SPDR_times_retweeted"            "L1_dow_SPDR_times_favourited"           "L1_dow_SPDR_Sentistrength_pos"                     
+ [49] "L1_dow_SPDR_Sentistrength_neg"          "L1_dow_SPDR_Emolex_raw"                 "L1_dow_SPDR_Sentiment140"                          
+ [52] "L1_dow_SPDR_Vader_Afinn"                "L1_dow_SPDR_Vader_decimal"              "L1_dow_wallstreet_num_tweets"                      
+ [55] "L1_dow_wallstreet_times_retweeted"      "L1_dow_wallstreet_times_favourited"     "L1_dow_wallstreet_Sentistrength_pos"               
+ [58] "L1_dow_wallstreet_Sentistrength_neg"    "L1_dow_wallstreet_Emolex_raw"           "L1_dow_wallstreet_Sentiment140"                    
+ [61] "L1_dow_wallstreet_Vader_Afinn"          "L1_dow_wallstreet_Vader_decimal"        "L1_federal_reserve_num_tweets"                     
+ [64] "L1_federal_reserve_times_retweeted"     "L1_federal_reserve_times_favourited"    "L1_federal_reserve_Sentistrength_pos"              
+ [67] "L1_federal_reserve_Sentistrength_neg"   "L1_federal_reserve_Emolex_raw"          "L1_federal_reserve_Sentiment140"                   
+ [70] "L1_federal_reserve_Vader_Afinn"         "L1_federal_reserve_Vader_decimal"       "L1_financial_crisis_num_tweets"                    
+ [73] "L1_financial_crisis_times_retweeted"    "L1_financial_crisis_times_favourited"   "L1_financial_crisis_Sentistrength_pos"             
+ [76] "L1_financial_crisis_Sentistrength_neg"  "L1_financial_crisis_Emolex_raw"         "L1_financial_crisis_Sentiment140"                  
+ [79] "L1_financial_crisis_Vader_Afinn"        "L1_financial_crisis_Vader_decimal"      "L1_goldman_sachs_num_tweets"                       
+ [82] "L1_goldman_sachs_times_retweeted"       "L1_goldman_sachs_times_favourited"      "L1_goldman_sachs_Sentistrength_pos"                
+ [85] "L1_goldman_sachs_Sentistrength_neg"     "L1_goldman_sachs_Emolex_raw"            "L1_goldman_sachs_Sentiment140"                     
+ [88] "L1_goldman_sachs_Vader_Afinn"           "L1_goldman_sachs_Vader_decimal"         "L1_interest_rates_num_tweets"                      
+ [91] "L1_interest_rates_times_retweeted"      "L1_interest_rates_times_favourited"     "L1_interest_rates_Sentistrength_pos"               
+ [94] "L1_interest_rates_Sentistrength_neg"    "L1_interest_rates_Emolex_raw"           "L1_interest_rates_Sentiment140"                    
+ [97] "L1_interest_rates_Vader_Afinn"          "L1_interest_rates_Vader_decimal"        "L1_market_volatility_num_tweets"                   
+[100] "L1_market_volatility_times_retweeted"   "L1_market_volatility_times_favourited"  "L1_market_volatility_Sentistrength_pos"            
+[103] "L1_market_volatility_Sentistrength_neg" "L1_market_volatility_Emolex_raw"        "L1_market_volatility_Sentiment140"                 
+[106] "L1_market_volatility_Vader_Afinn"       "L1_market_volatility_Vader_decimal"     "L1_obama_economy_num_tweets"                       
+[109] "L1_obama_economy_times_retweeted"       "L1_obama_economy_times_favourited"      "L1_obama_economy_Sentistrength_pos"                
+[112] "L1_obama_economy_Sentistrength_neg"     "L1_obama_economy_Emolex_raw"            "L1_obama_economy_Sentiment140"                     
+[115] "L1_obama_economy_Vader_Afinn"           "L1_obama_economy_Vader_decimal"         "L1_oil_prices_num_tweets"                          
+[118] "L1_oil_prices_times_retweeted"          "L1_oil_prices_times_favourited"         "L1_oil_prices_Sentistrength_pos"                   
+[121] "L1_oil_prices_Sentistrength_neg"        "L1_oil_prices_Emolex_raw"               "L1_oil_prices_Sentiment140"                        
+[124] "L1_oil_prices_Vader_Afinn"              "L1_oil_prices_Vader_decimal"            "L1_stock_prices_num_tweets"                        
+[127] "L1_stock_prices_times_retweeted"        "L1_stock_prices_times_favourited"       "L1_stock_prices_Sentistrength_pos"                 
+[130] "L1_stock_prices_Sentistrength_neg"      "L1_stock_prices_Emolex_raw"             "L1_stock_prices_Sentiment140"                      
+[133] "L1_stock_prices_Vader_Afinn"            "L1_stock_prices_Vader_decimal"          "L1_DJI"                                            
+[136] "L1_DAX"                                 "L1_FTSE"                                "L1_GSPC"                                           
+[139] "L1_nikkei225"                           "L1_SSE_comp"                            "L1_EFA"                                            
+[142] "L1_gold_USD"                            "L1_gold_GBP"                            "L1_gold_EURO"                                      
+[145] "L1_copper_cash"                         "L1_copper_3M"                           "L1_copper_vol_spot"                                
+[148] "L1_copper_vol_3M"                       "L1_oil_WTI"                             "L1_natural_gas"                                    
+[151] "L1_USD_EUR"                             "L1_USD_GBP"                             "L1_USD_JPY"                                        
+[154] "L1_USD_AUD"                             "L1_USD_CAD"                             "L1_zc_US_1Y"                                       
+[157] "L1_zc_US_2Y"                            "L1_zc_US_5Y"                            "L1_zc_US_10Y"                                      
+[160] "L1_zc_US_15Y"                           "L1_zc_US_20Y"                           "L1_vola_dow"                                       
+[163] "L1_vola_sp500"                          "L1_log_ret_DJI"                         "is.monday"                                         
+[166] "is.weekend"                             "is.holiday"                             "avg_bull_market"                                   
+[169] "avg_bear_market"                        "avg_Dow_Jones"                          "avg_dow_SPDR"                                      
+[172] "avg_dow_wallstreet"                     "avg_federal_reserve"                    "avg_financial_crisis"                              
+[175] "avg_goldman_sachs"                      "avg_interest_rates"                     "avg_market_volatility"                             
+[178] "avg_obama_economy"                      "avg_oil_prices"                         "avg_stock_prices"                                  
+[181] "bull_market_num_tweets"                 "bull_market_times_retweeted"            "bull_market_times_favourited"                      
+[184] "bull_market_Sentistrength_pos"          "bull_market_Sentistrength_neg"          "bull_market_Emolex_raw"                            
+[187] "bull_market_Sentiment140"               "bull_market_Vader_Afinn"                "bull_market_Vader_decimal"                         
+[190] "bear_market_num_tweets"                 "bear_market_times_retweeted"            "bear_market_times_favourited"                      
+[193] "bear_market_Sentistrength_pos"          "bear_market_Sentistrength_neg"          "bear_market_Emolex_raw"                            
+[196] "bear_market_Sentiment140"               "bear_market_Vader_Afinn"                "bear_market_Vader_decimal"                         
+[199] "Dow_Jones_num_tweets"                   "Dow_Jones_times_retweeted"              "Dow_Jones_times_favourited"                        
+[202] "Dow_Jones_Sentistrength_pos"            "Dow_Jones_Sentistrength_neg"            "Dow_Jones_Emolex_raw"                              
+[205] "Dow_Jones_Sentiment140"                 "Dow_Jones_Vader_Afinn"                  "Dow_Jones_Vader_decimal"                           
+[208] "dow_SPDR_num_tweets"                    "dow_SPDR_times_retweeted"               "dow_SPDR_times_favourited"                         
+[211] "dow_SPDR_Sentistrength_pos"             "dow_SPDR_Sentistrength_neg"             "dow_SPDR_Emolex_raw"                               
+[214] "dow_SPDR_Sentiment140"                  "dow_SPDR_Vader_Afinn"                   "dow_SPDR_Vader_decimal"                            
+[217] "dow_wallstreet_num_tweets"              "dow_wallstreet_times_retweeted"         "dow_wallstreet_times_favourited"                   
+[220] "dow_wallstreet_Sentistrength_pos"       "dow_wallstreet_Sentistrength_neg"       "dow_wallstreet_Emolex_raw"                         
+[223] "dow_wallstreet_Sentiment140"            "dow_wallstreet_Vader_Afinn"             "dow_wallstreet_Vader_decimal"                      
+[226] "federal_reserve_num_tweets"             "federal_reserve_times_retweeted"        "federal_reserve_times_favourited"                  
+[229] "federal_reserve_Sentistrength_pos"      "federal_reserve_Sentistrength_neg"      "federal_reserve_Emolex_raw"                        
+[232] "federal_reserve_Sentiment140"           "federal_reserve_Vader_Afinn"            "federal_reserve_Vader_decimal"                     
+[235] "financial_crisis_num_tweets"            "financial_crisis_times_retweeted"       "financial_crisis_times_favourited"                 
+[238] "financial_crisis_Sentistrength_pos"     "financial_crisis_Sentistrength_neg"     "financial_crisis_Emolex_raw"                       
+[241] "financial_crisis_Sentiment140"          "financial_crisis_Vader_Afinn"           "financial_crisis_Vader_decimal"                    
+[244] "goldman_sachs_num_tweets"               "goldman_sachs_times_retweeted"          "goldman_sachs_times_favourited"                    
+[247] "goldman_sachs_Sentistrength_pos"        "goldman_sachs_Sentistrength_neg"        "goldman_sachs_Emolex_raw"                          
+[250] "goldman_sachs_Sentiment140"             "goldman_sachs_Vader_Afinn"              "goldman_sachs_Vader_decimal"                       
+[253] "interest_rates_num_tweets"              "interest_rates_times_retweeted"         "interest_rates_times_favourited"                   
+[256] "interest_rates_Sentistrength_pos"       "interest_rates_Sentistrength_neg"       "interest_rates_Emolex_raw"                         
+[259] "interest_rates_Sentiment140"            "interest_rates_Vader_Afinn"             "interest_rates_Vader_decimal"                      
+[262] "market_volatility_num_tweets"           "market_volatility_times_retweeted"      "market_volatility_times_favourited"                
+[265] "market_volatility_Sentistrength_pos"    "market_volatility_Sentistrength_neg"    "market_volatility_Emolex_raw"                      
+[268] "market_volatility_Sentiment140"         "market_volatility_Vader_Afinn"          "market_volatility_Vader_decimal"                   
+[271] "obama_economy_num_tweets"               "obama_economy_times_retweeted"          "obama_economy_times_favourited"                    
+[274] "obama_economy_Sentistrength_pos"        "obama_economy_Sentistrength_neg"        "obama_economy_Emolex_raw"                          
+[277] "obama_economy_Sentiment140"             "obama_economy_Vader_Afinn"              "obama_economy_Vader_decimal"                       
+[280] "oil_prices_num_tweets"                  "oil_prices_times_retweeted"             "oil_prices_times_favourited"                       
+[283] "oil_prices_Sentistrength_pos"           "oil_prices_Sentistrength_neg"           "oil_prices_Emolex_raw"                             
+[286] "oil_prices_Sentiment140"                "oil_prices_Vader_Afinn"                 "oil_prices_Vader_decimal"                          
+[289] "stock_prices_num_tweets"                "stock_prices_times_retweeted"           "stock_prices_times_favourited"                     
+[292] "stock_prices_Sentistrength_pos"         "stock_prices_Sentistrength_neg"         "stock_prices_Emolex_raw"                           
+[295] "stock_prices_Sentiment140"              "stock_prices_Vader_Afinn"               "stock_prices_Vader_decimal"                        
+[298] "DJI"                                    "DAX"                                    "FTSE"                                              
+[301] "GSPC"                                   "nikkei225"                              "SSE_comp"                                          
+[304] "EFA"                                    "gold_USD"                               "gold_GBP"                                          
+[307] "gold_EURO"                              "copper_cash"                            "copper_3M"                                         
+[310] "copper_vol_spot"                        "copper_vol_3M"                          "oil_WTI"                                           
+[313] "natural_gas"                            "USD_EUR"                                "USD_GBP"                                           
+[316] "USD_JPY"                                "USD_AUD"                                "USD_CAD"                                           
+[319] "zc_US_1Y"                               "zc_US_2Y"                               "zc_US_5Y"                                          
+[322] "zc_US_10Y"                              "zc_US_15Y"                              "zc_US_20Y"                                         
+[325] "vola_dow"                               "vola_sp500"                             "log_ret_DJI"                                       

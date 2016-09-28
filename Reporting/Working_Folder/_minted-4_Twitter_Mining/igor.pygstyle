@@ -1,0 +1,63 @@
+
+\makeatletter
+\def\PYGigor@reset{\let\PYGigor@it=\relax \let\PYGigor@bf=\relax%
+    \let\PYGigor@ul=\relax \let\PYGigor@tc=\relax%
+    \let\PYGigor@bc=\relax \let\PYGigor@ff=\relax}
+\def\PYGigor@tok#1{\csname PYGigor@tok@#1\endcsname}
+\def\PYGigor@toks#1+{\ifx\relax#1\empty\else%
+    \PYGigor@tok{#1}\expandafter\PYGigor@toks\fi}
+\def\PYGigor@do#1{\PYGigor@bc{\PYGigor@tc{\PYGigor@ul{%
+    \PYGigor@it{\PYGigor@bf{\PYGigor@ff{#1}}}}}}}
+\def\PYGigor#1#2{\PYGigor@reset\PYGigor@toks#1+\relax+\PYGigor@do{#2}}
+
+\expandafter\def\csname PYGigor@tok@ch\endcsname{\let\PYGigor@it=\textit\def\PYGigor@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@cm\endcsname{\let\PYGigor@it=\textit\def\PYGigor@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@cs\endcsname{\let\PYGigor@it=\textit\def\PYGigor@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@cp\endcsname{\let\PYGigor@it=\textit\def\PYGigor@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@s2\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@s1\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@nc\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.46,0.46}{##1}}}
+\expandafter\def\csname PYGigor@tok@nd\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.80,0.00,0.64}{##1}}}
+\expandafter\def\csname PYGigor@tok@si\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@nf\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.76,0.31,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@sh\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@c1\endcsname{\let\PYGigor@it=\textit\def\PYGigor@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@kc\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@c\endcsname{\let\PYGigor@it=\textit\def\PYGigor@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@sx\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@kd\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@ss\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@sr\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@k\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@kn\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@cpf\endcsname{\let\PYGigor@it=\textit\def\PYGigor@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@kr\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@s\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@kp\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@kt\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@sc\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@sb\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@se\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+\expandafter\def\csname PYGigor@tok@sd\endcsname{\def\PYGigor@tc##1{\textcolor[rgb]{0.00,0.61,0.00}{##1}}}
+
+\def\PYGigorZbs{\char`\\}
+\def\PYGigorZus{\char`\_}
+\def\PYGigorZob{\char`\{}
+\def\PYGigorZcb{\char`\}}
+\def\PYGigorZca{\char`\^}
+\def\PYGigorZam{\char`\&}
+\def\PYGigorZlt{\char`\<}
+\def\PYGigorZgt{\char`\>}
+\def\PYGigorZsh{\char`\#}
+\def\PYGigorZpc{\char`\%}
+\def\PYGigorZdl{\char`\$}
+\def\PYGigorZhy{\char`\-}
+\def\PYGigorZsq{\char`\'}
+\def\PYGigorZdq{\char`\"}
+\def\PYGigorZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYGigorZat{@}
+\def\PYGigorZlb{[}
+\def\PYGigorZrb{]}
+\makeatother
+

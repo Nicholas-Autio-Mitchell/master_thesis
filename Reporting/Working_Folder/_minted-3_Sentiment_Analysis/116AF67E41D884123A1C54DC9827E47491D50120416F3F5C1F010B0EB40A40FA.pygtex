@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{k+kr}{for}\PYG{p}{(}i \PYG{k+kr}{in} \PYG{l+m}{1}\PYG{o}{:}\PYG{k+kp}{nrow}\PYG{p}{(}\PYG{k+kt}{matrix}\PYG{p}{(}data \PYG{o}{=} rnorm\PYG{p}{(}\PYG{l+m}{100}\PYG{p}{,}\PYG{l+m}{0}\PYG{p}{,}\PYG{l+m}{1}\PYG{p}{),} nrow \PYG{o}{=} \PYG{l+m}{100}\PYG{p}{,} ncol \PYG{o}{=} \PYG{l+m}{1}\PYG{p}{)))} \PYG{p}{\PYGZob{}}
+
+      \PYG{k+kp}{print}\PYG{p}{(}i\PYG{p}{)}
+  \PYG{p}{\PYGZcb{}}
+\end{Verbatim}

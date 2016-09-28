@@ -1,0 +1,118 @@
+% Hauptdatei - main
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Info zum Dokument
+\documentclass[a4paper]{book}
+\author{Mauricio Lobos}
+\title{Latex - eine kleine Einführung}
+\date{Heute}
+
+% Pakete
+\input{Pakete}
+
+% Seite einrichten
+\input{Seite}
+
+% Neue Befehle
+\input{Macros}
+%\input{C:/Users/Rizzo0/Downloads/z_Latex_Book/z_ordner/Macros}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Dokument
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Titelseite
+%\maketitle
+\begin{titlepage}
+\begin{center}
+
+% Titel
+\rule{\linewidth}{0.5mm} \\[0.5cm]
+{\LARGE \bf Latex - Eine kleine Einführung} \\[0.3mm] 
+\rule{\linewidth}{0.5mm} \\[2cm]
+
+% Author und Betreuer
+\begin{minipage}{0.4\textwidth}
+	\begin{flushleft}
+	\large \emph{Autor:} \\
+	Mauricio \textsc{Lobos}
+	\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\begin{flushright}
+	\large \emph{Betreuer:} \\
+	Prof. Dr.-Ing. habil. Spaßmensch \textsc{Schlaumeier Götz}
+	\end{flushright}
+\end{minipage} \\[4cm]
+
+% Uni
+\textsc{Universität des totalen Lachkrampfs (UTL)} \\
+\includegraphics[width=0.4\textwidth]{pics/utl_logo.eps} \\[2cm]
+
+% Abgabedatum
+Heute, 2013
+
+\end{center}
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Inhaltsverzeichnis
+\tableofcontents
+
+% Kapiteln
+\input{ch_Hierarchie}
+\input{ch_Mathekram}
+\input{ch_Seite}
+\input{ch_ITFS}
+\input{ch_LWMM}
+\input{ch_IA}
+
+% Bibliographie
+\newpage
+\mbox{}
+\newpage
+\addcontentsline{toc}{chapter}{Literatur}
+\bibliographystyle{plainnat}
+\bibliography{lit_konti}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Appendix
+\begin{appendix}
+\input{app_er}
+\end{appendix}
+
+% Tabellen- und Abbildungsverzeichnis
+\newpage
+\mbox{}
+\newpage
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\listoftables
+\newpage
+\mbox{}
+\newpage
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+
+% Index
+\newpage
+\mbox{}
+\newpage
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

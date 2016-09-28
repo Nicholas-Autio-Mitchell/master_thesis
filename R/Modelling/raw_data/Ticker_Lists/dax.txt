@@ -1,0 +1,31 @@
+Symbol	Name	Last Trade	Change	Volume
+ADS.DE	Adidas AG	68.06 5:18AM EDT	Down 0.34 (0.50%)	125,573
+ALV.DE	Allianz SE	152.45 5:18AM EDT	Up 0.35(0.23%)	240,880
+BAS.DE	BASF SE	75.18 5:18AM EDT	Down 0.56 (0.74%)	739,407
+BAYN.DE	Bayer AG	129.25 5:18AM EDT	Up 0.50(0.39%)	248,722
+BEI.DE	Beiersdorf AG	77.42 5:18AM EDT	Down 0.42 (0.54%)	73,540
+BMW.DE	Bayerische Motoren Werke Aktiengesellschaft	86.25 5:18AM EDT	Down 0.38 (0.44%)	383,289
+CBK.DE	Commerzbank AG	11.04 5:18AM EDT	Up 0.02(0.23%)	1,036,938
+CON.DE	Continental Aktiengesellschaft	205.75 5:18AM EDT	Down 0.70 (0.34%)	136,554
+DAI.DE	Daimler AG	76.49 5:18AM EDT	Up 0.15(0.20%)	921,647
+DB1.DE	Deutsche Boerse AG	83.31 5:18AM EDT	Down 0.10 (0.12%)	82,578
+DBK.DE	Deutsche Bank AG	28.89 5:18AM EDT	Up 0.09(0.33%)	707,103
+DPW.DE	Deutsche Post AG	26.18 5:18AM EDT	Down 0.07 (0.27%)	642,835
+DTE.DE	Deutsche Telekom AG	16.35 5:18AM EDT	Up 0.10(0.65%)	1,624,863
+EOAN.DE	E.ON SE	11.45 5:18AM EDT	Down 0.10 (0.82%)	2,254,421
+FME.DE	Fresenius Medical Care AG & Co. KGAA	73.93 5:18AM EDT	Up 0.70(0.96%)	71,006
+FRE.DE	Fresenius SE & Co KGaA	65.94 5:18AM EDT	Up 0.40(0.61%)	320,007
+HEI.DE	HeidelbergCement AG	70.86 5:17AM EDT	Up 0.30(0.43%)	89,689
+HEN3.DE	Henkel AG & Co. KGaA	96.04 5:18AM EDT	Down 0.80 (0.83%)	252,386
+IFX.DE	Infineon Technologies AG	9.67 5:18AM EDT	Up 0.05(0.55%)	1,284,525
+LHA.DE	Deutsche Lufthansa Aktiengesellschaft	11.85 5:18AM EDT	Up 0.02(0.13%)	521,949
+LIN.DE	Linde Aktiengesellschaft	169.85 5:18AM EDT	Up 0.75(0.44%)	74,772
+LXS.DE	Lanxess AG	50.88 5:18AM EDT	Up 0.18(0.36%)	108,417
+MRK.DE	Merck KGaA	89.02 5:18AM EDT	Up 1.73(1.98%)	179,823
+MUV2.DE	Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft	168.55 5:18AM EDT	Up 0.35(0.21%)	133,951
+RWE.DE	RWE AG	15.95 5:18AM EDT	Down 0.35 (2.12%)	1,806,111
+SAP.DE	SAP SE	63.30 5:18AM EDT	Up 0.25(0.40%)	333,274
+SDF.DE	K+S Aktiengesellschaft	36.95 5:17AM EDT	Down 0.02 (0.05%)	195,803
+SIE.DE	Siemens Aktiengesellschaft	94.88 5:18AM EDT	Down 0.25 (0.26%)	297,190
+TKA.DE	ThyssenKrupp AG	21.81 5:18AM EDT	Down 0.24 (1.11%)	492,578
+VOW3.DE	Volkswagen AG	177.05 5:18AM EDT	Down 0.90 (0.51%)	240,884

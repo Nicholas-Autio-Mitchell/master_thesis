@@ -1,0 +1,228 @@
+;;;;; some very useful functions
+(defun rbz-table ()	   ; a function to insert the table environment
+  (interactive)                  
+  (insert "\\begin{table}[t!]\n")	; \n is the newline character
+  (insert "  \\centering\n")
+  (insert "  \\begin{tabular}{}\n")
+  (insert "    \\hline\n")
+  (insert "    \n")
+  (insert "    \\hline\n")
+  (insert "  \\end{tabular}\n")
+  (insert "  \\caption{ }\n")
+  (insert "  \\label{tab:1}\n")
+  (insert "\\end{table}\n") 
+  (previous-line 8)		   ; move back to the line containing \begin... 
+  (forward-char 18)		   ; move inside the curly brackets
+  )
+
+
+(defun rbz-figure ()	   ; a function to insert the figure environment
+  (interactive)                  
+  (insert "\\begin{figure}[t!]\n") ; \n is the newline character
+  (insert "  \\centering\n")
+  (insert "  \\includegraphics[width=0.8\\textwidth]{}\n")
+  (insert "  \\caption{ }\n")
+  (insert "  \\label{fig:zzz}\n")
+  (insert "\\end{figure}\n") 
+  (previous-line 4)		   ; move back to the line containing \begin... 
+  (forward-char 40)		   ; move inside the curly brackets
+  )
+
+
+(defun rbz-sweave-alice ()
+  (interactive)                  
+  (insert "%\\setkeys{Gin}{width=0.8\\textwidth} \n")
+  (insert "\\begin{figure}[h!]\n")
+  (insert "  \\centering\n")
+  (insert "<<prettyalice, fig=TRUE, echo=FALSE, width=10, height=10>>=\n")
+  (insert " \n")
+  (insert " \n")
+  (insert "@ \n")
+  (insert "  \\caption{} \n")
+  (insert "  \\label{fig:prettyalice} \n")
+  (insert "\\end{figure}\n")	   
+  (previous-line 6)		   
+  (forward-char 0)		   
+  )
+
+
+(defun rbz-sweave-britney ()
+  (interactive)
+  (insert "<<prettybritney, fig=TRUE, echo=FALSE, width=10, height=10, include=FALSE>>=\n")
+  (insert "## Don't forget to change YOURFILESNAME! \n")
+  (insert " \n")
+  (insert "@ \n")
+  (insert "\\begin{figure}[h!]\n") ; \n is the newline character
+  (insert "  \\centering\n")
+  (insert "  \\includegraphics[width=0.8\\textwidth]{YOURFILESNAME-prettybritney}\n")
+  (insert "  \\caption{ }\n")
+  (insert "  \\label{fig:prettybritney}\n")
+  (insert "\\end{figure}\n") 
+  (previous-line 9)		   ; move back to the line containing \begin... 
+  (forward-char 0)		   ; move inside the curly brackets
+  )
+
+
+(defun rbz-hyperref ()
+  (interactive)
+  (insert "%% Usage: \\href{URL}{text} \n")
+  (insert "\\usepackage[hyperfootnotes=false]{hyperref}         % make sure this comes last \n")
+  (insert "\\hypersetup{backref, \n")
+  (insert " pdftitle={},\n")
+  (insert " pdfsubject={Mysubject},\n")
+  (insert " pdfauthor={Nikolay Robinzonov},\n")
+  (insert " pdfkeywords={LaTeX},\n")
+  (insert " colorlinks=true,              % colorlinks instead of a box \n") 
+  (insert " linkcolor=black!50!red,       % color for normal internal links \n")
+  (insert " citecolor=black!50!green,     % color for bibliographical citations \n")
+  (insert " urlcolor=black!50!blue,       % color for URLs \n")
+  (insert " linktocpage=true\n")
+  (insert "}\n")
+  (insert "\n")
+  (previous-line 11)
+  (forward-char 11)
+  )
+
+
+(defun rbz-document ()	  
+  (interactive)                    
+  (insert "\\documentclass[a4paper,oneside,12pt]{article}\n")
+  (insert "\\usepackage[english]{babel}\n")
+  (insert "\\usepackage[utf8]{inputenc}\n")
+  (insert "\\usepackage[T1]{fontenc}\n")
+  (insert "\\usepackage{geometry}\n")
+  (insert "\\usepackage{graphicx}\n")
+  (insert "\\usepackage{amsmath}\n")
+  (insert "\\usepackage{ae,aeguill}\n")
+  (insert "\\usepackage{amssymb}\n")
+  (insert "\\usepackage{xcolor}\n")
+  (insert "\\usepackage{natbib}\n")
+  (insert "\\usepackage{url}\n")
+  (insert "\\usepackage{eurosym}       \% \\euro \n\n")
+  (insert "\%%%%%% cosmetics %%%%%%%\n")
+  (insert "\%% %% font: Helvetica \n")
+  (insert "\%% \\renewcommand{\\familydefault}{\\sfdefault} \n")
+  (insert "\%% \\usepackage{helvet} \% \\usepackage{avant} \n")
+  (insert "\%% \\setlength{\\parindent}{0pt}  \% no indentation \n\n")
+  (insert "\%% fancy headings\n")
+  (insert "\\usepackage{fancyhdr}\n")
+  (insert "\\setlength{\\headheight}{14pt} \% 13.6pt or more\n")
+  (insert "\\renewcommand{\\headrulewidth}{0.2pt}\n")
+  (insert "\\renewcommand{\\footrulewidth}{0.2pt}\n")
+  (insert "\\pagestyle{fancy}\n")
+  (insert "\\rfoot{\\today}\n\n")
+  (insert "\%% \\title{My Title}\n")
+  (insert "\%% \\author{Nikolay Robinzonov}\n")
+  (insert "\%% \\date{\\today}\n")
+  (insert "\n")
+  (insert "\\begin{document}\n")
+  (insert "\n")
+  (insert "\n")
+  (insert "\n")
+  (insert "\\end{document}\n") 
+  (previous-line 4)		   ; move back to the line containing \begin... 
+  (forward-char 1)		   ; move inside the curly brackets
+  )
+
+
+(defun rbz-shamearticle ()	  
+  (interactive)                    
+  (insert "\\section{}\n")
+  (insert "\n")
+  (insert "\n")
+  (insert "\\Signed[онзи]{Този}{дата}\n") 
+  (insert "\\source{url}\n") 
+  (insert "\\printname\n") 
+  (previous-line 6)		   ; move back to the line containing \begin... 
+  (forward-char 10)		   ; move inside the curly brackets
+  )
+
+(defun rbz-sweave-opts ()	  
+  (interactive)                    
+  (insert "\\SweaveOpts{keep.source = TRUE}\n")
+  (insert "\\setkeys{Gin}{width=0.8\\textwidth}\n")
+  (insert "%% options(useFancyQuotes = FALSE)	# Sweave in R\n")
+  (insert "\\DefineVerbatimEnvironment{Sinput}{Verbatim}{fontshape=sl,fontsize=\\small,% \n")
+  (insert "                                              formatcom={\\color{blue}}}\n")
+  (insert "\\DefineVerbatimEnvironment{Soutput}{Verbatim}{fontsize=\\footnotesize,% \n")
+  (insert "                                               formatcom={\\color{red}}} \n")
+  (insert "\\DefineVerbatimEnvironment{Scode}{Verbatim}{fontshape=sl,fontsize=\\small,% \n")
+  (insert "                                            formatcom={\\color{ColorBrewerBlue}}} \n")
+  )
+
+
+(defun rbz-insertframe ()
+  (interactive)
+  (insert "\%%%%%%%%%%%%%%%%%%%% k %%%%%%%%%%%%%%%%%%%%\n")  
+  (insert "\\begin{frame}[fragile]\n")
+  (insert "  \\frametitle{}\n")
+  (insert "\n")	
+  (insert "\n")
+  (insert "\n")
+  (insert "\\end{frame}\n")
+  (previous-line 4)		   ; move back to the line containing \begin... 
+  (forward-char 1)		   ; move inside the curly brackets
+  )
+
+(defun rbz-verbchunk ()
+  (interactive)
+  (insert "\\begin{minipage}{6cm}\\normalsize\\color{black}\n")
+  (insert "\\begin{verbatim}\n")
+  (insert "\n")	
+  (insert "\\end{verbatim}\n")	
+  (insert "\\end{minipage}\n")	
+  (previous-line 3)		   ; move back to the line containing \begin... 
+  )
+
+(defun rbz-rectangle ()
+  (interactive)
+  (insert "\\begin{tikzpicture}[remember picture, overlay]\n")
+  (insert "   \\draw[help lines] (0,0) grid (10,10)\; \n")
+  (insert "   \\node[rectangle, fill=yellow, fill opacity=0.2,\%\n") 
+  (insert "    draw=red, thick, minimum width=6cm, minimum height=1cm]\n")
+  (insert "    (a) at (4,4) {}\; \n")	
+  (insert "\\end{tikzpicture}\n")	
+  (previous-line 3)		   ; move back to the line containing \begin... 
+  (forward-char 35)		   ; move inside the curly brackets
+  )
+
+
+(defun rbz-gmail ()	  
+  (interactive)                    
+  (insert "Nikolay Robinzonov <robinzoni@gmail.com>")
+  )	  
+
+(defun rbz-stat ()	  
+  (interactive)                    
+  (insert "Nikolay Robinzonov <Nikolay.Robinzonov@stat.uni-muenchen.de>")
+  )	  
+
+(defun rbz-citeauthor ()	  
+  (interactive)                    
+  (insert "\\signed{\\citeauthor[]{}}")
+  (previous-line 1)
+  (forward-char 23)		   ; move inside the curly brackets
+  )	  
+
+(defun rbz-comment ()	  
+  (interactive)                    
+  (insert "####################\n")
+  (insert "##  \n")
+  (insert "####################\n")
+  (previous-line 2)
+  (forward-char 4)
+  )	  
+
+
+
+
+;;-------------------------------------------------------------------
+; Keybindings
+(global-set-key "\C-c\C-z" 'rbz-figure)
+(global-set-key "\C-c\C-t" 'rbz-table)
+
+
+;; what should C-c C-f make
+;(set-variable (quote latex-run-command) "pdflatex")
+;;-------------------------------------------------------------------
+

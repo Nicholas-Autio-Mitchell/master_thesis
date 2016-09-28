@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{for}\PYG{p}{(}i \PYG{k+kr}{in} \PYG{l+m}{1}\PYG{o}{:}\PYG{l+m}{2}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+
+    \PYG{k+kp}{print}\PYG{p}{(}i\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

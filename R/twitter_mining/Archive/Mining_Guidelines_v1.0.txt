@@ -1,0 +1,25 @@
+1)Ensure all required packages are installed and loaded into session:
+  - twitteR
+  - base64enc
+  - tm
+  - plyr
+  - ...
+  
+2) Probably only needs to be done once, but the Twitter API needs to be established.
+  - Create a text file containing the four required values: "consumer_key", "consumer_secret", "access_token" and  "access_token_secret".
+  - Use the functions 'setup_twitter_oauth()' using the four saved values and the function inputs (only these four are required). After being prompted, select [1] to use a local file cache for direct access.
+  - If problems occur this is likely due to updates to the twitteR package itself or to its dependiencies. Check the Github website of the twitteR creator: Jeff Gentry <geoffjentry@gmail.com>.
+  
+3) Start to import some tweets using the function: 'searchTwitter()'. See the function help pages for assistance with the input.
+
+4) Inported tweets using the above function are stored in a (large) list. This needs to be converted into a string/character vector or something similar to allow the manipulation of the tweets themselves - packages such as 'tm' do this well.
+
+5) The function 'sapply()' will parse the list we have save from Twitter and return a character vector, so all text is retained, but can now be mor easily manipulated. We would like to create a corpus (a collection of objects/documents, in our case they are simply individual tweets)
+
+6) We no should begin to clean the tweets saved individually within our corpus. A general cleaning process can be completed, followed by one tailored to the specific analysis that will subsequently be carried out on the tweets.
+
+The general cleaning process may remove less usual content from the tweets, such as: punctuation, numbers, URLs, the distinction between upper and lower case (i.e. make everything lower case), and also remove common words such as 'and' 'of' 'also' etc.
+
+The more specific cleaning may involve removing words that are known to be irrelavant to the analysis, however are expteced to appear very ofter within the tweets.
+
+7) We form a corpus from our character vector by using the function 'Corpus()'.

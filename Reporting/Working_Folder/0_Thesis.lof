@@ -1,0 +1,16 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Google Trends data versus the DJIA price}}{9}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Plutchik's \emph {Wheel of Emotion}}}{21}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces An example of linear regression using sentiment analysis scores}}{26}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces The contour plot of a fictitious loss function}}{29}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces An example loss function for the one-dimensional case}}{32}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces An illustration of 25-fold boostrap cross-validation}}{33}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces An illustration of weekend sentiment as a predictor}}{39}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces The number of predictors removed as a function of the correlation threshold, $\kappa $}}{44}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Movements of the DJIA compared to Twitter activity}}{45}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces DJIA log-returns plotted alongside the logarithm of tweet counts}}{46}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces The predictive accuracy of all subsets, using Gaussian regression in GLMs}}{48}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces The mean-suared error of all subsets, using Gaussian regression in GLMs}}{49}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces The predictive accuracy of all subsets, using binomial regression in GLMs}}{50}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Four price-paths, comparing forecasted returns against actual returns}}{52}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces The predictive accuracies of GLMs using fixed versus increasing frame-size}}{53}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces The predictive accuracies of \emph {component-wise} versus \emph {batch} stochastic gradient boosting}}{56}{figure.16}

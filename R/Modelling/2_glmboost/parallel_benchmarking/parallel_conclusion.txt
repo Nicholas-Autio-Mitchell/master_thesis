@@ -1,0 +1,45 @@
+Two tests were performed and several checks made. The times for the runs are given below, 
+but first the main question must be addressed: Are the results identical?
+The answer is yes. This has been checked for many output using the R function: `ìdentical()`.
+
+The basic benchmark was to run the first 12 frames of modelling (frame_size = 40) for all 
+lag values and all subsets. The number of iterations was 1000, step size of 0.05.
+The time taken for this was **28 minutes**
+
+The same test was run, but using the parallel setup with ``foreach()`.
+The time taken was **17 minutes**.
+
+This is a speed up of 40%.
+
+Another test to see how things scale as the number of iterations changes was performed. The 
+parallel setup was used again with 2000 iterations, with otherwise the same parameters. 
+Doubling the number of iterations would normally lead linearly to a doubling of the 
+computational time, so (2 x 17) 34 minutes.
+The time taken was **28 minutes**.
+
+These reductions in computing times are expected to be scalable to systems with larger 
+numbers of cores, however the code must be slightly amended, as it will currently work in 
+foreach-loops of 1:5 - meaning that at maximum 5 cores can be utilised.
+
+The machine used for testing had only 4 ohysical cores, but 4 virtual cores by virtue of 
+hyperthreading. Increasing the number of cores registered, i.e. registerDoMC(5) did also 
+further speed up the process. With 1000 iterations and otherwise all the same parameters.
+
+The time takes was **15.5 minutes**
+
+This is still a further improvement, now 45% faster than the original, the fifth cores 
+reducing the compute time compared to four cores by ~9%.
+Hyperthreading should therefore be used. when possible.
+
+The last step to ramp things up for 8 cores or more (if using AWS) would be to rearrange the 
+code and the input data structure, so that a greater number of loops can run at the same 
+time.
+
+There are a total of 25 data sets. These could be merged into one list of 25 elements 
+instead of 5 list elemts, each containing five data sets. This can be done with fairly low 
+amounts of effort. Making alterations to use all 32 cores on an AWS instance would require 
+more energy and likely is not worth the time investment required.
+
+A flat list has been created and saved as 'subsets_lagged.one_list.rda'.
+It can easily be created on the fly, using: 
+"flat_list <- unlist(subsets_lagged, recursive = FALSE)"

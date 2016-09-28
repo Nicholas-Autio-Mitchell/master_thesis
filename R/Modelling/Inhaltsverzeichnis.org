@@ -1,0 +1,172 @@
+
+* Abstract (English and German)
+
+** How did we get here?
+
+*** What does this research contribute to the field, i.e. what is new?
+
+** How can we use this to create an advantage? 
+
+** What is our toolkit
+
+** What was our expectation?
+
+** What was our result?
+
+** Draft
+The emergence and ensuing explosion in popularity of social media platforms since the beginning of the twenty-first century, facilitated and catalysed by technological advancements and ever increasing global connectivity, has created an abundance of data in completely new dimensions to traditionally available data. This has lead to new terminology, such as: big data, sentiment analysis and machine learning, to name but just a few.
+
+This study utilises a combination of these developments with the aim of enhancing commonly used models used to analyse and predict the movements of stock markets. Social media data from the Twitter platform has been used to add greater breadth to our model; the results of multi-model sentiment analysis performed on individual tweets being incorporated as additional covariates.
+
+Component-wise gradient boosting was selected as the methodology for its inherent capabilities in variable selection and adaptability to high-dimensional data sets (/large n large p/). These are major advantages, considering both the large number of covariates produced by sentiment analysis and the little prior knowledge regarding their individual significance levels.
+
+Expectations/Results: ...
+
+
+* Introduction
+
+** An overview of the research area
+
+*** stock market predictions with social media -> overlap of two research areas
+
+*** sentiment analysis -> usage of results (not the theory/background - later!)
+
+** What are we setting out to show? (Make the aim crystal clear)
+
+** What are the limits of the thesis?
+
+*** What are relevant topics/questions, but not included in this study?
+
+** Thesis Breakdown
+
+*** The story of the thesis from start to finish. Describe the sections, how one leads naturally onto the next.
+
+* Twitter Mining
+
+** Overview of social media data / big-data sources
+
+** Twitter APIs
+
+** Scraping
+
+*** Firehose / 3rd Party Company / Advanced Search
+
+**** What are they? How do they work? Pros and Cons of each?
+
+*** How the advanced search was utilised
+
+*** Which information did we select from Twitter (i.e. the scraped HTML code)?
+
+** Summary of the raw data obtained
+
+*** Explain the basic table of results we carried forward into modelling
+
+
+* Sentiment Analysis
+
+** Short intro (summarising what has been presented so far)
+
+** Models to be applied
+
+*** List the models (SentiStrength, Emolex, Sentinet140, Vader Afinn, Vader)
+
+*** Examplanation of each:
+
+**** Underlying philosophy
+
+**** The algorithm
+
+**** Understanding the results
+
+
+* Gradient Boosting
+
+** Origins and development of the methodology
+
+*** Original idea by Friedman and it has been adapted into the version used here
+
+** Relevant theoretical aspects - why we optimise certain parameters
+
+** Strengths and weaknesses
+
+** Why does it suit our data and purpose?
+
+
+* Data Preparation and Overview
+
+** How were SA results aggregated?
+
+** Which market data did we get?
+
+*** The 'how' is not very relevant
+
+*** Differences between SA data and market data (weekends, scale, etc.)
+
+*** Dealing with missing data
+
+** Descriptive statistics and breakdowns of the final combined data sets
+
+* Modelling
+
+** Data Subsets
+
+*** Which subsets were chosen
+
+|--------------+-------------------------------+----------------------------------------------+--------------|
+| Name         | Components [DJI_logRet \sim ] | Reasoning                                    | Name in R    |
+|--------------+-------------------------------+----------------------------------------------+--------------|
+| dow_only     | lagged log returns            | Most basic example for comparison            | dow_only     |
+| dow_trad     | gold, oil, sp500, int.rates   | traditional model factors                    | dow_trad     |
+| * dow_macro  | all macro data                | Many macro factors handled well              | * glm_macro  |
+| * dow_SA_all | all individual SA results     | SA from certain models might perform better  | * glm_sa_avg |
+| * dow_SA_avg | average sentiment scores      | SA in general explains variance              | * glm_sa_all |
+|--------------+-------------------------------+----------------------------------------------+--------------|
+| * dow_best   | macro + best of SA            | All data to showcase component-wise boosting | * glm_mix    |
+|              |                               |                                              |              |
+|--------------+-------------------------------+----------------------------------------------+--------------|
+
+ /*/ = currently being implemented and modelled (i.e. there are already results) 
+
+*** Lag values for each subset for comparisons autoregressive models
+
+*** Choose smaller subsets of the most promising data and drill further into the modelling
+
+**** This may include different base learning for SA data versus market data inside of gamboost()
+
+**** It might be a topic to add to "Further Work"
+
+** Inspection/superficial comparison of market and SA data (better in )
+
+*** Plot interesting relationships e.g. market returns against number of tweets
+
+** Boosting Models
+
+*** Which models with which parameters were used?
+
+**** Justify these decisions with comparable works or from initial data inspection above
+
+*** How was the cross-validation performed?
+
+*** What are the results?
+
+*** What is the interpretation of the results?
+
+* Discussion and Conclusion
+
+** Summarise all results and compare to expectations
+
+** Compare results to traditional models (i.e. without social media data)
+
+** Compare to similar studies (if there are any?) - validates our model/methodology
+
+** Highlight the limits of empirical work and so these results
+
+*** How might we improve the outcomes in the future?
+
+
+* Still open...
+
+** How best to embed references to literature?
+I think during the first section of each of the chapters, as several large areas are covered.
+It might be difficult to follow if one literature section covers sentiment analysis, boosting and market hypotheses.
+

@@ -1,0 +1,8 @@
+
+There are some ideas that came up over the course of the thesis, which would be great to include in the final report, but are not necessary for the main flow of the story. A list of them is to be kept here for things to do towards the completion of the report if there is time.
+
+1) a word-cloud, showing that the twitter data can answer certain questions graphically. For example, "What did NYT report about a big event?" or "How did people react to a public announcement from the Federal Reserve"
+2) Images of the Reuters Sentiment index (see report printed out, provided by Rupert)
+3) A view into single users (see notebook for assessed examples)
+4) A section on threshold Autoregression Models (TAR), first published by Tong (1978/1990).
+5) Mentions of aggregating sentiment into weekly data and predicting volatility clusters - make comparisons to work on Okhrin's google paper (Heiden 2014)

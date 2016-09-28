@@ -1,0 +1,86 @@
+
+
+* Machine Learning - an Overview
+
+The positive contribution of new data resulting from data mining may be summarised in two parts.
+
+Firstly, when incorporating social media data into traditional forecasting models an entirely new dimension is being introduced, and has the potential to add a noteworthy amount of explanatory power to model. If modelling can be performed in a manner whereby large numbers of variables do not diminish overall performance, then the addition of more data can only improve the outcome. [Reference to any PCA analysis]
+
+Secondly, there is a huge amount of data involved, which has given rise to the buzzword: /Big Data/. Ceteris paribus, more data equals results that are as good or better than those of an identical model with less data. Arguments can be made against such notions, but general speaking, a prediction based on a large data set is worth more than one based on a small data set.
+Imagine it is reported that the average house price in a city is 200,000 € based on five houses. If the same average house price is reported once again, this time based on five hundred houses, our intuition tells us that the second statement holds more weight. It is statistically more robust to things that may perturb the market e.g. an expensive new mansion being built in the area will not drastically alter the second statement.
+
+An example:
+When analysts want to predict if a stock will perform positively (price will climb) or negatively (price will fall) in the next time period, factors that are typically included tend to be the past performance of that stock, the performance of its competitors, performance in related markets and specific factors relevant to the geographical region in which the stock is active. A number of indices and tools already exist that attempt to describe the market sentiment towards that stock, however their 
+
+These include a consumer confidence index [Based on how many people? How often can it be measured?], volatility indices [for large groups of stocks, based solely on stock movements and volumes of trades…?], surveys of analysts who deal directly with the stock [subjective opinions of perhaps 30 analysts].
+
+These are of course all valid and relevant factors, but what we can add to that is the power of thousands, if not millions of opinions regarding the whole context of that stock, in all aspects, in real time. This is definitely a factor that has something to add to the current picture of forecasting models and therefore warrants further research. This study aims to provide that with a full implementation of social media data into the forecasting model of a financial asset.
+
+
+* Brief overview of available tools
+Literature to all work in tools here.
+How to we define what it is that we want?
+Depends on end goal. We will consider packages that can extract, clean and analyse data, so 'all-in-one' solutions.
+
+** Matlab
+There are several recent extension to Matlab's capabilities. These are all integrated into a point-and-click interface.
+
+
+** Python
+
+
+** R
+
+* Where does one usually get data from?
+Literature to all studies involving social media data from sources other than Twitter.
+Social Media (free & paid) —> Twitter, Facebook, Google Trends, News sites, RSS feeds,
+
+
+* How do we optimise data?
+How do we clean data? What is the useful part of the unstructured data?
+
+
+
+* What are the most common statistical methods employed?
+To value and quantify 
+
+
+* How Do we analyse data?
+
+Before we can incorporate our mined data into a proven statistical model, for example a time series regression model, it is necessary to quantify our textual data. This can be done in one of two ways. Either through classification or regression. The former is typically used for discrete data, while the latter is the best solution for data with a continuous spectrum of values.
+
+
+Knowledge sources:
+http://www.kdnuggets.com/2015/05/top-10-data-mining-algorithms-explained.html
+https://cran.r-project.org/web/views/MachineLearning.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
